@@ -5369,3 +5369,324 @@ padding:2%;
     }
 
 }
+
+/* ==========================================
+   OLIVE TREE - FACILITY GALLERY
+   Brown + Green Premium Design
+========================================== */
+
+.ch-project-area.vm-wood-card {
+    --facility-brown: #4b291b;
+    --facility-green: #176b3a;
+    --facility-gold: #d6a84b;
+
+    position: relative;
+    width: 100%;
+    padding: 55px 0 65px;
+    overflow: hidden;
+
+    background: linear-gradient(
+        120deg,
+        #422318 0%,
+        #684027 55%,
+        #80502f 100%
+    );
+}
+
+/* Section heading */
+
+.vm-wood-card .ch-top-title {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 12px;
+}
+
+.vm-wood-card .ch-top-title span {
+    display: inline-block;
+    color: #d6b36c;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.vm-wood-card .ch-top-title h2 {
+    color: #ffffff;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* Carousel spacing */
+
+.vm-wood-card .project-wrap {
+    width: 100%;
+    padding: 0 8px;
+}
+
+.vm-wood-card .project-active-s2 {
+    position: relative;
+    z-index: 2;
+}
+
+.vm-wood-card .project-active-s2 .owl-stage {
+    display: flex;
+    align-items: stretch;
+}
+
+.vm-wood-card .project-active-s2 .owl-item {
+    display: flex;
+    height: auto;
+}
+
+.vm-wood-card .project-item {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* Facility card */
+
+.vm-wood-card .facility-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 3px solid rgba(214, 168, 75, 0.75);
+    border-radius: 10px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.vm-wood-card .facility-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================
+   IMAGE SIZE
+========================================== */
+
+.vm-wood-card .facility-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.vm-wood-card .facility-image img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition: transform 0.6s ease;
+}
+
+/* Image zoom */
+
+.vm-wood-card .facility-card:hover .facility-image img {
+    transform: scale(1.06);
+}
+
+/* Image number */
+
+.vm-wood-card .facility-number {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    background: #176b3a;
+    color: #ffffff;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    z-index: 3;
+}
+
+/* ==========================================
+   FACILITY NAME TAG
+========================================== */
+
+.vm-wood-card .facility-caption {
+    position: relative;
+    display: block;
+
+    padding: 12px 10px;
+
+    background: #ffffff;
+    text-align: center;
+    min-height: 50px;
+}
+
+/* Small green category tag */
+
+.vm-wood-card .facility-tag {
+    display: inline-block;
+
+    padding: 5px 13px;
+    margin-bottom: 9px;
+
+    background: #e8f2e9;
+    color: #176b3a;
+
+    border-radius: 30px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+}
+
+/* Facility title */
+
+.vm-wood-card .facility-caption h3 {
+    color: #4b291b;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.25;
+
+    margin: 0;
+    padding: 0;
+
+    transition: color 0.3s ease;
+}
+
+.vm-wood-card .facility-card:hover .facility-caption h3 {
+    color: #176b3a;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+    .ch-project-area.vm-wood-card {
+        padding: 45px 0 50px;
+    }
+
+    .vm-wood-card .ch-top-title h2 {
+        font-size: 40px;
+    }
+
+    .vm-wood-card .facility-image {
+        height: 270px;
+    }
+
+    .vm-wood-card .facility-caption h3 {
+        font-size: 21px;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .ch-project-area.vm-wood-card {
+        padding: 35px 0 40px;
+    }
+
+    .vm-wood-card .ch-top-title {
+        margin-bottom: 18px;
+        padding-left: 10px;
+    }
+
+    .vm-wood-card .ch-top-title h2 {
+        font-size: 34px;
+    }
+
+    .vm-wood-card .ch-top-title span {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .vm-wood-card .project-wrap {
+        padding: 0 5px;
+    }
+
+    .vm-wood-card .project-item {
+        padding: 7px;
+    }
+
+    .vm-wood-card .facility-image {
+        height: 250px;
+    }
+
+    .vm-wood-card .facility-caption {
+        padding: 14px 10px 17px;
+        min-height: 100px;
+    }
+
+    .vm-wood-card .facility-caption h3 {
+        font-size: 20px;
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .vm-wood-card .facility-image {
+        height: 220px;
+    }
+
+    .vm-wood-card .facility-number {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .vm-wood-card .facility-caption h3 {
+        font-size: 19px;
+    }
+
+    .vm-wood-card .facility-tag {
+        font-size: 9px;
+        padding: 4px 10px;
+    }
+
+}
