@@ -169,7 +169,7 @@
     justify-content: center;
     align-items: center;
 
-    background: #765033;
+    background: rgb(100, 0, 0);
     color: white;
 
     border-radius: 50%;
@@ -3625,21 +3625,9 @@ padding:2%;
     }
 }
 
-@media (min-width: 1200px) {
-    .col-xl-4 {
-        width:12%;
-        flex: 0 0 auto;
-    }
-}
 
 
-@media (min-width: 1200px) {
-    .col-xl-6 {
-        flex: 0 0 auto;
-        width: 65%;
-    }
-}
-
+    
 /* =========================================
    FOOTER
 ========================================= */

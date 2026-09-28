@@ -1915,7 +1915,7 @@ body.dark-page .mouse-circle-mover-follow {
     position: relative;
   }
   .cp-header-area .main-menu ul > li > a {
-    font-size: 17px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -2059,7 +2059,7 @@ body.dark-page .mouse-circle-mover-follow {
 @media (max-width: 1199px) {
   .cp-header-area .main-menu ul > li > a {
     padding: 35px 15px;
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 .cp-header-area .search-toggle-btn i {
@@ -2160,7 +2160,7 @@ body.dark-page .mouse-circle-mover-follow {
   width: 85%;
   height: 100%;
   content: "";
-  background:#7d502d;
+  background:rgb(100, 0, 0);
   clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%, 1% 45%);
   z-index: -1;
 }
@@ -2231,22 +2231,22 @@ body.dark-page .mouse-circle-mover-follow {
 }
 @media (max-width: 1500px) {
   .cp-header-style-2 .main-menu ul > li > a {
-    padding: 40px 25px;
+    padding: 20px 18px;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .cp-header-style-2 .main-menu ul > li > a {
-    padding: 40px 22px;
+    padding: 20px 23px;
   }
 }
 @media (max-width: 1300px) {
   .cp-header-style-2 .main-menu ul > li > a {
-    padding: 40px 18px;
+    padding: 20px 18px;
   }
 }
 @media (max-width: 1199px) {
   .cp-header-style-2 .main-menu ul > li > a {
-    padding: 40px 14px;
+    padding: 20px 18px;
   }
 }
 .cp-header-style-2 .mean-container a.meanmenu-reveal {
