@@ -1,0 +1,9994 @@
+/* =========================================
+   OLIVE TREE GLOBAL SCHOOL
+   PREMIUM BREADCRUMB BANNER
+========================================= */
+
+.otgs-breadcrumb {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    isolation: isolate;
+
+    background-image:
+        url("../img/aboutimg1.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* BACKGROUND OVERLAY */
+
+.otgs-breadcrumb-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background:rgba(0, 0, 0, 0.477);
+}
+
+/* CONTAINER */
+
+.otgs-breadcrumb-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 65px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* CONTENT */
+
+.otgs-breadcrumb-content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* SCHOOL NAME */
+
+.otgs-breadcrumb-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color:  #ffd042;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+/* PAGE TITLE */
+
+.otgs-breadcrumb-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    text-transform: capitalize;
+
+    text-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* GOLD DECORATIVE LINE */
+
+.otgs-breadcrumb-line {
+    width: 55px;
+    height: 3px;
+
+    margin: 20px auto;
+
+    background: #ffd042;
+    border-radius: 5px;
+}
+
+/* BREADCRUMB NAVIGATION */
+
+.otgs-breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* HOME LINK */
+
+.otgs-breadcrumb-nav a {
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.otgs-breadcrumb-nav a:hover {
+    color:  #ffd042;
+}
+
+/* SEPARATOR */
+
+.otgs-breadcrumb-arrow {
+    color: #ffd042;
+    font-size: 17px;
+}
+
+/* CURRENT PAGE */
+
+.otgs-current-page {
+    color: #ffd042;
+}
+
+/* =========================================
+   TABLET VIEW
+========================================= */
+
+@media (max-width: 991px) {
+
+    .otgs-breadcrumb {
+        min-height: 280px;
+        background-position: center;
+    }
+
+    .otgs-breadcrumb-container {
+        padding: 55px 20px;
+    }
+
+    .otgs-breadcrumb-content h1 {
+        font-size: 34px;
+    }
+
+    .otgs-breadcrumb-label {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+}
+
+/* =========================================
+   MOBILE VIEW
+========================================= */
+
+@media (max-width: 767px) {
+
+    .otgs-breadcrumb {
+        min-height: 230px;
+        background-position: 60% center;
+    }
+
+    .otgs-breadcrumb-container {
+        padding: 45px 18px;
+    }
+
+    .otgs-breadcrumb-content h1 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .otgs-breadcrumb-label {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .otgs-breadcrumb-line {
+        margin: 15px auto;
+        width: 45px;
+    }
+
+    .otgs-breadcrumb-nav {
+        font-size: 13px;
+        gap: 9px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .otgs-breadcrumb {
+        min-height: 200px;
+    }
+
+    .otgs-breadcrumb-container {
+        padding: 35px 15px;
+    }
+
+    .otgs-breadcrumb-content h1 {
+        font-size: 24px;
+    }
+
+    .otgs-breadcrumb-label {
+        font-size: 9px;
+        line-height: 1.7;
+    }
+
+    .otgs-breadcrumb-nav {
+        font-size: 12px;
+        gap: 8px;
+    }
+}
+
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   ABOUT SECTION
+   WHITE BACKGROUND + TREE + LEAF ANIMATION
+========================================================= */
+
+.otgs-about-leaf {
+    position: relative;
+    width: 100%;
+    padding: 50px 20px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* =========================================================
+   SOFT ORGANIC BACKGROUND
+========================================================= */
+
+.otgs-about-leaf::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    left: -220px;
+    top: -170px;
+    border-radius: 50%;
+    background: rgba(101, 125, 69, 0.07);
+    pointer-events: none;
+}
+
+.otgs-about-leaf::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    right: -190px;
+    bottom: -180px;
+    border-radius: 50%;
+    background: rgba(118, 80, 51, 0.06);
+    pointer-events: none;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.otgs-about-leaf-container {
+    position: relative;
+    z-index: 10;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   TREE / LEAF BACKGROUND ANIMATION
+========================================================= */
+
+.otgs-about-leaf-visual::before {
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    left: 5px;
+    top: 15px;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            transparent 52%,
+            rgba(67, 95, 50, 0.09) 53%,
+            transparent 55%
+        );
+
+    border-radius: 50%;
+
+    animation: otgsTreeGlow 5s ease-in-out infinite;
+}
+
+/* =========================================================
+   FLOATING LEAF 1
+========================================================= */
+
+.otgs-about-leaf-visual::after {
+    content: "";
+    position: absolute;
+
+    width: 38px;
+    height: 20px;
+
+    left: 25px;
+    top: 80px;
+
+    background: #7d9658;
+
+    border-radius: 80% 15% 80% 15%;
+
+    transform: rotate(-28deg);
+
+    opacity: .75;
+
+    animation:
+        otgsLeafFloatOne 6s ease-in-out infinite;
+}
+
+/* =========================================================
+   IMAGE / TREE SIDE
+========================================================= */
+
+.otgs-about-leaf-visual {
+    position: relative;
+
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================================
+   ORGANIC IMAGE FRAME
+========================================================= */
+
+.otgs-about-leaf-image {
+    position: relative;
+    z-index: 4;
+
+    width: 390px;
+    height: 480px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 8px solid #ffffff;
+
+    border-radius:
+        48% 18% 45% 20% /
+        28% 18% 32% 20%;
+
+    box-shadow:
+        0 20px 45px rgba(48, 72, 43, .16),
+        0 7px 0 #536f3c;
+
+    transition: transform .5s ease;
+}
+
+.otgs-about-leaf-image:hover {
+    transform: translateY(-5px);
+}
+
+.otgs-about-leaf-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+/* =========================================================
+   OUTER TREE FRAME
+========================================================= */
+
+.otgs-about-leaf-curve {
+    position: absolute;
+    z-index: 2;
+
+    width: 390px;
+    height: 480px;
+
+    left: 17px;
+    top: 17px;
+
+    border: 3px solid #765033;
+
+    border-radius:
+        48% 18% 45% 20% /
+        28% 18% 32% 20%;
+
+    transform: rotate(-5deg);
+
+    opacity: .65;
+
+    animation: otgsFrameFloat 5s ease-in-out infinite;
+}
+
+/* =========================================================
+   LARGE LEAF
+========================================================= */
+
+.otgs-about-leaf-shape {
+    position: absolute;
+    z-index: 5;
+
+    width: 145px;
+    height: 145px;
+
+    right: -5px;
+    bottom: -5px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #536f3c,
+            #8fa15e
+        );
+
+    border-radius:
+        70% 30% 65% 35%;
+
+    transform: rotate(20deg);
+
+    box-shadow:
+        0 15px 30px rgba(66, 87, 42, .18);
+
+    animation:
+        otgsLeafPulse 5s ease-in-out infinite;
+}
+
+
+
+/* =========================================================
+   SMALL LEAF
+========================================================= */
+
+.otgs-about-leaf-shape::after {
+    content: "";
+
+    position: absolute;
+
+    width: 65px;
+    height: 35px;
+
+    right: -25px;
+    top: 5px;
+
+    background: #435f32;
+
+    border-radius: 80% 15% 80% 15%;
+
+    transform: rotate(-35deg);
+
+    animation: otgsSmallLeaf 4s ease-in-out infinite;
+}
+
+/* =========================================================
+   FLOATING LEAF DECORATIONS
+========================================================= */
+
+.otgs-about-leaf-content::before {
+    content: "";
+
+    position: absolute;
+
+    width: 32px;
+    height: 17px;
+
+    right: 8%;
+    top: -25px;
+
+    background: #8d9b62;
+
+    border-radius: 80% 15% 80% 15%;
+
+    transform: rotate(25deg);
+
+    opacity: .65;
+
+    animation:
+        otgsFloatingLeaf 7s ease-in-out infinite;
+}
+
+.otgs-about-leaf-content::after {
+    content: "";
+
+    position: absolute;
+
+    width: 25px;
+    height: 14px;
+
+    right: 1%;
+    top: 40%;
+
+    background: #765033;
+
+    border-radius: 80% 15% 80% 15%;
+
+    transform: rotate(-30deg);
+
+    opacity: .22;
+
+    animation:
+        otgsFloatingLeafTwo 8s ease-in-out infinite;
+}
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.otgs-about-leaf-badge {
+    position: absolute;
+    z-index: 7;
+
+    left: -8px;
+    bottom: 25px;
+
+    min-width: 255px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 14px 20px 14px 13px;
+
+    background: #ffffff;
+
+    border-left: 6px solid #765033;
+
+    border-radius: 0 14px 14px 0;
+
+    box-shadow:
+        0 15px 35px rgba(63, 45, 29, .13);
+}
+
+.otgs-about-leaf-badge-number {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:darkgreen;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.otgs-about-leaf-badge small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: darkred;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.otgs-about-leaf-badge strong {
+    display: block;
+
+    color: #31452b;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.otgs-about-leaf-content {
+    position: relative;
+}
+
+/* =========================================================
+   SMALL TITLE
+========================================================= */
+
+.otgs-about-leaf-heading > span {
+    display: inline-block;
+
+    margin-bottom: 9px;
+
+    padding: 6px 14px;
+
+    background: #eef3e7;
+
+    color: #3f5d32;
+
+    border: 1px solid #d0dcc0;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.otgs-about-leaf-heading h2 {
+    margin: 0;
+
+    color: darkgreen;
+
+    font-size: 43px;
+    line-height: 1.08;
+
+    font-weight: 700;
+}
+
+.otgs-about-leaf-heading h2 b {
+    color:darkred;
+    font-weight: 700;
+}
+
+/* =========================================================
+   TITLE LINE
+========================================================= */
+
+.otgs-about-leaf-line {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 17px;
+    margin-bottom: 23px;
+}
+
+.otgs-about-leaf-line i {
+    display: block;
+
+    height: 5px;
+
+    border-radius: 10px;
+}
+
+.otgs-about-leaf-line i:nth-child(1) {
+    width: 55px;
+    background: darkgreen;
+}
+
+.otgs-about-leaf-line i:nth-child(2) {
+    width: 27px;
+    background: darkred;
+}
+
+.otgs-about-leaf-line i:nth-child(3) {
+    width: 14px;
+    background: darkgoldenrod;
+}
+
+/* =========================================================
+   INTRO BOX
+========================================================= */
+
+.otgs-about-leaf-intro {
+    position: relative;
+
+    margin-bottom: 18px;
+
+    padding: 18px 20px 18px 23px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #f1f5eb,
+            #ffffff
+        );
+
+    border-left: 5px solid #536f3c;
+
+    border-radius: 0 14px 14px 0;
+
+    color: #000000;
+
+    font-size: 18px;
+    line-height: 1.75;
+
+    font-weight: 600;
+}
+
+/* =========================================================
+   PARAGRAPHS
+========================================================= */
+
+.otgs-about-leaf-text p {
+    margin: 0 0 13px;
+
+    color: #000000;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    font-weight: 400;
+}
+
+/* =========================================================
+   VALUE CARDS
+========================================================= */
+
+.otgs-about-leaf-values {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+.otgs-about-leaf-value {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e5dc;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 22px rgba(69, 52, 35, .07);
+
+    transition: .3s ease;
+}
+
+.otgs-about-leaf-value:nth-child(1) {
+    border-top: 4px solid darkgreen;
+}
+
+.otgs-about-leaf-value:nth-child(2) {
+    border-top: 4px solid darkred;
+}
+
+.otgs-about-leaf-value:nth-child(3) {
+    border-top: 4px solid darkgoldenrod;
+}
+
+.otgs-about-leaf-value:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(69, 52, 35, .12);
+}
+
+.otgs-about-leaf-value > span {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius:
+        70% 30% 65% 35%;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.otgs-about-leaf-value:nth-child(1) > span {
+    background: darkgreen;
+}
+
+.otgs-about-leaf-value:nth-child(2) > span {
+    background: darkred;
+}
+
+.otgs-about-leaf-value:nth-child(3) > span {
+    background: darkgoldenrod;
+}
+
+.otgs-about-leaf-value strong {
+    display: block;
+
+    color: #30482b;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+.otgs-about-leaf-value small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #000000;
+
+    font-size: 13px;
+}
+
+/* =========================================================
+   TREE / LEAF ANIMATIONS
+========================================================= */
+
+@keyframes otgsTreeGlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: .65;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 1;
+    }
+}
+
+@keyframes otgsFrameFloat {
+
+    0%,
+    100% {
+        transform: rotate(-5deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-4deg) translateY(-6px);
+    }
+}
+
+@keyframes otgsLeafFloatOne {
+
+    0%,
+    100% {
+        transform:
+            translate(0, 0)
+            rotate(-28deg);
+    }
+
+    50% {
+        transform:
+            translate(20px, 18px)
+            rotate(-8deg);
+    }
+}
+
+@keyframes otgsLeafPulse {
+
+    0%,
+    100% {
+        transform:
+            rotate(20deg)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            rotate(24deg)
+            scale(1.05);
+    }
+}
+
+@keyframes otgsSmallLeaf {
+
+    0%,
+    100% {
+        transform:
+            rotate(-35deg)
+            translate(0, 0);
+    }
+
+    50% {
+        transform:
+            rotate(-20deg)
+            translate(7px, -5px);
+    }
+}
+
+@keyframes otgsFloatingLeaf {
+
+    0%,
+    100% {
+        transform:
+            translate(0, 0)
+            rotate(25deg);
+    }
+
+    25% {
+        transform:
+            translate(-15px, 20px)
+            rotate(45deg);
+    }
+
+    50% {
+        transform:
+            translate(-30px, 5px)
+            rotate(15deg);
+    }
+
+    75% {
+        transform:
+            translate(-10px, -15px)
+            rotate(35deg);
+    }
+}
+
+@keyframes otgsFloatingLeafTwo {
+
+    0%,
+    100% {
+        transform:
+            translate(0, 0)
+            rotate(-30deg);
+    }
+
+    50% {
+        transform:
+            translate(-15px, 25px)
+            rotate(-5deg);
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .otgs-about-leaf {
+        padding: 60px 20px;
+    }
+
+    .otgs-about-leaf-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .otgs-about-leaf-visual {
+        min-height: 500px;
+    }
+
+    .otgs-about-leaf-content {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    .otgs-about-leaf-heading h2 {
+        font-size: 38px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .otgs-about-leaf {
+        padding: 50px 15px;
+    }
+
+    .otgs-about-leaf-container {
+        gap: 35px;
+    }
+
+    .otgs-about-leaf-visual {
+        min-height: 425px;
+    }
+
+    .otgs-about-leaf-image {
+        width: 310px;
+        height: 395px;
+
+        border-width: 6px;
+    }
+
+    .otgs-about-leaf-curve {
+        width: 310px;
+        height: 395px;
+    }
+
+    .otgs-about-leaf-shape {
+        width: 105px;
+        height: 105px;
+
+        right: 20px;
+    }
+
+    .otgs-about-leaf-shape::before {
+        height: 75px;
+        left: 51px;
+    }
+
+    .otgs-about-leaf-shape::after {
+        width: 48px;
+        height: 28px;
+    }
+
+    .otgs-about-leaf-badge {
+        left: 3px;
+        bottom: 4px;
+
+        min-width: 220px;
+
+        padding: 12px 15px 12px 11px;
+    }
+
+    .otgs-about-leaf-heading h2 {
+        font-size: 34px;
+    }
+
+    .otgs-about-leaf-intro {
+        padding: 15px 16px;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .otgs-about-leaf-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .otgs-about-leaf-values {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .otgs-about-leaf {
+        padding: 42px 12px;
+    }
+
+    .otgs-about-leaf-visual {
+        min-height: 355px;
+    }
+
+    .otgs-about-leaf-image {
+        width: 245px;
+        height: 315px;
+    }
+
+    .otgs-about-leaf-curve {
+        width: 245px;
+        height: 315px;
+    }
+
+    .otgs-about-leaf-shape {
+        width: 78px;
+        height: 78px;
+
+        right: 10px;
+    }
+
+    .otgs-about-leaf-shape::before {
+        height: 55px;
+        left: 38px;
+        top: 12px;
+    }
+
+    .otgs-about-leaf-shape::after {
+        width: 35px;
+        height: 21px;
+    }
+
+    .otgs-about-leaf-badge {
+        left: 0;
+        bottom: 0;
+
+        min-width: 190px;
+
+        gap: 9px;
+
+        padding: 10px 12px 10px 9px;
+    }
+
+    .otgs-about-leaf-badge-number {
+        width: 40px;
+        height: 40px;
+
+        font-size: 14px;
+    }
+
+    .otgs-about-leaf-badge strong {
+        font-size: 13px;
+    }
+
+    .otgs-about-leaf-badge small {
+        font-size: 9px;
+    }
+
+    .otgs-about-leaf-heading > span {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .otgs-about-leaf-heading h2 {
+        font-size: 29px;
+    }
+
+    .otgs-about-leaf-intro {
+        font-size: 13.5px;
+        line-height: 1.65;
+    }
+
+    .otgs-about-leaf-text p {
+        font-size: 13.5px;
+        line-height: 1.65;
+    }
+
+    .otgs-about-leaf-value {
+        min-height: 64px;
+    }
+
+    .otgs-about-leaf-value strong {
+        font-size: 13px;
+    }
+
+    .otgs-about-leaf-value small {
+        font-size: 11px;
+    }
+}
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .otgs-about-leaf {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .otgs-about-leaf-image {
+        width: 220px;
+        height: 290px;
+    }
+
+    .otgs-about-leaf-curve {
+        width: 220px;
+        height: 290px;
+    }
+
+    .otgs-about-leaf-visual {
+        min-height: 330px;
+    }
+
+    .otgs-about-leaf-badge {
+        min-width: 175px;
+    }
+
+    .otgs-about-leaf-heading h2 {
+        font-size: 26px;
+    }
+}
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   OUR LEGACY
+   BRIGHT WHITE + DARK BROWN + NATURAL GREEN
+   BOTANICAL TREE DESIGN
+========================================================= */
+
+.otgs-legacy-tree {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    padding: 50px 20px;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   SOFT BACKGROUND
+========================================================= */
+
+.otgs-legacy-tree::before {
+    content: "";
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -240px;
+    top: -220px;
+
+    border: 1px solid rgba(83, 111, 60, 0.10);
+
+    border-radius: 50%;
+
+    z-index: -2;
+}
+
+.otgs-legacy-tree::after {
+    content: "";
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    left: -190px;
+    bottom: -200px;
+
+    border: 1px solid rgba(112, 78, 49, 0.09);
+
+    border-radius: 50%;
+
+    z-index: -2;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.otgs-legacy-tree-container {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.otgs-legacy-tree-visual {
+    position: relative;
+
+    min-height: 570px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Image frame */
+
+.otgs-legacy-tree-image-wrap {
+    position: relative;
+
+    width: 100%;
+    max-width: 515px;
+
+    margin: 0 auto;
+
+    padding: 11px;
+
+    background: #f4f0e8;
+
+    border: 1px solid #b79a78;
+
+    box-shadow:
+        0 18px 45px rgba(71, 57, 43, 0.12);
+}
+
+
+/* Image */
+
+.otgs-legacy-tree-image {
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    background: #e9e4da;
+}
+
+.otgs-legacy-tree-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    filter: saturate(0.96) contrast(1.03);
+
+    transition: transform 0.7s ease;
+}
+
+.otgs-legacy-tree-image-wrap:hover img {
+    transform: scale(1.035);
+}
+
+
+/* =========================================================
+   ORGANIC IMAGE FRAME
+========================================================= */
+
+.otgs-tree-frame-line {
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    pointer-events: none;
+}
+
+.frame-top {
+    right: -16px;
+    top: -16px;
+
+    border-top: 2px solid #607847;
+    border-right: 2px solid #607847;
+}
+
+.frame-bottom {
+    left: -16px;
+    bottom: -16px;
+
+    border-left: 2px solid #806043;
+    border-bottom: 2px solid #806043;
+}
+
+
+/* =========================================================
+   YEAR
+========================================================= */
+
+.otgs-legacy-tree-year {
+    position: absolute;
+
+    left: 0;
+    bottom: 62px;
+
+    width: 145px;
+    height: 112px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #607847;
+
+    border: 7px solid #ffffff;
+
+    box-shadow:
+        0 12px 28px rgba(57, 76, 42, 0.17);
+}
+
+.otgs-legacy-tree-year small {
+    margin-bottom: 5px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #e8eddf;
+
+    font-weight: 600;
+}
+
+.otgs-legacy-tree-year strong {
+    font-size: 34px;
+
+    line-height: 1;
+
+    color: #ffffff;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.otgs-legacy-tree-location {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin: 18px auto 0;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    color: darkred;
+}
+
+.otgs-legacy-tree-location span {
+    width: 30px;
+    height: 2px;
+
+    background: #728b55;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.otgs-legacy-tree-content {
+    position: relative;
+
+    padding: 5px 0;
+}
+
+
+/* Label */
+
+.otgs-legacy-tree-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    font-size: 18px;
+
+    letter-spacing: 2.5px;
+
+    color: darkgreen;
+
+    font-weight: 700;
+}
+
+.otgs-legacy-tree-label span {
+    width: 38px;
+    height: 2px;
+
+    display: block;
+
+    background: #866444;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.otgs-legacy-tree-content h2 {
+    margin: 0;
+
+    max-width: 500px;
+
+    font-size: 46px;
+
+    line-height: 1.12;
+
+    letter-spacing: -1px;
+
+    color: darkred;
+
+    font-weight: 600;
+}
+
+.otgs-legacy-tree-content h2 strong {
+    display: block;
+
+    color: darkgreen;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TITLE LINE
+========================================================= */
+
+.otgs-legacy-tree-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 20px 0 24px;
+}
+
+.otgs-legacy-tree-title span {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color:darkred;
+}
+
+.otgs-legacy-tree-title div {
+    width: 45px;
+    height: 1px;
+
+    background: darkgreen;
+}
+
+.otgs-legacy-tree-title small {
+    font-size: 18px;
+
+    letter-spacing: 1.7px;
+
+    color: darkred;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+========================================================= */
+
+.otgs-legacy-tree-content p {
+    max-width: 600px;
+
+    margin: 0 0 16px;
+
+    font-size: 15px;
+
+    line-height: 1.82;
+
+    color: #000000;
+}
+
+.otgs-legacy-tree-content .legacy-tree-intro {
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    color: #000000;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   GROWTH MESSAGE
+========================================================= */
+
+.otgs-legacy-tree-growth {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 26px;
+
+    padding: 15px 18px;
+
+    background: #f2ffcb;
+
+    border-left: 4px solid #607847;
+}
+
+
+/* Small tree */
+
+.otgs-growth-tree {
+    position: relative;
+
+    width: 55px;
+    height: 58px;
+
+    flex: 0 0 55px;
+}
+
+
+/* Trunk */
+
+.growth-trunk {
+    position: absolute;
+
+    left: 26px;
+    bottom: 4px;
+
+    width: 5px;
+    height: 31px;
+
+    background:darkred;
+
+    border-radius: 4px;
+}
+
+
+/* Tree leaves */
+
+.growth-leaf {
+    position: absolute;
+
+    width: 25px;
+    height: 18px;
+
+    background: darkgreen;
+
+    border-radius: 100% 0 100% 0;
+}
+
+.growth-leaf-1 {
+    left: 8px;
+    top: 12px;
+
+    transform: rotate(-35deg);
+}
+
+.growth-leaf-2 {
+    right: 5px;
+    top: 8px;
+
+    transform: rotate(35deg);
+}
+
+.growth-leaf-3 {
+    left: 17px;
+    top: 0;
+
+    transform: rotate(10deg);
+}
+
+
+/* Growth text */
+
+.otgs-growth-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.otgs-growth-text small {
+    font-size:18px;
+
+    letter-spacing: 2px;
+
+    color:darkred;
+
+    font-weight: 700;
+}
+
+.otgs-growth-text strong {
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    color:darkgreen;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FACTS
+========================================================= */
+
+.otgs-legacy-tree-facts {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 26px;
+
+    border-top: 1px solid #ded7ca;
+    border-bottom: 1px solid #ded7ca;
+}
+
+.otgs-legacy-tree-facts > div {
+    min-height: 75px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 10px 13px;
+
+    border-right: 1px solid #ded7ca;
+}
+
+.otgs-legacy-tree-facts > div:last-child {
+    border-right: none;
+}
+
+.otgs-legacy-tree-facts strong {
+    margin-bottom: 5px;
+
+    font-size: 15px;
+
+    line-height: 1.15;
+
+    color: darkgreen;
+}
+
+.otgs-legacy-tree-facts span {
+    font-size: 13px;
+
+    letter-spacing: 1.2px;
+
+    line-height: 1.35;
+
+    color: darkred;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BACKGROUND BRANCHES
+========================================================= */
+
+.otgs-legacy-tree-bg {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* Branch */
+
+.otgs-tree-branch {
+    position: absolute;
+
+    height: 1px;
+
+    background: rgba(112, 78, 49, 0.18);
+
+    transform-origin: left center;
+}
+
+.branch-1 {
+    width: 190px;
+
+    right: -15px;
+    top: 27%;
+
+    transform: rotate(-27deg);
+}
+
+.branch-2 {
+    width: 155px;
+
+    left: -15px;
+    bottom: 21%;
+
+    transform: rotate(24deg);
+}
+
+
+/* =========================================================
+   BACKGROUND LEAVES
+========================================================= */
+
+.otgs-tree-leaf {
+    position: absolute;
+
+    width: 55px;
+    height: 28px;
+
+    border: 1px solid rgba(96, 120, 71, 0.22);
+
+    border-radius: 100% 0 100% 0;
+
+    transform-origin: center;
+
+    animation: otgsLeafFloat 6s ease-in-out infinite;
+}
+
+.otgs-tree-leaf::after {
+    content: "";
+
+    position: absolute;
+
+    width: 70%;
+
+    height: 1px;
+
+    left: 15%;
+    top: 50%;
+
+    background: rgba(96, 120, 71, 0.18);
+
+    transform: rotate(-20deg);
+}
+
+.leaf-1 {
+    right: 7%;
+    top: 12%;
+
+    transform: rotate(25deg);
+}
+
+.leaf-2 {
+    right: 3%;
+    top: 19%;
+
+    transform: rotate(65deg);
+
+    animation-delay: 1s;
+}
+
+.leaf-3 {
+    left: 4%;
+    bottom: 15%;
+
+    transform: rotate(-25deg);
+
+    animation-delay: 2s;
+}
+
+.leaf-4 {
+    left: 8%;
+    bottom: 22%;
+
+    transform: rotate(25deg);
+
+    animation-delay: 3s;
+}
+
+.leaf-5 {
+    right: 14%;
+    bottom: 8%;
+
+    transform: rotate(-35deg);
+
+    animation-delay: 1.5s;
+}
+
+.leaf-6 {
+    left: 15%;
+    top: 10%;
+
+    transform: rotate(65deg);
+
+    animation-delay: 2.5s;
+}
+
+
+/* =========================================================
+   LEAF ANIMATION
+========================================================= */
+
+@keyframes otgsLeafFloat {
+
+    0%,
+    100% {
+        margin-top: 0;
+        opacity: 0.65;
+    }
+
+    50% {
+        margin-top: 8px;
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .otgs-legacy-tree {
+        padding: 70px 20px;
+    }
+
+    .otgs-legacy-tree-container {
+        gap: 45px;
+    }
+
+    .otgs-legacy-tree-visual {
+        min-height: 510px;
+    }
+
+    .otgs-legacy-tree-image {
+        height: 440px;
+    }
+
+    .otgs-legacy-tree-content h2 {
+        font-size: 38px;
+    }
+
+    .otgs-legacy-tree-content p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .otgs-legacy-tree-content .legacy-tree-intro {
+        font-size: 15px;
+    }
+
+    .otgs-legacy-tree-year {
+        width: 125px;
+        height: 98px;
+
+        bottom: 52px;
+    }
+
+    .otgs-legacy-tree-year strong {
+        font-size: 29px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .otgs-legacy-tree {
+        padding: 55px 16px;
+    }
+
+    .otgs-legacy-tree-container {
+        display: block;
+
+        max-width: 600px;
+    }
+
+    .otgs-legacy-tree-visual {
+        min-height: auto;
+
+        margin-bottom: 45px;
+    }
+
+    .otgs-legacy-tree-image-wrap {
+        max-width: 100%;
+
+        padding: 8px;
+    }
+
+    .otgs-legacy-tree-image {
+        height: 390px;
+    }
+
+    .otgs-tree-frame-line {
+        width: 55px;
+        height: 55px;
+    }
+
+    .frame-top {
+        right: -8px;
+        top: -8px;
+    }
+
+    .frame-bottom {
+        left: -8px;
+        bottom: -8px;
+    }
+
+    .otgs-legacy-tree-year {
+        width: 112px;
+        height: 88px;
+
+        left: -3px;
+        bottom: 35px;
+
+        border-width: 5px;
+    }
+
+    .otgs-legacy-tree-year strong {
+        font-size: 26px;
+    }
+
+    .otgs-legacy-tree-location {
+        margin-top: 15px;
+
+        font-size:15px;
+
+        letter-spacing: 1.4px;
+    }
+
+    .otgs-legacy-tree-content h2 {
+        font-size: 34px;
+    }
+
+    .otgs-legacy-tree-title {
+        margin: 17px 0 21px;
+    }
+
+    .otgs-legacy-tree-content p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .otgs-legacy-tree-content .legacy-tree-intro {
+        font-size: 15px;
+    }
+
+    .otgs-legacy-tree-growth {
+        margin-top: 22px;
+
+        padding: 14px;
+    }
+
+    .otgs-growth-text strong {
+        font-size: 13px;
+    }
+
+    .otgs-legacy-tree-facts {
+        margin-top: 22px;
+    }
+
+    .otgs-legacy-tree-facts > div {
+        padding: 9px 7px;
+    }
+
+    .otgs-legacy-tree-facts strong {
+        font-size: 13px;
+    }
+
+    .otgs-legacy-tree-facts span {
+        font-size: 7px;
+        letter-spacing: 0.7px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .otgs-legacy-tree {
+        padding: 45px 13px;
+    }
+
+    .otgs-legacy-tree-image {
+        height: 315px;
+    }
+
+    .otgs-legacy-tree-image-wrap {
+        padding: 6px;
+    }
+
+    .otgs-legacy-tree-year {
+        width: 98px;
+        height: 78px;
+
+        bottom: 25px;
+    }
+
+    .otgs-legacy-tree-year small {
+        font-size: 7px;
+        letter-spacing: 1.3px;
+    }
+
+    .otgs-legacy-tree-year strong {
+        font-size: 22px;
+    }
+
+    .otgs-legacy-tree-content h2 {
+        font-size: 29px;
+    }
+
+    .otgs-legacy-tree-title small {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .otgs-legacy-tree-content p {
+        font-size: 13.5px;
+    }
+
+    .otgs-legacy-tree-content .legacy-tree-intro {
+        font-size: 14px;
+    }
+
+    .otgs-legacy-tree-growth {
+        gap: 12px;
+    }
+
+    .otgs-growth-tree {
+        transform: scale(0.85);
+        transform-origin: left center;
+        margin-right: -5px;
+    }
+
+    .otgs-legacy-tree-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .otgs-legacy-tree-facts > div {
+        min-height: auto;
+
+        padding: 12px 10px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #ded7ca;
+    }
+
+    .otgs-legacy-tree-facts > div:last-child {
+        border-bottom: none;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .otgs-legacy-tree-image {
+        height: 280px;
+    }
+
+    .otgs-legacy-tree-content h2 {
+        font-size: 26px;
+    }
+
+    .otgs-legacy-tree-content p {
+        font-size: 13px;
+    }
+
+    .otgs-legacy-tree-year {
+        width: 88px;
+        height: 70px;
+    }
+
+    .otgs-legacy-tree-year strong {
+        font-size: 20px;
+    }
+
+    .otgs-legacy-tree-location {
+        font-size: 8px;
+    }
+}
+
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   OUR PHILOSOPHY — EDUCATION FOR LIFE
+   WHITE + DARK BROWN + NATURAL GREEN
+========================================================= */
+
+.otgs-philosophy-life {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    padding: 50px 20px;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   SOFT BACKGROUND
+========================================================= */
+
+.otgs-philosophy-life::before {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    top: -270px;
+    right: -180px;
+
+    border: 1px solid rgba(96, 120, 71, 0.10);
+
+    border-radius: 50%;
+
+    z-index: -2;
+}
+
+.otgs-philosophy-life::after {
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    left: -170px;
+    bottom: -170px;
+
+    border: 1px solid rgba(128, 96, 67, 0.10);
+
+    border-radius: 50%;
+
+    z-index: -2;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.otgs-philosophy-container {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.02fr 0.98fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.otgs-philosophy-content {
+    position: relative;
+
+    padding: 5px 0;
+}
+
+
+/* Label */
+
+.otgs-philosophy-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+
+    color: darkgreen;
+}
+
+.otgs-philosophy-label span {
+    width: 38px;
+    height: 2px;
+
+    display: block;
+
+    background: #856342;
+}
+
+
+/* Heading */
+
+.otgs-philosophy-content h2 {
+    margin: 0;
+
+    font-size: 48px;
+    line-height: 1.08;
+
+    letter-spacing: -1px;
+
+    font-weight: 600;
+
+    color: #000000;
+}
+
+.otgs-philosophy-content h2 strong {
+    display: block;
+
+    color: darkgreen;
+
+    font-weight: 600;
+}
+
+
+/* Heading line */
+
+.otgs-philosophy-line {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 20px 0 25px;
+}
+
+.otgs-philosophy-line b {
+    font-size: 18px;
+
+    color: #896947;
+
+    font-weight: 700;
+}
+
+.otgs-philosophy-line i {
+    width: 48px;
+    height: 1px;
+
+    background: #829462;
+}
+
+.otgs-philosophy-line small {
+    font-size:18px;
+
+    letter-spacing: 1.7px;
+
+    color: #866545;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.otgs-philosophy-content p {
+    max-width: 600px;
+
+    margin: 0 0 17px;
+
+    font-size: 18px;
+
+    line-height: 1.82;
+
+    color: #000000;
+}
+
+.otgs-philosophy-content .otgs-philosophy-intro {
+    font-size: 18px;
+
+    line-height: 1.72;
+
+    color:rgb(0, 0, 0);
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   RIGHT VISUAL
+========================================================= */
+
+.otgs-philosophy-visual {
+    position: relative;
+
+    min-height: 535px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================================
+   ORBITS
+========================================================= */
+
+.otgs-philosophy-orbit {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.orbit-one {
+    width: 430px;
+    height: 430px;
+
+    border: 1px solid rgba(96, 120, 71, 0.16);
+}
+
+.orbit-two {
+    width: 350px;
+    height: 350px;
+
+    border: 1px dashed rgba(133, 99, 66, 0.18);
+
+    transform: rotate(22deg);
+}
+
+
+/* =========================================================
+   TREE
+========================================================= */
+
+.otgs-philosophy-tree {
+    position: absolute;
+
+    width: 360px;
+    height: 430px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* Main trunk */
+
+.otgs-philosophy-trunk {
+    position: absolute;
+
+    width: 17px;
+    height: 270px;
+
+    left: 50%;
+    bottom: 25px;
+
+    transform: translateX(-50%);
+
+    background: #806043;
+
+    border-radius: 12px 12px 5px 5px;
+
+    box-shadow:
+        inset 4px 0 rgba(255,255,255,0.08);
+}
+
+
+/* Main branches */
+
+.philosophy-branch {
+    position: absolute;
+
+    height: 10px;
+
+    background: #806043;
+
+    border-radius: 10px;
+
+    transform-origin: left center;
+}
+
+.branch-a {
+    width: 125px;
+
+    left: 50%;
+    top: 190px;
+
+    transform: rotate(-38deg);
+}
+
+.branch-b {
+    width: 125px;
+
+    left: 48%;
+    top: 155px;
+
+    transform: rotate(38deg);
+}
+
+.branch-c {
+    width: 105px;
+
+    left: 49%;
+    top: 125px;
+
+    transform: rotate(-8deg);
+}
+
+
+/* =========================================================
+   TREE LEAVES
+========================================================= */
+
+.philosophy-tree-leaf {
+    position: absolute;
+
+    width: 68px;
+    height: 42px;
+
+    background: #718953;
+
+    border-radius: 100% 0 100% 0;
+
+    box-shadow:
+        0 8px 15px rgba(67, 91, 48, 0.10);
+
+    animation: otgsPhilosophyLeaf 5s ease-in-out infinite;
+}
+
+
+/* Individual leaves */
+
+.tree-leaf-a {
+    left: 52px;
+    top: 115px;
+
+    transform: rotate(-35deg);
+}
+
+.tree-leaf-b {
+    left: 18px;
+    top: 175px;
+
+    transform: rotate(-55deg);
+
+    animation-delay: .8s;
+}
+
+.tree-leaf-c {
+    right: 42px;
+    top: 112px;
+
+    transform: rotate(35deg);
+
+    animation-delay: 1.2s;
+}
+
+.tree-leaf-d {
+    right: 5px;
+    top: 175px;
+
+    transform: rotate(55deg);
+
+    animation-delay: 1.8s;
+}
+
+.tree-leaf-e {
+    left: 82px;
+    top: 62px;
+
+    transform: rotate(-18deg);
+
+    animation-delay: 2s;
+}
+
+.tree-leaf-f {
+    right: 80px;
+    top: 62px;
+
+    transform: rotate(18deg);
+
+    animation-delay: 2.5s;
+}
+
+.tree-leaf-g {
+    left: 145px;
+    top: 25px;
+
+    transform: rotate(-5deg);
+
+    animation-delay: 1.5s;
+}
+
+.tree-leaf-h {
+    left: 125px;
+    top: 190px;
+
+    width: 60px;
+    height: 38px;
+
+    transform: rotate(12deg);
+
+    animation-delay: 3s;
+}
+
+
+/* =========================================================
+   LEAF ANIMATION
+========================================================= */
+
+@keyframes otgsPhilosophyLeaf {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: 7px;
+    }
+}
+
+
+/* =========================================================
+   CORE MESSAGE
+========================================================= */
+
+.otgs-philosophy-core {
+    position: relative;
+
+    z-index: 5;
+
+    width: 205px;
+    min-height: 205px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.94);
+
+    border: 1px solid #c8b79e;
+
+    box-shadow:
+        0 14px 35px rgba(69, 57, 44, 0.10);
+}
+
+.otgs-philosophy-core::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border: 1px solid rgba(96, 120, 71, 0.25);
+
+    pointer-events: none;
+}
+
+.otgs-philosophy-core span {
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+    color: darkred;
+
+    font-weight: 700;
+}
+
+.otgs-philosophy-core strong {
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    color: darkgreen;
+
+    font-weight: 600;
+}
+
+.otgs-philosophy-core small {
+    margin-top: 13px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.4px;
+
+    color:darkred;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BOTTOM OBJECTIVE
+========================================================= */
+
+.otgs-philosophy-objective {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 50px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    text-align: center;
+}
+
+.otgs-philosophy-objective-line {
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c9b99f
+        );
+}
+
+.otgs-philosophy-objective-line:last-child {
+    background:
+        linear-gradient(
+            90deg,
+            #c9b99f,
+            transparent
+        );
+}
+
+.otgs-philosophy-objective-text {
+    max-width: 620px;
+}
+
+.otgs-philosophy-objective-text small {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    color: darkred;
+
+    font-weight: 700;
+}
+
+.otgs-philosophy-objective-text strong {
+    display: block;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    color: #000000;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DECORATIVE LEAVES
+========================================================= */
+
+.otgs-philosophy-leaf {
+    position: absolute;
+
+    width: 80px;
+    height: 40px;
+
+    border: 1px solid rgba(96,120,71,0.18);
+
+    border-radius: 100% 0 100% 0;
+
+    pointer-events: none;
+}
+
+.otgs-philosophy-leaf::after {
+    content: "";
+
+    position: absolute;
+
+    width: 70%;
+    height: 1px;
+
+    left: 15%;
+    top: 50%;
+
+    background: rgba(96,120,71,0.20);
+
+    transform: rotate(-22deg);
+}
+
+.philosophy-leaf-1 {
+    top: 12%;
+    right: 3%;
+
+    transform: rotate(30deg);
+}
+
+.philosophy-leaf-2 {
+    bottom: 12%;
+    left: 3%;
+
+    transform: rotate(-30deg);
+}
+
+.philosophy-leaf-3 {
+    top: 48%;
+    right: 1%;
+
+    width: 55px;
+    height: 28px;
+
+    transform: rotate(65deg);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .otgs-philosophy-life {
+        padding: 70px 20px 55px;
+    }
+
+    .otgs-philosophy-container {
+        gap: 40px;
+    }
+
+    .otgs-philosophy-content h2 {
+        font-size: 39px;
+    }
+
+    .otgs-philosophy-content p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .otgs-philosophy-content .otgs-philosophy-intro {
+        font-size: 15px;
+    }
+
+    .otgs-philosophy-visual {
+        min-height: 470px;
+    }
+
+    .otgs-philosophy-orbit {
+        transform: scale(.88);
+    }
+
+    .otgs-philosophy-tree {
+        transform:
+            translate(-50%, -50%)
+            scale(.88);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .otgs-philosophy-life {
+        padding: 55px 16px 50px;
+    }
+
+    .otgs-philosophy-container {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .otgs-philosophy-content {
+        width: 100%;
+    }
+
+    .otgs-philosophy-content h2 {
+        font-size: 35px;
+    }
+
+    .otgs-philosophy-line {
+        margin: 17px 0 22px;
+    }
+
+    .otgs-philosophy-content p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .otgs-philosophy-content .otgs-philosophy-intro {
+        font-size: 15px;
+    }
+
+    .otgs-philosophy-visual {
+        width: 100%;
+
+        min-height: 450px;
+    }
+
+    .otgs-philosophy-orbit {
+        transform: scale(.78);
+    }
+
+    .otgs-philosophy-tree {
+        transform:
+            translate(-50%, -50%)
+            scale(.78);
+    }
+
+    .otgs-philosophy-objective {
+        margin-top: 20px;
+
+        gap: 12px;
+    }
+
+    .otgs-philosophy-objective-text strong {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .otgs-philosophy-life {
+        padding: 45px 13px 42px;
+    }
+
+    .otgs-philosophy-content h2 {
+        font-size: 30px;
+    }
+
+    .otgs-philosophy-label {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .otgs-philosophy-line small {
+        font-size: 7px;
+
+        letter-spacing: 1px;
+    }
+
+    .otgs-philosophy-content p {
+        font-size: 13.5px;
+    }
+
+    .otgs-philosophy-content .otgs-philosophy-intro {
+        font-size: 14px;
+    }
+
+    .otgs-philosophy-visual {
+        min-height: 390px;
+    }
+
+    .otgs-philosophy-orbit {
+        transform: scale(.65);
+    }
+
+    .otgs-philosophy-tree {
+        transform:
+            translate(-50%, -50%)
+            scale(.65);
+    }
+
+    .otgs-philosophy-core {
+        width: 180px;
+        min-height: 180px;
+    }
+
+    .otgs-philosophy-core strong {
+        font-size: 17px;
+    }
+
+    .otgs-philosophy-objective-line {
+        display: none;
+    }
+
+    .otgs-philosophy-objective-text {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .otgs-philosophy-content h2 {
+        font-size: 27px;
+    }
+
+    .otgs-philosophy-content p {
+        font-size: 13px;
+    }
+
+    .otgs-philosophy-visual {
+        min-height: 350px;
+    }
+
+    .otgs-philosophy-tree {
+        transform:
+            translate(-50%, -50%)
+            scale(.57);
+    }
+
+    .otgs-philosophy-orbit {
+        transform: scale(.57);
+    }
+
+    .otgs-philosophy-core {
+        width: 165px;
+        min-height: 165px;
+    }
+
+    .otgs-philosophy-core strong {
+        font-size: 15px;
+    }
+}
+
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   AWARDS & RECOGNITION
+   ASYMMETRIC BOTANICAL RIBBON
+   TYPOGRAPHY:
+   DARK GREEN + DARK RED + BLACK
+========================================================= */
+
+.otgs-awards-ribbon {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding:50px 20px;
+    background: rgb(240, 255, 205);
+    color: #000000;
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   COLOR VARIABLES
+========================================================= */
+
+.otgs-awards-ribbon {
+    --otgs-green: #30482b;
+    --otgs-green-light: #607847;
+    --otgs-red: #7e3f32;
+    --otgs-brown: #806043;
+    --otgs-black: #000000;
+    --otgs-line: #ded8ce;
+    --otgs-soft: #f4f1e9;
+}
+
+
+/* =========================================================
+   BACKGROUND PATTERN
+========================================================= */
+
+.otgs-awards-ribbon::before {
+    content: "";
+    position: absolute;
+
+    width: 620px;
+    height: 620px;
+
+    left: -390px;
+    top: 5%;
+
+    border: 1px solid rgba(48, 72, 43, 0.09);
+    border-radius: 50%;
+
+    z-index: -3;
+}
+
+.otgs-awards-ribbon::after {
+    content: "";
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -300px;
+    bottom: -180px;
+
+    border: 1px solid rgba(126, 63, 50, 0.09);
+    border-radius: 50%;
+
+    z-index: -3;
+}
+
+
+/* =========================================================
+   BACKGROUND CIRCLES
+========================================================= */
+
+.otgs-awards-ribbon-circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -2;
+}
+
+.circle-one {
+    width: 170px;
+    height: 170px;
+
+    right: 7%;
+    top: 13%;
+
+    background: rgba(96, 120, 71, 0.035);
+}
+
+.circle-two {
+    width: 115px;
+    height: 115px;
+
+    left: 5%;
+    bottom: 18%;
+
+    background: rgba(126, 63, 50, 0.035);
+}
+
+
+/* =========================================================
+   BOTANICAL BRANCHES
+========================================================= */
+
+.otgs-ribbon-branch {
+    position: absolute;
+
+    width: 180px;
+    height: 1px;
+
+    background: var(--otgs-brown);
+    opacity: .20;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+.branch-one {
+    left: -50px;
+    top: 27%;
+    transform: rotate(38deg);
+}
+
+.branch-two {
+    right: -55px;
+    bottom: 28%;
+    transform: rotate(-42deg);
+}
+
+
+/* =========================================================
+   LEAVES
+========================================================= */
+
+.otgs-ribbon-leaf {
+    position: absolute;
+
+    width: 52px;
+    height: 27px;
+
+    border: 1px solid rgba(96, 120, 71, .22);
+    border-radius: 100% 0 100% 0;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+.otgs-ribbon-leaf::after {
+    content: "";
+
+    position: absolute;
+
+    width: 70%;
+    height: 1px;
+
+    left: 15%;
+    top: 50%;
+
+    background: rgba(96, 120, 71, .25);
+
+    transform: rotate(-22deg);
+}
+
+.ribbon-leaf-one {
+    top: 15%;
+    right: 15%;
+    transform: rotate(30deg);
+}
+
+.ribbon-leaf-two {
+    top: 18%;
+    right: 12%;
+    transform: rotate(70deg) scale(.75);
+}
+
+.ribbon-leaf-three {
+    bottom: 13%;
+    left: 10%;
+    transform: rotate(-35deg);
+}
+
+.ribbon-leaf-four {
+    bottom: 10%;
+    left: 13%;
+    transform: rotate(5deg) scale(.72);
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.otgs-awards-ribbon-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.otgs-awards-ribbon-header {
+    max-width: 760px;
+    text-align: center;
+}
+
+
+/* Eyebrow */
+
+.otgs-ribbon-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+    margin-bottom: 12px;
+
+    color: var(--otgs-red);
+
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.otgs-ribbon-eyebrow span {
+    width: 38px;
+    height: 1px;
+
+    background: var(--otgs-green);
+}
+
+
+/* Main heading */
+
+.otgs-awards-ribbon-header h2 {
+    margin: 0;
+
+    color: var(--otgs-green);
+
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    letter-spacing: .3px;
+}
+
+.otgs-awards-ribbon-header h2 b {
+    color: var(--otgs-red);
+    font-weight: 700;
+}
+
+.otgs-awards-ribbon-header h2 strong {
+    color: var(--otgs-red);
+    font-weight: 700;
+}
+
+
+/* Header paragraph */
+
+.otgs-awards-ribbon-header p {
+    max-width: 700px;
+
+    margin: 15px auto 0;
+
+    color: var(--otgs-black);
+
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   MAIN TWO-COLUMN AREA
+========================================================= */
+
+.otgs-awards-ribbon-main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.otgs-ribbon-image-area {
+    position: relative;
+
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Background image layer */
+
+.otgs-ribbon-image-shadow {
+    position: absolute;
+
+    width: 77%;
+    height: 78%;
+
+    left: 8%;
+    top: 9%;
+
+    background: #f3efe6;
+
+    border: 1px solid #c8b89e;
+
+    transform: rotate(-5deg);
+}
+
+
+/* Image */
+
+.otgs-ribbon-image {
+    position: relative;
+
+    width: 81%;
+    height: 500px;
+
+    padding: 9px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--otgs-brown);
+
+    z-index: 2;
+}
+
+.otgs-ribbon-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform .6s ease;
+}
+
+.otgs-ribbon-image:hover img {
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   IMAGE CORNERS
+========================================================= */
+
+.otgs-ribbon-corner {
+    position: absolute;
+
+    width: 58px;
+    height: 58px;
+
+    z-index: 4;
+
+    pointer-events: none;
+}
+
+.corner-left {
+    left: -12px;
+    top: -12px;
+
+    border-left: 2px solid var(--otgs-green-light);
+    border-top: 2px solid var(--otgs-green-light);
+}
+
+.corner-right {
+    right: -12px;
+    bottom: -12px;
+
+    border-right: 2px solid var(--otgs-red);
+    border-bottom: 2px solid var(--otgs-red);
+}
+
+
+/* =========================================================
+   VERTICAL IMAGE LABEL
+========================================================= */
+
+.otgs-ribbon-vertical-label {
+    position: absolute;
+
+    left: 2%;
+    top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 155px;
+
+    background: var(--otgs-green-light);
+
+    border: 4px solid #ffffff;
+
+    transform: translateY(-50%);
+
+    z-index: 5;
+}
+
+.otgs-ribbon-vertical-label span {
+    color: #ffffff;
+
+    font-size: 11px;
+    line-height: 1;
+
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+}
+
+.otgs-ribbon-vertical-label strong {
+    margin-top: 9px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    line-height: 1;
+
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   IMAGE CAPTION
+========================================================= */
+
+.otgs-ribbon-caption {
+    position: absolute;
+
+    right: 2%;
+    bottom: 18px;
+
+    width: 245px;
+
+    padding: 12px 15px;
+
+    background: #ffffff;
+
+    border-top: 2px solid var(--otgs-red);
+
+    z-index: 5;
+}
+
+.otgs-ribbon-caption small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color:darkred;
+
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.otgs-ribbon-caption strong {
+    display: block;
+
+    color:rgb(0, 0, 0);
+
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTENT HEADING
+========================================================= */
+
+.otgs-ribbon-content {
+    width: 100%;
+}
+
+.otgs-ribbon-content-heading {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+
+    padding-bottom: 19px;
+
+    border-bottom: 1px solid var(--otgs-line);
+}
+
+
+/* Number */
+
+.otgs-ribbon-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    flex: 0 0 43px;
+
+    background: var(--otgs-soft);
+
+    border-left: 3px solid var(--otgs-red);
+
+    color: var(--otgs-red);
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* Small heading */
+
+.otgs-ribbon-content-heading small {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--otgs-red);
+
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    letter-spacing: .5px;
+}
+
+
+/* Main content heading */
+
+.otgs-ribbon-content-heading h3 {
+    margin: 0;
+
+    color: var(--otgs-green);
+
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.otgs-ribbon-content-heading h3 em {
+    color: var(--otgs-red);
+    font-style: normal;
+}
+
+
+/* =========================================================
+   INTRO PARAGRAPH
+========================================================= */
+
+.otgs-ribbon-intro {
+    margin: 20px 0;
+
+    color: var(--otgs-black);
+
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   AWARD RIBBON LIST
+========================================================= */
+
+.otgs-award-ribbons {
+    position: relative;
+}
+
+
+/* Connecting botanical line */
+
+.otgs-award-ribbons::before {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+    top: 15px;
+    bottom: 15px;
+
+    width: 1px;
+
+    background: #c9d0bf;
+}
+
+
+/* Award item */
+
+.otgs-award-ribbon-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 17px 1fr;
+
+    gap: 13px;
+
+    padding: 9px 0;
+
+    transition:
+        padding-left .3s ease,
+        transform .3s ease;
+}
+
+.otgs-award-ribbon-item:hover {
+    padding-left: 7px;
+}
+
+
+/* Marker */
+
+.otgs-award-ribbon-marker {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 6px;
+
+    z-index: 2;
+}
+
+.otgs-award-ribbon-marker span {
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    background: #ffffff;
+
+    border: 2px solid var(--otgs-green-light);
+
+    border-radius: 50%;
+}
+
+
+/* Award text */
+
+.otgs-award-ribbon-text {
+    display: grid;
+
+    grid-template-columns: 155px 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    min-height: 38px;
+
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid #e5e0d8;
+}
+
+
+/* Category */
+
+.otgs-award-ribbon-text small {
+    color: darkred;
+
+    font-size: 13px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    letter-spacing: .2px;
+}
+
+
+/* Award name */
+
+.otgs-award-ribbon-text strong {
+    color:darkgreen;
+
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PUBLICATION NOTE
+========================================================= */
+
+.otgs-ribbon-note {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    padding: 13px 15px;
+
+    background: #f5f6f1;
+
+    border-left: 3px solid var(--otgs-green-light);
+}
+
+
+/* Check */
+
+.otgs-ribbon-note > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+
+    flex: 0 0 25px;
+
+    background: var(--otgs-green-light);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* Note text */
+
+.otgs-ribbon-note p {
+    margin: 0;
+
+    color: var(--otgs-black);
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.otgs-ribbon-note strong {
+    color: var(--otgs-green);
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.otgs-ribbon-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 55px;
+}
+
+
+.otgs-ribbon-bottom-line {
+    width: 150px;
+    height: 1px;
+
+    background: #d7d2c9;
+}
+
+
+.otgs-ribbon-bottom-text {
+    text-align: center;
+}
+
+
+.otgs-ribbon-bottom-text small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--otgs-red);
+
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+.otgs-ribbon-bottom-text strong {
+    color: var(--otgs-green);
+
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .otgs-awards-ribbon {
+        padding: 60px 20px 55px;
+    }
+
+    .otgs-awards-ribbon-header {
+        margin-bottom: 42px;
+    }
+
+    .otgs-awards-ribbon-main {
+        gap: 40px;
+    }
+
+    .otgs-ribbon-image-area {
+        min-height: 510px;
+    }
+
+    .otgs-ribbon-image {
+        width: 88%;
+        height: 440px;
+    }
+
+    .otgs-ribbon-vertical-label {
+        left: 0;
+        height: 140px;
+    }
+
+    .otgs-ribbon-caption {
+        width: 210px;
+        right: 0;
+    }
+
+    .otgs-award-ribbon-text {
+        grid-template-columns: 125px 1fr;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .otgs-awards-ribbon {
+        padding: 50px 16px 45px;
+    }
+
+    .otgs-awards-ribbon-header {
+        margin-bottom: 35px;
+    }
+
+    .otgs-awards-ribbon-main {
+        display: flex;
+        flex-direction: column;
+
+        gap: 42px;
+    }
+
+
+    /* Image */
+
+    .otgs-ribbon-image-area {
+        width: 100%;
+        min-height: 430px;
+    }
+
+    .otgs-ribbon-image-shadow {
+        width: 83%;
+        height: 82%;
+
+        left: 5%;
+        top: 5%;
+    }
+
+    .otgs-ribbon-image {
+        width: 89%;
+        height: 385px;
+    }
+
+    .otgs-ribbon-corner {
+        width: 45px;
+        height: 45px;
+    }
+
+    .otgs-ribbon-vertical-label {
+        left: 0;
+
+        width: 39px;
+        height: 125px;
+
+        border-width: 3px;
+    }
+
+    .otgs-ribbon-caption {
+        right: 0;
+        bottom: 12px;
+
+        width: 195px;
+
+        padding: 10px 12px;
+    }
+
+
+    /* Content */
+
+    .otgs-ribbon-content-heading {
+        gap: 12px;
+    }
+
+    .otgs-ribbon-number {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+    }
+
+    .otgs-ribbon-intro {
+        margin: 18px 0;
+
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    /* Award list */
+
+    .otgs-award-ribbon-text {
+        grid-template-columns: 115px 1fr;
+
+        gap: 10px;
+    }
+
+
+    /* Bottom */
+
+    .otgs-ribbon-bottom {
+        margin-top: 42px;
+        gap: 12px;
+    }
+
+    .otgs-ribbon-bottom-line {
+        width: 50px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .otgs-awards-ribbon {
+        padding: 42px 13px 40px;
+    }
+
+    .otgs-awards-ribbon-main {
+        gap: 38px;
+    }
+
+    .otgs-ribbon-image-area {
+        min-height: 365px;
+    }
+
+    .otgs-ribbon-image {
+        width: 91%;
+        height: 315px;
+    }
+
+    .otgs-ribbon-image-shadow {
+        width: 85%;
+        height: 83%;
+    }
+
+    .otgs-ribbon-vertical-label {
+        width: 34px;
+        height: 105px;
+    }
+
+    .otgs-ribbon-caption {
+        width: 160px;
+        bottom: 7px;
+
+        padding: 8px 10px;
+    }
+
+    .otgs-ribbon-eyebrow {
+        font-size: 18px;
+    }
+
+    .otgs-awards-ribbon-header h2 {
+        font-size: 18px;
+    }
+
+    .otgs-awards-ribbon-header p {
+        font-size: 18px;
+    }
+
+    .otgs-ribbon-content-heading h3 {
+        font-size: 18px;
+    }
+
+    .otgs-award-ribbon-text {
+        grid-template-columns: 95px 1fr;
+        gap: 8px;
+    }
+
+    .otgs-ribbon-bottom-line {
+        width: 25px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .otgs-awards-ribbon {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .otgs-ribbon-image {
+        height: 280px;
+    }
+
+    .otgs-ribbon-image-area {
+        min-height: 325px;
+    }
+
+    .otgs-ribbon-vertical-label {
+        width: 30px;
+        height: 95px;
+    }
+
+    .otgs-ribbon-caption {
+        width: 145px;
+    }
+
+    .otgs-award-ribbon-text {
+        grid-template-columns: 80px 1fr;
+        gap: 6px;
+    }
+}
+
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   CHAIRMAN'S MESSAGE
+   EDITORIAL TREE ROOT DESIGN
+
+   DARK GREEN  : #30482b
+   DARK RED    : #7e3f32
+   BROWN       : #806043
+   PARAGRAPH   : #000000
+========================================================= */
+
+.otgs-chairman-editorial {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    padding:50px 20px;
+
+    background: #ffffff;
+    color: #000000;
+
+    isolation: isolate;
+
+    --chair-green: #30482b;
+    --chair-green-light: #607847;
+    --chair-red: #7e3f32;
+    --chair-brown: #806043;
+    --chair-black: #000000;
+    --chair-line: #ddd8cf;
+    --chair-soft: #f4f1e9;
+}
+
+
+/* =========================================================
+   BACKGROUND ROOT CIRCLES
+========================================================= */
+
+.otgs-chairman-editorial::before {
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    left: -520px;
+    top: 10%;
+
+    border: 1px solid rgba(48,72,43,.08);
+
+    border-radius: 50%;
+
+    z-index: -3;
+}
+
+
+.otgs-chairman-editorial::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -350px;
+    bottom: -180px;
+
+    border: 1px solid rgba(126,63,50,.09);
+
+    border-radius: 50%;
+
+    z-index: -3;
+}
+
+
+/* =========================================================
+   ROOT PATTERN
+========================================================= */
+
+.otgs-chairman-root {
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    border: 1px solid rgba(128,96,67,.10);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: -2;
+}
+
+.root-one {
+    left: -80px;
+    bottom: 8%;
+}
+
+.root-two {
+    right: -80px;
+    top: 17%;
+}
+
+
+/* =========================================================
+   BACKGROUND LEAVES
+========================================================= */
+
+.otgs-chairman-leaf {
+    position: absolute;
+
+    width: 58px;
+    height: 29px;
+
+    border: 1px solid rgba(96,120,71,.20);
+
+    border-radius: 100% 0 100% 0;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+.otgs-chairman-leaf::after {
+    content: "";
+
+    position: absolute;
+
+    width: 70%;
+    height: 1px;
+
+    left: 15%;
+    top: 50%;
+
+    background: rgba(96,120,71,.23);
+
+    transform: rotate(-22deg);
+}
+
+.leaf-a {
+    top: 12%;
+    right: 11%;
+
+    transform: rotate(28deg);
+}
+
+.leaf-b {
+    top: 16%;
+    right: 8%;
+
+    transform: rotate(70deg) scale(.7);
+}
+
+.leaf-c {
+    left: 7%;
+    bottom: 14%;
+
+    transform: rotate(-35deg);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.otgs-chairman-editorial-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.otgs-chairman-editorial-heading {
+    text-align: center;
+
+    margin-bottom:15px;
+}
+
+
+.otgs-chairman-editorial-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--chair-red);
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.otgs-chairman-editorial-heading h2 {
+    margin: 0;
+
+    color: var(--chair-green);
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+
+.otgs-chairman-editorial-heading h2 strong {
+    color: var(--chair-red);
+
+    font-weight: 700;
+}
+
+
+.otgs-chairman-heading-line {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 16px;
+}
+
+
+.otgs-chairman-heading-line span {
+    width: 35px;
+    height: 1px;
+
+    background: var(--chair-green);
+}
+
+
+.otgs-chairman-heading-line i {
+    width: 7px;
+    height: 7px;
+
+    border: 1px solid var(--chair-red);
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.otgs-chairman-editorial-main {
+    display: grid;
+
+    grid-template-columns: 43% 57%;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   PORTRAIT AREA
+========================================================= */
+
+.otgs-chairman-portrait {
+    position: relative;
+
+    min-height: 590px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   PORTRAIT RINGS
+========================================================= */
+
+.otgs-chairman-portrait-ring {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.ring-one {
+    width: 440px;
+    height: 440px;
+
+    border: 1px solid rgba(96,120,71,.25);
+
+    transform: rotate(-12deg);
+}
+
+
+.ring-two {
+    width: 385px;
+    height: 385px;
+
+    border: 1px dashed rgba(126,63,50,.22);
+
+    transform: rotate(18deg);
+}
+
+
+/* =========================================================
+   PORTRAIT IMAGE
+========================================================= */
+
+.otgs-chairman-portrait-image {
+    position: relative;
+
+    width: 350px;
+    height: 470px;
+
+    overflow: hidden;
+
+    background: #f3efe6;
+
+    border: 8px solid #ffffff;
+
+    box-shadow:
+        0 20px 45px rgba(50,42,35,.13);
+
+    z-index: 2;
+}
+
+
+.otgs-chairman-portrait-image::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border: 1px solid var(--chair-brown);
+
+    pointer-events: none;
+
+    z-index: 2;
+}
+
+
+.otgs-chairman-portrait-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform .7s ease;
+}
+
+
+.otgs-chairman-portrait-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   PORTRAIT LEAVES
+========================================================= */
+
+.otgs-chairman-portrait-leaf {
+    position: absolute;
+
+    width: 55px;
+    height: 28px;
+
+    border: 1px solid var(--chair-green-light);
+
+    border-radius: 100% 0 100% 0;
+
+    opacity: .65;
+
+    z-index: 3;
+}
+
+
+.otgs-chairman-portrait-leaf::after {
+    content: "";
+
+    position: absolute;
+
+    width: 70%;
+    height: 1px;
+
+    left: 15%;
+    top: 50%;
+
+    background: var(--chair-green-light);
+
+    transform: rotate(-20deg);
+}
+
+
+.leaf-p1 {
+    left: 5%;
+    top: 23%;
+
+    transform: rotate(-35deg);
+}
+
+
+.leaf-p2 {
+    right: 7%;
+    bottom: 23%;
+
+    transform: rotate(145deg);
+}
+
+
+/* =========================================================
+   PORTRAIT NAME
+========================================================= */
+
+.otgs-chairman-portrait-name {
+    position: absolute;
+
+    left: 4%;
+    bottom: 32px;
+
+    min-width: 255px;
+
+    padding: 13px 18px;
+
+    background: var(--chair-green);
+
+    border-left: 5px solid var(--chair-red);
+
+    box-shadow:
+        0 12px 28px rgba(48,72,43,.16);
+
+    z-index: 5;
+}
+
+
+.otgs-chairman-portrait-name span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #dfe8d7;
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+}
+
+
+.otgs-chairman-portrait-name strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 1.4;
+
+    font-weight: 700;
+}
+
+
+.otgs-chairman-portrait-name small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #e9eee4;
+
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   MESSAGE AREA
+========================================================= */
+
+.otgs-chairman-editorial-message {
+    position: relative;
+}
+
+
+/* =========================================================
+   BIG QUOTE
+========================================================= */
+
+.otgs-chairman-quote {
+    position: absolute;
+
+    left: 0;
+    top: -25px;
+
+    color: rgba(126,63,50,.15);
+
+    font-size: 115px;
+    line-height: 1;
+
+    font-weight: 700;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MESSAGE HEADING
+========================================================= */
+
+.otgs-chairman-message-heading {
+    padding-bottom: 19px;
+
+    border-bottom: 1px solid var(--chair-line);
+}
+
+
+.otgs-chairman-message-heading small {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--chair-red);
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+}
+
+
+.otgs-chairman-message-heading h3 {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: var(--chair-green);
+
+    font-size: 18px;
+    line-height: 1.5;
+
+    font-weight: 700;
+}
+
+
+.otgs-chairman-message-heading h3 em {
+    color: var(--chair-red);
+
+    font-style: normal;
+}
+
+
+/* =========================================================
+   MESSAGE TEXT
+========================================================= */
+
+.otgs-chairman-editorial-text {
+    padding-top: 19px;
+}
+
+
+.otgs-chairman-editorial-text p {
+    margin: 0 0 14px;
+
+    color: #000000;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    font-weight: 400;
+}
+
+
+.otgs-chairman-editorial-text .chairman-greeting {
+    margin-bottom: 14px;
+
+    color: var(--chair-green);
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.otgs-chairman-editorial-signature {
+    margin-top: 23px;
+
+    padding-left: 18px;
+
+    border-left: 2px solid var(--chair-green-light);
+}
+
+
+.otgs-chairman-editorial-signature span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #000000;
+
+    font-size: 18px;
+}
+
+
+.otgs-chairman-editorial-signature strong {
+    display: block;
+
+    color: var(--chair-green);
+
+    font-size: 18px;
+    line-height: 1.4;
+
+    font-weight: 700;
+}
+
+
+.otgs-chairman-editorial-signature small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: var(--chair-red);
+
+    font-size: 18px;
+    line-height: 1.4;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BOTTOM VALUES
+========================================================= */
+
+.otgs-chairman-editorial-values {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 55px;
+
+    border-top: 1px solid var(--chair-line);
+    border-bottom: 1px solid var(--chair-line);
+}
+
+
+.otgs-chairman-editorial-values > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 62px;
+
+    padding: 10px 18px;
+
+    border-right: 1px solid var(--chair-line);
+}
+
+
+.otgs-chairman-editorial-values > div:last-child {
+    border-right: none;
+}
+
+
+.otgs-chairman-editorial-values span {
+    color: var(--chair-red);
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.otgs-chairman-editorial-values strong {
+    color: var(--chair-green);
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .otgs-chairman-editorial {
+        padding: 60px 20px 55px;
+    }
+
+    .otgs-chairman-editorial-main {
+        grid-template-columns: 42% 58%;
+    }
+
+    .otgs-chairman-portrait {
+        min-height: 520px;
+    }
+
+    .ring-one {
+        width: 370px;
+        height: 370px;
+    }
+
+    .ring-two {
+        width: 325px;
+        height: 325px;
+    }
+
+    .otgs-chairman-portrait-image {
+        width: 290px;
+        height: 415px;
+    }
+
+    .otgs-chairman-portrait-name {
+        left: 0;
+        min-width: 220px;
+    }
+
+    .otgs-chairman-editorial-message {
+        padding-left: 40px;
+    }
+
+    .otgs-chairman-editorial-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .otgs-chairman-editorial-values > div:nth-child(2) {
+        border-right: none;
+    }
+
+    .otgs-chairman-editorial-values > div:nth-child(-n+2) {
+        border-bottom: 1px solid var(--chair-line);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .otgs-chairman-editorial {
+        padding: 50px 16px 45px;
+    }
+
+    .otgs-chairman-editorial-heading {
+        margin-bottom: 35px;
+    }
+
+    .otgs-chairman-editorial-main {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+
+    /* Portrait */
+
+    .otgs-chairman-portrait {
+        width: 100%;
+        min-height: 450px;
+    }
+
+    .ring-one {
+        width: 340px;
+        height: 340px;
+    }
+
+    .ring-two {
+        width: 300px;
+        height: 300px;
+    }
+
+    .otgs-chairman-portrait-image {
+        width: 275px;
+        height: 375px;
+    }
+
+    .otgs-chairman-portrait-name {
+        left: 0;
+        bottom: 12px;
+
+        min-width: 205px;
+
+        padding: 11px 14px;
+    }
+
+
+    /* Message */
+
+    .otgs-chairman-editorial-message {
+        padding-left: 0;
+    }
+
+    .otgs-chairman-quote {
+        left: -5px;
+        top: -20px;
+
+        font-size: 85px;
+    }
+
+    .otgs-chairman-message-heading {
+        padding-left: 25px;
+    }
+
+    .otgs-chairman-editorial-text {
+        padding-top: 18px;
+    }
+
+
+    /* Values */
+
+    .otgs-chairman-editorial-values {
+        margin-top: 40px;
+    }
+
+    .otgs-chairman-editorial-values > div {
+        min-height: 57px;
+
+        padding: 9px 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .otgs-chairman-editorial {
+        padding: 42px 13px 40px;
+    }
+
+    .otgs-chairman-editorial-main {
+        gap: 35px;
+    }
+
+    .otgs-chairman-editorial-label {
+        font-size: 18px;
+    }
+
+    .otgs-chairman-portrait {
+        min-height: 380px;
+    }
+
+    .ring-one {
+        width: 285px;
+        height: 285px;
+    }
+
+    .ring-two {
+        width: 250px;
+        height: 250px;
+    }
+
+    .otgs-chairman-portrait-image {
+        width: 235px;
+        height: 320px;
+    }
+
+    .otgs-chairman-portrait-name {
+        min-width: 175px;
+
+        padding: 9px 11px;
+    }
+
+    .otgs-chairman-message-heading {
+        padding-left: 20px;
+    }
+
+    .otgs-chairman-editorial-values {
+        grid-template-columns: 1fr;
+    }
+
+    .otgs-chairman-editorial-values > div {
+        border-right: none;
+        border-bottom: 1px solid var(--chair-line);
+    }
+
+    .otgs-chairman-editorial-values > div:last-child {
+        border-bottom: none;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .otgs-chairman-editorial {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .otgs-chairman-portrait {
+        min-height: 345px;
+    }
+
+    .ring-one {
+        width: 255px;
+        height: 255px;
+    }
+
+    .ring-two {
+        width: 225px;
+        height: 225px;
+    }
+
+    .otgs-chairman-portrait-image {
+        width: 215px;
+        height: 285px;
+    }
+
+    .otgs-chairman-portrait-name {
+        min-width: 155px;
+    }
+}
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   ACADEMIC PHILOSOPHY
+   COLORFUL TREE + LEAF ANIMATION
+========================================================= */
+
+.otgs-academic-philosophy {
+
+    --dark-green: #29452b;
+    --green: #607847;
+    --olive: #89996c;
+
+    --dark-red: #7d302b;
+    --red: #a34a3f;
+
+    --brown: #806043;
+    --brown-light: #b3946d;
+
+    --cream: #f6f0e5;
+
+    position: relative;
+
+    width: 100%;
+
+    padding: 85px 20px 70px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(96,120,71,.10),
+            transparent 190px
+        ),
+        radial-gradient(
+            circle at 92% 28%,
+            rgba(125,48,43,.07),
+            transparent 210px
+        ),
+        radial-gradient(
+            circle at 10% 85%,
+            rgba(128,96,67,.07),
+            transparent 220px
+        ),
+        #ffffff;
+
+    color: #000;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.otgs-academic-philosophy-container {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   BOTANICAL BACKGROUND
+========================================================= */
+
+.otgs-botanical-bg {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LARGE ORGANIC CIRCLES
+========================================================= */
+
+.otgs-botanical-bg::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    left: -340px;
+    top: 100px;
+
+    border: 1px solid rgba(96,120,71,.12);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 45px rgba(96,120,71,.025),
+        0 0 0 90px rgba(96,120,71,.018);
+
+    animation:
+        otgsBotanicalCircleOne 18s ease-in-out infinite;
+}
+
+
+.otgs-botanical-bg::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -280px;
+    bottom: 60px;
+
+    border: 1px solid rgba(125,48,43,.10);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 40px rgba(125,48,43,.025),
+        0 0 0 80px rgba(128,96,67,.018);
+
+    animation:
+        otgsBotanicalCircleTwo 22s ease-in-out infinite;
+}
+
+
+@keyframes otgsBotanicalCircleOne {
+
+    0%,
+    100% {
+        transform: translate(0,0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(25px,18px) rotate(8deg);
+    }
+
+}
+
+
+@keyframes otgsBotanicalCircleTwo {
+
+    0%,
+    100% {
+        transform: translate(0,0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-25px,-20px) rotate(-8deg);
+    }
+
+}
+
+
+/* =========================================================
+   TREE BRANCHES
+========================================================= */
+
+.otgs-branch {
+
+    position: absolute;
+
+    width: 300px;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(128,96,67,.30),
+            rgba(96,120,71,.30)
+        );
+
+    border-radius: 100%;
+
+    transform-origin: left center;
+
+    opacity: .65;
+}
+
+
+/* Left upper branch */
+
+.branch-left-top {
+
+    left: -40px;
+    top: 130px;
+
+    transform:
+        rotate(24deg);
+
+    animation:
+        otgsBranchSwayOne 8s ease-in-out infinite;
+}
+
+
+/* Left lower branch */
+
+.branch-left-bottom {
+
+    left: -70px;
+    bottom: 170px;
+
+    transform:
+        rotate(-20deg);
+
+    animation:
+        otgsBranchSwayTwo 10s ease-in-out infinite;
+}
+
+
+/* Right upper branch */
+
+.branch-right-top {
+
+    right: -80px;
+    top: 180px;
+
+    transform:
+        rotate(155deg);
+
+    animation:
+        otgsBranchSwayTwo 9s ease-in-out infinite;
+}
+
+
+/* Right lower branch */
+
+.branch-right-bottom {
+
+    right: -80px;
+    bottom: 130px;
+
+    transform:
+        rotate(205deg);
+
+    animation:
+        otgsBranchSwayOne 11s ease-in-out infinite;
+}
+
+
+@keyframes otgsBranchSwayOne {
+
+    0%,
+    100% {
+        transform:
+            rotate(24deg)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            rotate(28deg)
+            translateY(8px);
+    }
+
+}
+
+
+@keyframes otgsBranchSwayTwo {
+
+    0%,
+    100% {
+        transform:
+            rotate(-20deg)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            rotate(-15deg)
+            translateY(-8px);
+    }
+
+}
+
+
+/* =========================================================
+   LEAF BASE
+========================================================= */
+
+.otgs-leaf {
+
+    position: absolute;
+
+    width: 48px;
+    height: 24px;
+
+    border-radius:
+        100% 0 100% 0;
+
+    opacity: .70;
+
+    filter:
+        drop-shadow(
+            0 6px 8px rgba(40,50,30,.08)
+        );
+
+    transform-origin: center;
+}
+
+
+/* =========================================================
+   LEAF COLORS
+========================================================= */
+
+.leaf-01,
+.leaf-05,
+.leaf-09 {
+
+    background: var(--dark-green);
+}
+
+
+.leaf-02,
+.leaf-06,
+.leaf-10 {
+
+    background: var(--green);
+}
+
+
+.leaf-03,
+.leaf-07,
+.leaf-11 {
+
+    background: var(--olive);
+}
+
+
+.leaf-04,
+.leaf-08,
+.leaf-12 {
+
+    background: var(--dark-red);
+}
+
+
+/* =========================================================
+   LEAF POSITIONS
+========================================================= */
+
+.leaf-01 {
+
+    left: 4%;
+    top: 12%;
+
+    transform: rotate(25deg);
+
+    animation:
+        otgsLeafMove1 7s ease-in-out infinite;
+}
+
+
+.leaf-02 {
+
+    left: 13%;
+    top: 23%;
+
+    transform: rotate(-30deg);
+
+    animation:
+        otgsLeafMove2 8s ease-in-out infinite;
+}
+
+
+.leaf-03 {
+
+    left: 3%;
+    top: 48%;
+
+    transform: rotate(45deg);
+
+    animation:
+        otgsLeafMove3 9s ease-in-out infinite;
+}
+
+
+.leaf-04 {
+
+    left: 14%;
+    bottom: 15%;
+
+    transform: rotate(-35deg);
+
+    animation:
+        otgsLeafMove4 7.5s ease-in-out infinite;
+}
+
+
+.leaf-05 {
+
+    right: 6%;
+    top: 15%;
+
+    transform: rotate(145deg);
+
+    animation:
+        otgsLeafMove2 8s ease-in-out infinite;
+}
+
+
+.leaf-06 {
+
+    right: 15%;
+    top: 29%;
+
+    transform: rotate(195deg);
+
+    animation:
+        otgsLeafMove1 9s ease-in-out infinite;
+}
+
+
+.leaf-07 {
+
+    right: 4%;
+    top: 52%;
+
+    transform: rotate(135deg);
+
+    animation:
+        otgsLeafMove3 7s ease-in-out infinite;
+}
+
+
+.leaf-08 {
+
+    right: 13%;
+    bottom: 14%;
+
+    transform: rotate(205deg);
+
+    animation:
+        otgsLeafMove4 8s ease-in-out infinite;
+}
+
+
+.leaf-09 {
+
+    left: 28%;
+    top: 8%;
+
+    width: 34px;
+    height: 17px;
+
+    animation:
+        otgsLeafMove3 6s ease-in-out infinite;
+}
+
+
+.leaf-10 {
+
+    right: 28%;
+    top: 10%;
+
+    width: 38px;
+    height: 19px;
+
+    animation:
+        otgsLeafMove1 7s ease-in-out infinite;
+}
+
+
+.leaf-11 {
+
+    left: 30%;
+    bottom: 7%;
+
+    width: 40px;
+    height: 20px;
+
+    animation:
+        otgsLeafMove4 8s ease-in-out infinite;
+}
+
+
+.leaf-12 {
+
+    right: 31%;
+    bottom: 8%;
+
+    width: 35px;
+    height: 18px;
+
+    animation:
+        otgsLeafMove2 6.5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   LEAF MOTIONS
+========================================================= */
+
+@keyframes otgsLeafMove1 {
+
+    0%,
+    100% {
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotate(25deg);
+    }
+
+    50% {
+        margin-top: 18px;
+        margin-left: -12px;
+        transform: rotate(43deg);
+    }
+
+}
+
+
+@keyframes otgsLeafMove2 {
+
+    0%,
+    100% {
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        margin-top: -15px;
+        margin-left: 14px;
+        transform: rotate(-12deg);
+    }
+
+}
+
+
+@keyframes otgsLeafMove3 {
+
+    0%,
+    100% {
+        margin-top: 0;
+        transform: rotate(45deg) scale(1);
+    }
+
+    50% {
+        margin-top: 14px;
+        transform: rotate(60deg) scale(1.12);
+    }
+
+}
+
+
+@keyframes otgsLeafMove4 {
+
+    0%,
+    100% {
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotate(-35deg);
+    }
+
+    50% {
+        margin-top: -12px;
+        margin-left: -14px;
+        transform: rotate(-18deg);
+    }
+
+}
+
+
+/* =========================================================
+   MINI FLOATING LEAVES
+========================================================= */
+
+.otgs-mini-leaf {
+
+    position: absolute;
+
+    width: 20px;
+    height: 10px;
+
+    border-radius:
+        100% 0 100% 0;
+
+    opacity: .55;
+}
+
+
+.mini-01 {
+
+    left: 24%;
+    top: 32%;
+
+    background: var(--green);
+
+    animation:
+        otgsMiniFloat1 5s ease-in-out infinite;
+}
+
+
+.mini-02 {
+
+    right: 23%;
+    top: 38%;
+
+    background: var(--red);
+
+    animation:
+        otgsMiniFloat2 6s ease-in-out infinite;
+}
+
+
+.mini-03 {
+
+    left: 20%;
+    top: 65%;
+
+    background: var(--brown);
+
+    animation:
+        otgsMiniFloat3 7s ease-in-out infinite;
+}
+
+
+.mini-04 {
+
+    right: 20%;
+    top: 70%;
+
+    background: var(--olive);
+
+    animation:
+        otgsMiniFloat1 6s ease-in-out infinite;
+}
+
+
+.mini-05 {
+
+    left: 42%;
+    top: 17%;
+
+    background: var(--dark-green);
+
+    animation:
+        otgsMiniFloat2 5.5s ease-in-out infinite;
+}
+
+
+.mini-06 {
+
+    right: 42%;
+    bottom: 13%;
+
+    background: var(--dark-red);
+
+    animation:
+        otgsMiniFloat3 6.5s ease-in-out infinite;
+}
+
+
+@keyframes otgsMiniFloat1 {
+
+    0%,
+    100% {
+        transform:
+            translate(0,0)
+            rotate(25deg);
+    }
+
+    50% {
+        transform:
+            translate(-12px,18px)
+            rotate(50deg);
+    }
+
+}
+
+
+@keyframes otgsMiniFloat2 {
+
+    0%,
+    100% {
+        transform:
+            translate(0,0)
+            rotate(70deg);
+    }
+
+    50% {
+        transform:
+            translate(15px,-14px)
+            rotate(45deg);
+    }
+
+}
+
+
+@keyframes otgsMiniFloat3 {
+
+    0%,
+    100% {
+        transform:
+            translate(0,0)
+            rotate(-30deg);
+    }
+
+    50% {
+        transform:
+            translate(12px,12px)
+            rotate(-8deg);
+    }
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.otgs-academic-header {
+
+    position: relative;
+
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+
+    z-index: 10;
+}
+
+
+.otgs-academic-label {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-bottom: 14px;
+
+    color: var(--dark-red);
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.otgs-academic-label span {
+
+    width: 38px;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--dark-red)
+        );
+}
+
+
+.otgs-academic-header h2 {
+
+    margin: 0;
+
+    color: var(--dark-green);
+
+    font-size: 46px;
+
+    line-height: 1.05;
+
+    font-weight: 700;
+}
+
+
+.otgs-academic-header h2 strong {
+
+    display: inline-block;
+
+    color: var(--dark-red);
+
+    font-weight: 700;
+}
+
+
+.otgs-academic-header p {
+
+    max-width: 620px;
+
+    margin: 18px auto 0;
+
+    color: #000000;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.otgs-academic-content {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 32px;
+
+    max-width: 1080px;
+
+    margin: auto;
+
+    z-index: 10;
+}
+
+
+/* =========================================================
+   CENTER STEM
+========================================================= */
+
+.otgs-academic-stem {
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 50%;
+
+    width: 2px;
+
+    transform: translateX(-50%);
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            var(--green),
+            var(--dark-red),
+            var(--green),
+            transparent
+        );
+
+    opacity: .7;
+}
+
+
+.stem-node {
+
+    position: absolute;
+
+    left: 50%;
+
+    width: 18px;
+    height: 18px;
+
+    transform: translateX(-50%);
+
+    border: 4px solid #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 1px var(--green),
+        0 4px 10px rgba(0,0,0,.10);
+}
+
+
+.node-01 {
+
+    top: 8%;
+
+    background: var(--dark-green);
+}
+
+
+.node-02 {
+
+    top: 33%;
+
+    background: var(--dark-red);
+}
+
+
+.node-03 {
+
+    top: 58%;
+
+    background: var(--olive);
+}
+
+
+.node-04 {
+
+    top: 84%;
+
+    background: var(--brown);
+}
+
+
+/* =========================================================
+   ACADEMIC ITEM
+========================================================= */
+
+.otgs-academic-item {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 50%;
+
+    min-height: 190px;
+
+    z-index: 5;
+}
+
+
+.item-left {
+
+    padding-right: 65px;
+
+    justify-content: flex-end;
+
+    text-align: right;
+
+    align-self: flex-start;
+}
+
+
+.item-right {
+
+    padding-left: 65px;
+
+    justify-content: flex-start;
+
+    text-align: left;
+
+    align-self: flex-end;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.otgs-academic-number {
+
+    flex-shrink: 0;
+
+    width: 66px;
+    height: 66px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px rgba(40,60,35,.14);
+
+    position: relative;
+
+    z-index: 4;
+}
+
+
+.item-left .otgs-academic-number {
+
+    order: 2;
+
+    margin-left: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--dark-green),
+            var(--green)
+        );
+}
+
+
+.item-right .otgs-academic-number {
+
+    order: 1;
+
+    margin-right: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--dark-red),
+            var(--red)
+        );
+}
+
+
+/* =========================================================
+   TEXT AREA
+========================================================= */
+
+.otgs-academic-text {
+
+    max-width: 390px;
+}
+
+
+.otgs-academic-text small {
+
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--dark-red);
+
+    font-size: 18px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.otgs-academic-text h3 {
+
+    margin: 0 0 10px;
+
+    color: var(--dark-green);
+
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+.otgs-academic-text h3 strong {
+
+    display: block;
+
+    color: var(--dark-red);
+
+    font-weight: 700;
+}
+
+
+.otgs-academic-text p {
+
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 18px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   TEACHER STRIP
+========================================================= */
+
+.otgs-teacher-strip {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    max-width: 900px;
+
+    margin: 58px auto 0;
+
+    padding: 24px 30px;
+
+    background:
+        linear-gradient(
+            100deg,
+            rgba(246,240,229,.95),
+            rgba(255,255,255,.98)
+        );
+
+    border-top:
+        2px solid var(--green);
+
+    border-bottom:
+        2px solid var(--dark-red);
+
+    box-shadow:
+        0 12px 35px rgba(50,60,40,.08);
+
+    z-index: 10;
+}
+
+
+.otgs-teacher-mark {
+
+    width: 62px;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 24px;
+
+    background: var(--dark-green);
+
+    color: #ffffff;
+
+    border-radius: 50%;
+}
+
+
+.otgs-teacher-mark span {
+
+    font-size: 24px;
+
+    animation:
+        otgsStarPulse 3s ease-in-out infinite;
+}
+
+
+@keyframes otgsStarPulse {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0);
+    }
+
+    50% {
+        transform: scale(1.18) rotate(15deg);
+    }
+
+}
+
+
+.otgs-teacher-content {
+
+    flex: 1;
+}
+
+
+.otgs-teacher-content small {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--dark-red);
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.otgs-teacher-content h4 {
+
+    margin: 0 0 5px;
+
+    color: var(--dark-green);
+
+    font-size: 21px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+}
+
+
+.otgs-teacher-content h4 b {
+
+    color: var(--dark-red);
+
+    margin: 0 5px;
+}
+
+
+.otgs-teacher-content p {
+
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.otgs-academic-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 42px;
+
+    text-align: center;
+}
+
+
+.otgs-academic-bottom > span {
+
+    width: 100px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--green)
+        );
+}
+
+
+.otgs-academic-bottom > span:last-child {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--dark-red),
+            transparent
+        );
+}
+
+
+.otgs-academic-bottom div {
+
+    min-width: 300px;
+}
+
+
+.otgs-academic-bottom small {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--dark-red);
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.otgs-academic-bottom strong {
+
+    display: block;
+
+    color: var(--dark-green);
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HOVER EFFECT
+========================================================= */
+
+.otgs-academic-item:hover
+.otgs-academic-number {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 12px 25px rgba(40,60,35,.20);
+}
+
+
+.otgs-academic-item:hover
+.otgs-academic-text h3 strong {
+
+    color: var(--green);
+}
+
+
+.otgs-academic-item,
+.otgs-academic-number,
+.otgs-academic-text h3 strong {
+
+    transition:
+        transform .35s ease,
+        color .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .otgs-academic-philosophy {
+
+        padding: 70px 18px 60px;
+    }
+
+
+    .otgs-academic-header {
+
+        margin-bottom: 45px;
+    }
+
+
+    .otgs-academic-header h2 {
+
+        font-size: 40px;
+    }
+
+
+    .otgs-academic-content {
+
+        max-width: 850px;
+
+        gap: 25px;
+    }
+
+
+    .item-left {
+
+        padding-right: 45px;
+    }
+
+
+    .item-right {
+
+        padding-left: 45px;
+    }
+
+
+    .otgs-academic-text h3 {
+
+        font-size: 23px;
+    }
+
+
+    .otgs-academic-number {
+
+        width: 58px;
+        height: 58px;
+    }
+
+
+    .otgs-leaf {
+
+        opacity: .45;
+    }
+
+
+    .otgs-branch {
+
+        opacity: .35;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .otgs-academic-philosophy {
+
+        padding:
+            58px
+            16px
+            50px;
+    }
+
+
+    .otgs-academic-header {
+
+        margin-bottom: 38px;
+    }
+
+
+    .otgs-academic-label {
+
+        font-size: 16px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .otgs-academic-header h2 {
+
+        font-size: 34px;
+
+        line-height: 1.15;
+    }
+
+
+    .otgs-academic-header p {
+
+        font-size: 18px;
+
+        line-height: 1.55;
+    }
+
+
+    /* Mobile stem */
+
+    .otgs-academic-stem {
+
+        left: 30px;
+
+        transform: none;
+    }
+
+
+    .stem-node {
+
+        left: 0;
+
+        width: 14px;
+        height: 14px;
+
+        border-width: 3px;
+    }
+
+
+    .node-01 {
+        top: 8%;
+    }
+
+    .node-02 {
+        top: 34%;
+    }
+
+    .node-03 {
+        top: 59%;
+    }
+
+    .node-04 {
+        top: 85%;
+    }
+
+
+    /* Items become single column */
+
+    .otgs-academic-item,
+    .item-left,
+    .item-right {
+
+        width: 100%;
+
+        align-self: stretch;
+
+        padding:
+            15px
+            10px
+            15px
+            65px;
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+        min-height: auto;
+    }
+
+
+    .item-left .otgs-academic-number,
+    .item-right .otgs-academic-number {
+
+        order: 1;
+
+        position: absolute;
+
+        left: 0;
+
+        top: 18px;
+
+        margin: 0;
+
+        width: 48px;
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+
+    .otgs-academic-text {
+
+        max-width: none;
+
+        width: 100%;
+    }
+
+
+    .otgs-academic-text small {
+
+        font-size: 16px;
+    }
+
+
+    .otgs-academic-text h3 {
+
+        font-size: 22px;
+    }
+
+
+    .otgs-academic-text p {
+
+        font-size: 18px;
+
+        line-height: 1.6;
+    }
+
+
+    .otgs-teacher-strip {
+
+        margin-top: 35px;
+
+        padding:
+            20px
+            18px;
+
+        align-items: flex-start;
+    }
+
+
+    .otgs-teacher-mark {
+
+        width: 50px;
+        height: 50px;
+
+        margin-right: 15px;
+    }
+
+
+    .otgs-teacher-content h4 {
+
+        font-size: 18px;
+    }
+
+
+    .otgs-teacher-content p {
+
+        font-size: 18px;
+    }
+
+
+    .otgs-academic-bottom {
+
+        gap: 12px;
+
+        margin-top: 32px;
+    }
+
+
+    .otgs-academic-bottom > span {
+
+        width: 35px;
+    }
+
+
+    .otgs-academic-bottom div {
+
+        min-width: 0;
+    }
+
+
+    .otgs-academic-bottom small,
+    .otgs-academic-bottom strong {
+
+        font-size: 16px;
+    }
+
+
+    /* Reduce background elements */
+
+    .leaf-09,
+    .leaf-10,
+    .leaf-11,
+    .leaf-12,
+    .mini-05,
+    .mini-06 {
+
+        display: none;
+    }
+
+
+    .otgs-branch {
+
+        opacity: .22;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .otgs-academic-philosophy {
+
+        padding:
+            50px
+            13px
+            45px;
+    }
+
+
+    .otgs-academic-header h2 {
+
+        font-size: 30px;
+    }
+
+
+    .otgs-academic-header p {
+
+        font-size: 18px;
+    }
+
+
+    .otgs-academic-content {
+
+        gap: 18px;
+    }
+
+
+    .otgs-academic-item,
+    .item-left,
+    .item-right {
+
+        padding-left: 58px;
+
+        padding-right: 5px;
+    }
+
+
+    .item-left .otgs-academic-number,
+    .item-right .otgs-academic-number {
+
+        width: 43px;
+        height: 43px;
+
+        font-size: 15px;
+    }
+
+
+    .otgs-academic-text small {
+
+        font-size: 15px;
+
+        letter-spacing: .8px;
+    }
+
+
+    .otgs-academic-text h3 {
+
+        font-size: 21px;
+    }
+
+
+    .otgs-academic-text p {
+
+        font-size: 18px;
+
+        line-height: 1.55;
+    }
+
+
+    .otgs-teacher-strip {
+
+        display: block;
+
+        text-align: center;
+    }
+
+
+    .otgs-teacher-mark {
+
+        margin:
+            0 auto
+            15px;
+    }
+
+
+    .otgs-teacher-content small {
+
+        font-size: 15px;
+    }
+
+
+    .otgs-teacher-content h4 {
+
+        font-size: 18px;
+    }
+
+
+    .otgs-teacher-content p {
+
+        font-size: 18px;
+    }
+
+
+    .otgs-academic-bottom > span {
+
+        display: none;
+    }
+
+
+    .otgs-academic-bottom strong {
+
+        line-height: 1.4;
+    }
+
+
+    .leaf-01,
+    .leaf-02,
+    .leaf-03,
+    .leaf-04,
+    .leaf-05,
+    .leaf-06,
+    .leaf-07,
+    .leaf-08 {
+
+        opacity: .25;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .otgs-academic-philosophy {
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .otgs-academic-header h2 {
+
+        font-size: 27px;
+    }
+
+
+    .otgs-academic-item,
+    .item-left,
+    .item-right {
+
+        padding-left: 52px;
+    }
+
+
+    .item-left .otgs-academic-number,
+    .item-right .otgs-academic-number {
+
+        width: 39px;
+        height: 39px;
+
+        font-size: 14px;
+    }
+
+
+    .otgs-academic-text h3 {
+
+        font-size: 19px;
+    }
+
+
+    .otgs-academic-text p {
+
+        font-size: 17px;
+    }
+
+
+    .otgs-teacher-content h4 {
+
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .otgs-academic-philosophy *,
+    .otgs-academic-philosophy::before,
+    .otgs-academic-philosophy::after {
+
+        animation: none !important;
+
+        transition: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   PEDAGOGY - FINAL TYPOGRAPHY VERSION
+   DESIGN KEPT SAME
+========================================================= */
+
+.ot-pedagogy-editorial {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    padding: 50px 20px;
+
+    background:white;
+
+    color: #000;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.ot-ped-container {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    max-width: 1160px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   BACKGROUND TEXT
+========================================================= */
+
+.ot-ped-watermark {
+    position: absolute;
+
+    top: 45px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(80px, 14vw, 180px);
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: 8px;
+
+    white-space: nowrap;
+
+    color: rgba(23, 77, 50, 0.035);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   DECORATIVE LEAVES
+========================================================= */
+
+.ot-ped-leaf {
+    position: absolute;
+
+    width: 130px;
+    height: 62px;
+
+    border-radius: 100% 0 100% 0;
+
+    opacity: 0.10;
+
+    pointer-events: none;
+}
+
+.ot-ped-leaf::after {
+    content: "";
+
+    position: absolute;
+
+    left: 48%;
+    top: 2px;
+
+    width: 2px;
+    height: 100px;
+
+    background: currentColor;
+
+    transform: rotate(42deg);
+}
+
+.leaf-one {
+    top: 90px;
+    left: -45px;
+
+    color: #174d32;
+    background: #174d32;
+
+    transform: rotate(-28deg);
+}
+
+.leaf-two {
+    right: -40px;
+    top: 260px;
+
+    color: #8b1e2d;
+    background: #8b1e2d;
+
+    transform: rotate(145deg);
+}
+
+.leaf-three {
+    bottom: 35px;
+    right: 15%;
+
+    width: 85px;
+    height: 40px;
+
+    color: #a47a35;
+    background: #a47a35;
+
+    transform: rotate(28deg);
+}
+
+
+/* =========================================================
+   TOP AREA
+========================================================= */
+
+.ot-ped-top {
+    display: grid;
+
+    grid-template-columns: 1fr 90px 0.8fr;
+
+    align-items: end;
+
+    gap: 28px;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #d9cfbd;
+}
+
+
+/* Small label */
+
+.ot-ped-title > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    color: #8b1e2d;
+}
+
+
+/* MAIN HEADING - 18PX */
+
+.ot-ped-title h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #174d32;
+}
+
+
+/* Heading second line */
+
+.ot-ped-title h2 b {
+    display: inline;
+
+    margin-left: 5px;
+
+    font-size: 18px;
+
+    line-height: 1.3;
+
+    font-style: italic;
+
+    font-weight: 700;
+
+    color: #8b1e2d;
+}
+
+
+/* Decorative line */
+
+.ot-ped-top-line {
+    height: 1px;
+
+    margin-bottom: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #174d32,
+            #b18a42,
+            #8b1e2d
+        );
+}
+
+
+/* Tagline */
+
+.ot-ped-tagline {
+    padding-bottom: 1px;
+}
+
+.ot-ped-tagline p {
+    max-width: 360px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #000;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.ot-ped-body {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 75px;
+
+    padding: 45px 0 38px;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.ot-ped-intro {
+    position: relative;
+
+    padding-left: 32px;
+}
+
+
+/* Quote */
+
+.ot-ped-quote-mark {
+    position: absolute;
+
+    left: 0;
+    top: -17px;
+
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    color: #b18a42;
+
+    opacity: 0.65;
+}
+
+
+/* Sub heading */
+
+.ot-ped-intro h3 {
+    margin: 0 0 18px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    color: #174d32;
+}
+
+.ot-ped-intro h3 span {
+    color: #8b1e2d;
+
+    font-style: italic;
+}
+
+
+/* PARAGRAPH - BLACK 14PX */
+
+.ot-ped-intro p {
+    margin: 0 0 14px;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    font-weight: 400;
+
+    color: #000;
+}
+
+.ot-ped-intro strong {
+    color: #174d32;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   LEARNING FLOW
+========================================================= */
+
+.ot-learning-flow {
+    padding-top: 3px;
+}
+
+
+/* Flow heading */
+
+.flow-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 17px;
+}
+
+.flow-heading span {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.3px;
+
+    color: #8b1e2d;
+}
+
+.flow-heading i {
+    width: 42px;
+    height: 2px;
+
+    display: block;
+
+    background: #b18a42;
+}
+
+
+/* =========================================================
+   FLOW ITEMS
+========================================================= */
+
+.flow-item {
+    display: grid;
+
+    grid-template-columns: 42px 2px 1fr;
+
+    align-items: stretch;
+
+    gap: 15px;
+
+    min-height: 64px;
+}
+
+
+/* Number */
+
+.flow-number {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid #b18a42;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #174d32;
+
+    background: #fffaf0;
+}
+
+.flow-item:nth-child(3) .flow-number,
+.flow-item:nth-child(5) .flow-number {
+    color: #8b1e2d;
+}
+
+
+/* Vertical line */
+
+.flow-line {
+    position: relative;
+
+    width: 1px;
+
+    margin: 0 auto;
+
+    background: #d5c8b0;
+}
+
+.flow-item:last-child .flow-line {
+    background: transparent;
+}
+
+
+/* Flow content */
+
+.flow-content {
+    padding: 3px 0 18px;
+}
+
+
+/* Flow title - 16px */
+
+.flow-content strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 18px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #174d32;
+}
+
+
+/* Flow paragraph - black */
+
+.flow-content span {
+    display: block;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    color: #000;
+}
+
+
+/* =========================================================
+   RATIO SECTION
+========================================================= */
+
+.ot-ped-ratio {
+    display: grid;
+
+    grid-template-columns: 1.05fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 0;
+
+    padding: 23px 0;
+
+    border-top: 1px solid #d9cfbd;
+    border-bottom: 1px solid #d9cfbd;
+}
+
+
+/* Ratio intro */
+
+.ratio-intro {
+    padding-right: 25px;
+}
+
+.ratio-intro > span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #8b1e2d;
+}
+
+
+/* Ratio heading - 18px */
+
+.ratio-intro h3 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    color: #174d32;
+}
+
+
+/* =========================================================
+   RATIO STAT
+========================================================= */
+
+.ratio-stat {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    min-height: 82px;
+
+    padding: 5px 25px;
+
+    border-left: 1px solid #d9cfbd;
+}
+
+
+/* Ratio number */
+
+.ratio-big {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.ratio-big span {
+    font-size: 20px;
+
+    margin: 0 2px;
+}
+
+.ratio-stat-green .ratio-big {
+    color: #174d32;
+}
+
+.ratio-stat-red .ratio-big {
+    color: #8b1e2d;
+}
+
+
+/* Ratio title */
+
+.ratio-text strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 16px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #000;
+}
+
+
+/* Ratio description */
+
+.ratio-text small {
+    display: block;
+
+    max-width: 155px;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #000;
+}
+
+
+/* =========================================================
+   FINAL MESSAGE
+========================================================= */
+
+.ot-ped-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    max-width: 800px;
+
+    margin: 25px auto 0;
+
+    text-align: center;
+}
+
+.footer-leaf-mark {
+    display: flex;
+
+    align-items: center;
+
+    gap: 3px;
+
+    transform: rotate(-20deg);
+}
+
+.footer-leaf-mark span {
+    width: 7px;
+    height: 14px;
+
+    display: block;
+
+    border-radius: 100% 0 100% 0;
+
+    background: #174d32;
+}
+
+.footer-leaf-mark span:nth-child(2) {
+    background: #b18a42;
+}
+
+.footer-leaf-mark span:nth-child(3) {
+    background: #8b1e2d;
+}
+
+
+/* Final paragraph - BLACK */
+
+.ot-ped-footer p {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #000;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .ot-pedagogy-editorial {
+        padding: 55px 20px 60px;
+    }
+
+    .ot-ped-top {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    .ot-ped-top-line {
+        display: none;
+    }
+
+    .ot-ped-tagline {
+        text-align: right;
+    }
+
+    .ot-ped-body {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 38px 0 34px;
+    }
+
+    .ot-ped-ratio {
+        grid-template-columns: 1fr 1fr;
+
+        row-gap: 12px;
+    }
+
+    .ratio-intro {
+        grid-column: 1 / -1;
+
+        padding: 0 0 8px;
+    }
+
+    .ratio-stat:first-of-type {
+        border-left: 0;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ot-pedagogy-editorial {
+        padding: 45px 14px 50px;
+    }
+
+    .ot-ped-watermark {
+        top: 70px;
+
+        font-size: 65px;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* TOP */
+
+    .ot-ped-top {
+        display: block;
+
+        padding-bottom: 23px;
+    }
+
+    .ot-ped-title > span {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+    .ot-ped-title h2 {
+        font-size: 18px;
+    }
+
+    .ot-ped-title h2 b {
+        font-size: 18px;
+    }
+
+    .ot-ped-tagline {
+        margin-top: 14px;
+
+        text-align: left;
+    }
+
+    .ot-ped-tagline p {
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    /* BODY */
+
+    .ot-ped-body {
+        padding: 30px 0 27px;
+
+        gap: 28px;
+    }
+
+    .ot-ped-intro {
+        padding-left: 24px;
+    }
+
+    .ot-ped-quote-mark {
+        top: -13px;
+
+        font-size: 48px;
+    }
+
+    .ot-ped-intro h3 {
+        font-size: 18px;
+
+        margin-bottom: 16px;
+    }
+
+    .ot-ped-intro p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* FLOW */
+
+    .flow-heading {
+        margin-bottom: 15px;
+    }
+
+    .flow-heading span {
+        font-size: 9px;
+
+        letter-spacing: 1.8px;
+    }
+
+    .flow-item {
+        grid-template-columns: 36px 2px 1fr;
+
+        gap: 12px;
+
+        min-height: 61px;
+    }
+
+    .flow-number {
+        width: 35px;
+        height: 35px;
+
+        font-size: 9px;
+    }
+
+    .flow-content {
+        padding-bottom: 16px;
+    }
+
+    .flow-content strong {
+        font-size: 16px;
+    }
+
+    .flow-content span {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+
+    /* RATIO */
+
+    .ot-ped-ratio {
+        display: block;
+
+        padding: 20px 0;
+    }
+
+    .ratio-intro {
+        padding-bottom: 14px;
+    }
+
+    .ratio-intro h3 {
+        font-size: 18px;
+    }
+
+    .ratio-stat {
+        min-height: 70px;
+
+        padding: 11px 0;
+
+        border-left: 0;
+
+        border-top: 1px solid #e1d8c7;
+    }
+
+    .ratio-stat:first-of-type {
+        border-top: 0;
+    }
+
+    .ratio-big {
+        font-size: 30px;
+    }
+
+    .ratio-text strong {
+        font-size: 14px;
+    }
+
+    .ratio-text small {
+        font-size: 12px;
+    }
+
+
+    /* FOOTER */
+
+    .ot-ped-footer {
+        margin-top: 20px;
+
+        gap: 9px;
+    }
+
+    .ot-ped-footer p {
+        font-size: 14px;
+
+        line-height: 1.55;
+    }
+
+
+    /* Decorative leaves */
+
+    .ot-ped-leaf {
+        opacity: 0.055;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .ot-pedagogy-editorial {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .ot-ped-title h2,
+    .ot-ped-title h2 b {
+        font-size: 18px;
+    }
+
+    .ot-ped-intro {
+        padding-left: 20px;
+    }
+
+    .ot-ped-intro h3 {
+        font-size: 18px;
+    }
+
+    .ot-ped-intro p {
+        font-size: 13px;
+    }
+
+    .flow-content strong {
+        font-size: 15px;
+    }
+
+    .flow-content span {
+        font-size: 13px;
+    }
+
+    .ratio-big {
+        font-size: 28px;
+    }
+
+    .ratio-text strong {
+        font-size: 13px;
+    }
+
+    .ratio-text small {
+        font-size: 11px;
+    }
+
+    .ot-ped-footer p {
+        font-size: 13px;
+    }
+}
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   CURRICULUM & SYLLABUS
+   MODERN VERTICAL TIMELINE DESIGN
+========================================================= */
+
+.ot-curriculum-modern {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 50px 20px;
+}
+
+
+/* =========================================================
+   SOFT BACKGROUND PATTERN
+========================================================= */
+
+.ot-curriculum-modern::before {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    left: -250px;
+    top: 100px;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle,
+            rgba(22, 91, 57, 0.08) 0,
+            rgba(22, 91, 57, 0.08) 2px,
+            transparent 3px
+        );
+    background-size: 22px 22px;
+    pointer-events: none;
+}
+
+.ot-curriculum-modern::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    right: -180px;
+    bottom: 80px;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle,
+            rgba(139, 30, 45, 0.07) 0,
+            rgba(139, 30, 45, 0.07) 2px,
+            transparent 3px
+        );
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.ot-curriculum-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   HEADING AREA
+========================================================= */
+
+.ot-curriculum-heading {
+    display: grid;
+    grid-template-columns: 95px 1fr;
+    gap: 28px;
+    align-items: start;
+    margin-bottom: 38px;
+}
+
+
+/* NUMBER */
+
+.ot-heading-number {
+    width: 78px;
+    height: 78px;
+    border: 1px solid #8b1e2d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ot-heading-number::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    right: -5px;
+    top: -5px;
+    background: #d4a72c;
+}
+
+.ot-heading-number span {
+    color: #8b1e2d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.ot-heading-number small {
+    margin-top: 7px;
+    color: darkgreen;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+
+/* HEADING CONTENT */
+
+.ot-section-label {
+    display: block;
+    color: darkred;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 7px;
+}
+
+.ot-heading-content h2 {
+    margin: 0;
+    color: darkgreen;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.ot-heading-content h2 span {
+    color: darkred;
+    font-style: italic;
+}
+
+.ot-heading-content p {
+    margin: 8px 0 0;
+    max-width: 700px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.ot-curriculum-main {
+    display: grid;
+    grid-template-columns: 43% 57%;
+    align-items: start;
+}
+
+
+/* =========================================================
+   VISUAL AREA
+========================================================= */
+
+.ot-curriculum-visual {
+    min-height: 650px;
+    position: relative;
+    padding: 0 65px 40px 0;
+}
+
+
+/* MAIN IMAGE */
+
+.ot-image-frame {
+    width: 100%;
+    height: 510px;
+    position: relative;
+    overflow: hidden;
+    border-left: 7px solid #176b3a;
+    background: #eee;
+}
+
+.ot-image-frame::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 20px;
+    top: 20px;
+    border-top: 2px solid #d4a72c;
+    border-left: 2px solid #d4a72c;
+    z-index: 2;
+}
+
+.ot-image-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* IMAGE TAG */
+
+.ot-image-tag {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-width: 190px;
+    padding: 13px 22px;
+    background: #8b1e2d;
+    color: #ffffff;
+}
+
+.ot-image-tag span {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+.ot-image-tag strong {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+
+/* SMALL IMAGE */
+
+.ot-small-image {
+    width: 205px;
+    height: 165px;
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    padding: 7px;
+    background: #ffffff;
+    border: 1px solid #d4a72c;
+    z-index: 3;
+}
+
+.ot-small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* VERTICAL WORD */
+
+.ot-vertical-word {
+    position: absolute;
+    right: -17px;
+    top: 40px;
+    writing-mode: vertical-rl;
+    color: rgba(23, 107, 58, 0.13);
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.ot-curriculum-content {
+    padding: 4px 0 0 50px;
+}
+
+
+/* INTRO */
+
+.ot-content-intro {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9ddd9;
+}
+
+.ot-content-intro > span {
+    display: block;
+    color: #176b3a;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.ot-content-intro h3 {
+    margin: 0 0 12px;
+    color: #8b1e2d;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.ot-content-intro h3 em {
+    color: #176b3a;
+    font-style: normal;
+}
+
+.ot-info-text {
+    margin: 0 0 9px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   CURRICULUM ITEMS
+========================================================= */
+
+.ot-curriculum-list {
+    width: 100%;
+    margin-top: 12px;
+}
+
+
+.ot-curriculum-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 14px;
+    align-items: center;
+    min-height: 58px;
+    padding: 8px 5px;
+    border-bottom: 1px solid #e3e5e2;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.ot-curriculum-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background: #8b1e2d;
+    transition: width 0.3s ease;
+}
+
+
+.ot-curriculum-item:hover {
+    padding-left: 12px;
+    background: #fafcf9;
+}
+
+
+.ot-curriculum-item:hover::after {
+    width: 100%;
+}
+
+
+/* ITEM NUMBER */
+
+.ot-item-number {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #176b3a;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ITEM TEXT */
+
+.ot-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.ot-item-text strong {
+    color: #173b29;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.ot-item-text span {
+    color: #000000;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+/* ALTERNATE NUMBER */
+
+.ot-curriculum-item:nth-child(2n) .ot-item-number,
+.ot-curriculum-item:nth-child(5n) .ot-item-number {
+    background: #8b1e2d;
+}
+
+.ot-curriculum-item:nth-child(3n) .ot-item-number {
+    background: #b18418;
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.ot-curriculum-bottom {
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 700px) 1fr;
+    align-items: center;
+    gap: 18px;
+    margin-top: 38px;
+}
+
+
+.ot-bottom-line {
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #176b3a
+    );
+}
+
+.ot-bottom-line:last-child {
+    background: linear-gradient(
+        to left,
+        transparent,
+        #8b1e2d
+    );
+}
+
+
+.ot-curriculum-bottom p {
+    margin: 0;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.ot-curriculum-bottom p b {
+    color: #176b3a;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .ot-curriculum-modern {
+        padding: 45px 18px 50px;
+    }
+
+    .ot-curriculum-main {
+        grid-template-columns: 40% 60%;
+    }
+
+    .ot-curriculum-visual {
+        min-height: 610px;
+        padding-right: 35px;
+    }
+
+    .ot-image-frame {
+        height: 470px;
+    }
+
+    .ot-small-image {
+        width: 170px;
+        height: 140px;
+        right: -2px;
+    }
+
+    .ot-curriculum-content {
+        padding-left: 30px;
+    }
+
+    .ot-item-text span {
+        font-size: 12px;
+    }
+
+    .ot-curriculum-bottom {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ot-bottom-line {
+        display: none;
+    }
+
+    .ot-curriculum-bottom p {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .ot-curriculum-modern {
+        padding: 40px 15px 45px;
+    }
+
+    .ot-curriculum-heading {
+        grid-template-columns: 65px 1fr;
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+
+    .ot-heading-number {
+        width: 62px;
+        height: 62px;
+    }
+
+    .ot-heading-number span {
+        font-size: 18px;
+    }
+
+    .ot-section-label {
+        font-size: 9px;
+        letter-spacing: 1.8px;
+    }
+
+    .ot-heading-content h2 {
+        font-size: 18px;
+    }
+
+    .ot-heading-content p {
+        font-size: 15px;
+    }
+
+    .ot-curriculum-main {
+        grid-template-columns: 1fr;
+    }
+
+    .ot-curriculum-visual {
+        min-height: auto;
+        height: 450px;
+        padding: 0 45px 45px 0;
+        margin-bottom: 25px;
+    }
+
+    .ot-image-frame {
+        height: 370px;
+    }
+
+    .ot-small-image {
+        width: 165px;
+        height: 125px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .ot-vertical-word {
+        display: none;
+    }
+
+    .ot-curriculum-content {
+        padding: 0;
+    }
+
+    .ot-content-intro h3 {
+        font-size: 18px;
+    }
+
+    .ot-curriculum-item {
+        min-height: 56px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .ot-curriculum-modern {
+        padding: 35px 12px 40px;
+    }
+
+    .ot-curriculum-heading {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ot-heading-number {
+        width: 58px;
+        height: 58px;
+    }
+
+    .ot-curriculum-visual {
+        height: 390px;
+        padding-right: 28px;
+    }
+
+    .ot-image-frame {
+        height: 325px;
+        border-left-width: 5px;
+    }
+
+    .ot-small-image {
+        width: 135px;
+        height: 105px;
+        padding: 5px;
+    }
+
+    .ot-image-tag {
+        min-width: 155px;
+        padding: 10px 14px;
+    }
+
+    .ot-image-tag strong {
+        font-size: 13px;
+    }
+
+    .ot-info-text {
+        font-size: 15px;
+    }
+
+    .ot-curriculum-item {
+        grid-template-columns: 34px 1fr;
+        gap: 10px;
+        padding: 8px 2px;
+    }
+
+    .ot-item-number {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .ot-item-text strong {
+        font-size: 15px;
+    }
+
+    .ot-item-text span {
+        font-size: 12px;
+    }
+
+    .ot-curriculum-bottom {
+        margin-top: 28px;
+    }
+
+    .ot-curriculum-bottom p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .ot-curriculum-modern {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ot-curriculum-visual {
+        height: 350px;
+    }
+
+    .ot-image-frame {
+        height: 295px;
+    }
+
+    .ot-small-image {
+        width: 115px;
+        height: 90px;
+    }
+
+    .ot-item-text span {
+        display: none;
+    }
+}
+
+/* =========================================
+   GLOBE READY EDUCATION
+   PREMIUM DARK BROWN + DARK GREEN THEME
+========================================= */
+
+.globe-ready-section {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 20px;
+    background: #ffffff;
+    color: #161616;
+}
+
+/* Subtle tree background */
+.globe-ready-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.045;
+    background-image: url("assets/images/tree-pattern.png");
+    background-repeat: repeat;
+    background-size: 330px;
+    pointer-events: none;
+}
+
+/* Decorative leaves */
+.tree-pattern {
+    position: absolute;
+    z-index: 0;
+    color: #183d24;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+.tree-left {
+    left: -65px;
+    top: 50px;
+    font-size: 300px;
+    transform: rotate(-18deg);
+}
+
+.tree-right {
+    right: -70px;
+    bottom: 20px;
+    font-size: 330px;
+    transform: rotate(18deg);
+}
+
+.globe-ready-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.globe-heading {
+    max-width: 950px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.globe-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 20px;
+    border: 1px solid #315d3a;
+    border-radius: 50px;
+    color: #214c2c;
+    background: #edf2e9;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.globe-heading h2 {
+    margin: 0 0 22px;
+    color: #3a2416;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.globe-heading h2 span {
+    color: #214f2d;
+}
+
+.globe-heading p {
+    max-width: 900px;
+    margin: 12px auto;
+    color: #111111;
+    font-size: 17px;
+    line-height: 1.85;
+    font-weight: 400;
+}
+
+.globe-heading strong {
+    color: #214f2d;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   IMAGE GALLERY
+========================================= */
+
+.globe-gallery {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    gap: 16px;
+    margin-bottom: 65px;
+}
+
+.globe-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #ddd8ca;
+    border: 4px solid #ffffff;
+}
+
+.globe-image.image-large {
+    grid-row: span 2;
+}
+
+.globe-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.globe-image:hover img {
+    transform: scale(1.08);
+}
+
+
+/* Image overlay */
+
+.image-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 60px 20px 20px;
+    background: linear-gradient(
+        to top,
+        rgba(26, 38, 24, 0.88),
+        rgba(26, 38, 24, 0)
+    );
+}
+
+.image-overlay span {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   CONTENT BOX
+========================================= */
+
+.globe-content {
+    position: relative;
+    padding: 48px;
+    border: 1px solid #d8d3c5;
+    border-radius: 25px;
+    background: #ffffff;
+}
+
+.globe-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 90px;
+    height: 5px;
+    background: #244e2e;
+    border-radius: 0 0 8px 8px;
+}
+
+
+/* =========================================
+   CONTENT TITLE
+========================================= */
+
+.globe-content-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 38px;
+}
+
+.leaf-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #e7eee4;
+    border: 1px solid #cbd9c7;
+    font-size: 28px;
+}
+
+.globe-content-title small {
+    display: block;
+    margin-bottom: 5px;
+    color: #315f39;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.globe-content-title h3 {
+    margin: 0;
+    color: #3a2416;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.globe-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.globe-feature {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid darkred;
+    transition: all 0.35s ease;
+}
+
+.globe-feature::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    bottom: 18px;
+    width: 4px;
+    border-radius: 0 5px 5px 0;
+    background: #315d39;
+    opacity: 0;
+    transition: 0.3s ease;
+    transform: translateY(-5px);
+    background: #ffffff;
+    border-color: #b8c8b6;
+}
+
+.globe-feature:hover::before {
+    opacity: 1;
+}
+
+
+/* Feature icon */
+
+.feature-icon {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+    background: #e9eee4;
+    border: 1px solid #d2ddce;
+
+    font-size: 23px;
+}
+
+
+/* Feature heading */
+
+.globe-feature h4 {
+    margin: 0 0 8px;
+    color: #3a2416;
+    font-size: 18px;
+    font-weight: 750;
+}
+
+
+/* Feature paragraph */
+
+.globe-feature p {
+    margin: 0;
+    color: #111111;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .globe-ready-section {
+        padding: 75px 0;
+    }
+
+    .globe-heading h2 {
+        font-size: 40px;
+    }
+
+    .globe-heading p {
+        font-size: 16px;
+    }
+
+    .globe-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 230px 190px 190px;
+    }
+
+    .globe-image.image-large {
+        grid-row: span 2;
+    }
+
+    .globe-content {
+        padding: 38px;
+    }
+
+    .globe-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .globe-ready-section {
+        padding: 55px 0;
+    }
+
+    .globe-ready-section .container {
+        padding: 0 15px;
+    }
+
+    .globe-heading {
+        margin-bottom: 38px;
+    }
+
+    .globe-tag {
+        font-size: 9px;
+        letter-spacing: 1px;
+        padding: 7px 14px;
+    }
+
+    .globe-heading h2 {
+        font-size: 32px;
+    }
+
+    .globe-heading p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .globe-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 190px 150px 150px;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .globe-image {
+        border-radius: 12px;
+        border-width: 3px;
+    }
+
+    .image-overlay {
+        padding: 35px 10px 10px;
+    }
+
+    .image-overlay span {
+        font-size: 11px;
+    }
+
+    .globe-content {
+        padding: 28px 18px;
+        border-radius: 18px;
+    }
+
+    .globe-content::after {
+        left: 25px;
+        width: 65px;
+    }
+
+    .globe-content-title {
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .leaf-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 21px;
+    }
+
+    .globe-content-title small {
+        font-size: 9px;
+        letter-spacing: 1.2px;
+    }
+
+    .globe-content-title h3 {
+        font-size: 22px;
+    }
+
+    .globe-features {
+        gap: 13px;
+    }
+
+    .globe-feature {
+        padding: 18px 15px;
+        gap: 13px;
+    }
+
+    .feature-icon {
+        flex: 0 0 43px;
+        width: 43px;
+        height: 43px;
+        font-size: 19px;
+    }
+
+    .globe-feature h4 {
+        font-size: 16px;
+    }
+
+    .globe-feature p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .tree-left {
+        font-size: 170px;
+    }
+
+    .tree-right {
+        font-size: 190px;
+    }
+}
+
+/* =========================================
+   SMART SCORE
+   OLIVE TREE PREMIUM THEME
+========================================= */
+
+.smart-score-section {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 20px;
+    background: #fffffe;
+    color: #111111;
+}
+
+/* Background tree pattern */
+.smart-score-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("assets/images/tree-pattern.png");
+    background-repeat: repeat;
+    background-size: 350px;
+    opacity: 0.035;
+    pointer-events: none;
+}
+
+/* Decorative leaves */
+
+.smart-score-leaf {
+    position: absolute;
+    z-index: 0;
+    color: #214f2d;
+    opacity: 0.07;
+    pointer-events: none;
+}
+
+.leaf-one {
+    left: -40px;
+    top: 50px;
+    font-size: 230px;
+    transform: rotate(-20deg);
+}
+
+.leaf-two {
+    right: -45px;
+    bottom: 30px;
+    font-size: 260px;
+    transform: rotate(20deg);
+}
+
+.smart-score-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.smart-score-heading {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.smart-score-tag {
+    display: inline-block;
+    padding: 8px 19px;
+    margin-bottom: 15px;
+
+    border: 1px solid #315d3a;
+    border-radius: 50px;
+
+    background: #edf2e9;
+    color: #214f2d;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.smart-score-heading h2 {
+    margin: 0 0 20px;
+
+    color: #3a2416;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.smart-score-heading h2 span {
+    color: #214f2d;
+}
+
+.smart-score-heading p {
+    margin: auto;
+    color: #111111;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.smart-score-heading strong {
+    color: #214f2d;
+}
+
+
+/* =========================================
+   MAIN WRAPPER
+========================================= */
+
+.smart-score-wrapper {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   INFORMATION CARD
+========================================= */
+
+.smart-score-info {
+    padding: 42px;
+    border: 1px solid #ddd8ca;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 15px 40px rgba(55, 40, 25, 0.10);
+}
+
+.smart-score-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+    background: #e7eee4;
+    color: #214f2d;
+
+    font-size: 25px;
+}
+
+.smart-small-title {
+    color: #315d3a;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.smart-score-info h3 {
+    margin: 6px 0 20px;
+
+    color: #3a2416;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.smart-score-info > p {
+    margin: 0 0 15px;
+
+    color: #111111;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.smart-score-info > p strong {
+    color: #214f2d;
+}
+
+
+/* =========================================
+   INFORMATION NOTE
+========================================= */
+
+.smart-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-top: 22px;
+    padding: 15px 17px;
+
+    border-left: 4px solid #315d3a;
+    border-radius: 8px;
+
+    background: #f0f3eb;
+}
+
+.smart-note i {
+    margin-top: 3px;
+    color: #315d3a;
+}
+
+.smart-note span {
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SCHOLARSHIP CARD
+========================================= */
+
+.smart-score-scholarship {
+    position: relative;
+    overflow: hidden;
+
+    padding: 42px 30px;
+
+    border-radius: 22px;
+
+    background: #21452a;
+    box-shadow: 0 18px 45px rgba(25, 55, 31, 0.25);
+
+    text-align: center;
+}
+
+.smart-score-scholarship::before {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -90px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    border: 30px solid rgba(255, 255, 255, 0.05);
+}
+
+.smart-score-scholarship::after {
+    content: "";
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    bottom: -70px;
+    left: -50px;
+
+    border-radius: 50%;
+
+    border: 20px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* Scholarship title */
+
+.scholarship-heading {
+    position: relative;
+    z-index: 2;
+}
+
+.scholarship-heading span {
+    color: #d9dfc7;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.scholarship-heading h3 {
+    margin: 25px 0 0;
+
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* 100% */
+
+.scholarship-number {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    margin: 5px 0;
+}
+
+.scholarship-number strong {
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.scholarship-number span {
+    margin-left: 5px;
+    color: #c9d9a7;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.smart-score-scholarship > p {
+    position: relative;
+    z-index: 2;
+
+    margin: 8px 0 30px;
+
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   SCHOLARSHIP RANGE
+========================================= */
+
+.scholarship-range {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 28px;
+}
+
+.range-item {
+    flex: 0 0 auto;
+}
+
+.range-item span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.range-item small {
+    color: #cbd8c3;
+    font-size: 11px;
+}
+
+.range-line {
+    flex: 1;
+    height: 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.range-line span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #b8c98d;
+}
+
+
+/* Badge */
+
+.smart-badge {
+    position: relative;
+    z-index: 2;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.smart-badge i {
+    color: #d4dfae;
+}
+
+
+/* =========================================
+   BOTTOM FEATURES
+========================================= */
+
+.smart-score-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.smart-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 23px;
+
+    border: 1px solid #ddd8ca;
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    transition: 0.3s ease;
+}
+
+.smart-feature:hover {
+    transform: translateY(-4px);
+    border-color: #a8b99f;
+    box-shadow: 0 10px 25px rgba(50, 70, 50, 0.10);
+}
+
+.smart-feature-icon {
+    flex: 0 0 46px;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #e9eee4;
+    color: #214f2d;
+
+    font-size: 20px;
+}
+
+.smart-feature h4 {
+    margin: 0 0 6px;
+
+    color: #3a2416;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+.smart-feature p {
+    margin: 0;
+
+    color: #111111;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .smart-score-heading h2 {
+        font-size: 40px;
+    }
+
+    .smart-score-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .smart-score-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .smart-score-section {
+        padding: 60px 0;
+    }
+
+    .smart-score-section .container {
+        padding: 0 15px;
+    }
+
+    .smart-score-heading {
+        margin-bottom: 35px;
+    }
+
+    .smart-score-heading h2 {
+        font-size: 33px;
+    }
+
+    .smart-score-heading p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .smart-score-info {
+        padding: 27px 20px;
+        border-radius: 18px;
+    }
+
+    .smart-score-info h3 {
+        font-size: 23px;
+    }
+
+    .smart-score-info > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .smart-score-scholarship {
+        padding: 35px 20px;
+        border-radius: 18px;
+    }
+
+    .scholarship-number strong {
+        font-size: 70px;
+    }
+
+    .scholarship-number span {
+        font-size: 30px;
+    }
+
+    .smart-score-features {
+        gap: 12px;
+    }
+
+    .smart-feature {
+        padding: 18px;
+    }
+
+    .smart-feature p {
+        font-size: 15px;
+    }
+}
+
+/* =========================================
+   OLIVE TREE CO-CURRICULAR
+   CLEAN WHITE + SOFT COLOR CARDS
+========================================= */
+
+.olive-co-section {
+    position: relative;
+
+    padding: 50px 20px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.olive-co-header {
+    max-width: 850px;
+
+    margin: 0 auto 60px;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+
+.olive-co-header > span {
+    color: #6b5134;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+
+.olive-co-header h2 {
+    margin: 16px 0;
+
+    color: #352719;
+
+    font-family: Georgia, serif;
+
+    line-height: 1.1;
+}
+
+
+.olive-co-header h2 strong {
+    color: #315b3a;
+}
+
+
+.olive-co-header p {
+    max-width: 780px;
+
+    margin: auto;
+
+    color: #151515;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SCROLL WRAPPER
+========================================= */
+
+.co-scroll-wrapper {
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 25px 0 50px;
+}
+
+
+
+/* =========================================
+   TRACK
+========================================= */
+
+.co-scroll-track {
+    display: flex;
+
+    width: max-content;
+
+    gap: 22px;
+
+    animation:
+        coInfiniteScroll 42s linear infinite;
+}
+
+
+.co-scroll-wrapper:hover .co-scroll-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.co-card {
+    position: relative;
+
+    width: 285px;
+
+    min-height: 275px;
+
+    flex-shrink: 0;
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(50,50,50,.08);
+
+    box-shadow:
+        0 12px 30px rgba(50,40,30,.08);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+
+.co-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 22px 45px rgba(50,40,30,.15);
+}
+
+
+/* =========================================
+   SOFT CARD COLORS
+========================================= */
+
+.co-yellow {
+    background: #fff8df;
+}
+
+.co-green {
+    background: #eaf4e8;
+}
+
+.co-blue {
+    background: #eaf3f8;
+}
+
+.co-peach {
+    background: #fff0e7;
+}
+
+.co-lavender {
+    background: #f1edfa;
+}
+
+.co-mint {
+    background: #e7f5ef;
+}
+
+.co-rose {
+    background: #fbecef;
+}
+
+.co-sand {
+    background: #f4eee4;
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.co-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+
+.co-top > span {
+    color: #8b7656;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.co-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #315b3a;
+
+    color: #fff;
+
+    font-size: 19px;
+
+    box-shadow:
+        0 7px 18px rgba(49,91,58,.18);
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.co-card h3 {
+    margin: 0 0 12px;
+
+    color: #352719;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    line-height: 1.25;
+}
+
+
+.co-card p {
+    margin: 0;
+
+    color: #151515;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BOTTOM BRAND
+========================================= */
+
+.co-bottom {
+    position: absolute;
+
+    left: 28px;
+    right: 28px;
+    bottom: 18px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid rgba(70,60,40,.12);
+
+    color: #7a6748;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   INFINITE ANIMATION
+========================================= */
+
+@keyframes coInfiniteScroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .olive-co-section {
+        padding: 70px 0;
+    }
+
+
+    .olive-co-header {
+        margin-bottom: 35px;
+    }
+
+
+    .olive-co-header h2 {
+        font-size: 38px;
+    }
+
+
+    .olive-co-header p {
+        font-size: 15px;
+    }
+
+
+    .co-scroll-wrapper {
+        padding: 15px 0 35px;
+    }
+
+
+    .co-scroll-track {
+        gap: 15px;
+
+        animation-duration: 32s;
+    }
+
+
+    .co-card {
+        width: 255px;
+
+        min-height: 255px;
+
+        padding: 25px;
+    }
+
+
+    .co-card h3 {
+        font-size: 20px;
+    }
+
+
+    .co-card p {
+        font-size: 14px;
+    }
+
+
+    .co-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 17px;
+    }
+
+
+    .co-scroll-wrapper::before,
+    .co-scroll-wrapper::after {
+        width: 45px;
+    }
+
+}
