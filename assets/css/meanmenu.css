@@ -70,10 +70,8 @@ a.meanmenu-reveal {
 .mean-container .mean-nav {
 	background: #1e2020  none repeat scroll 0 0;
 	float: left;
-	margin-top: 20px;
 	width: 100%;
     position: absolute;
-    box-shadow: 2.5px 4.33px 15px 0px rgb(0 0 0 / 15%);
 	z-index: 999;
 }
 
@@ -91,8 +89,9 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav ul li a {
-	border-top: 1px solid rgb(36 40 40);
-	color:#fff;
+	border-left: 3px solid darkred;
+	color:darkred;
+	background-color: burlywood;
 	display: block;
 	float: left;
 	margin: 0;
