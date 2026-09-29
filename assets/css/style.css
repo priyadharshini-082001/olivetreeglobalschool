@@ -1927,7 +1927,7 @@ body.dark-page .mouse-circle-mover-follow {
   }
   .cp-header-area .main-menu ul > li > a:hover,
   .cp-header-area .main-menu ul > li > a .active {
-    color: #1A9120;
+    color: darkred;
   }
   .cp-header-area .main-menu ul > li > a:hover:before,
   .cp-header-area .main-menu ul > li > a.active:before {
@@ -1956,8 +1956,7 @@ body.dark-page .mouse-circle-mover-follow {
 }
 @media screen and (min-width: 992px) {
   .cp-header-area .main-menu ul .sub-menu {
-    background-color: #fff;
-    box-shadow: 0px 2px 20px 0px rgba(62, 65, 159, 0.09);
+    background-color: burlywood;
     width: 230px;
     position: absolute;
     padding: 20px 0;
@@ -1992,7 +1991,7 @@ body.dark-page .mouse-circle-mover-follow {
   }
   .cp-header-area .main-menu ul > li .sub-menu a:hover,
   .cp-header-area .main-menu ul > li .sub-menu a .active {
-    color: #4AAB3D;
+    color: darkred;
   }
   .cp-header-area .main-menu ul > li > .sub-menu .sub-menu {
     left: 110%;
