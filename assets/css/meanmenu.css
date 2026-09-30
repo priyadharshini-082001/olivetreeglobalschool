@@ -91,7 +91,7 @@ a.meanmenu-reveal {
 .mean-container .mean-nav ul li a {
 	border-left: 3px solid darkred;
 	color:darkred;
-	background-color: burlywood;
+	background-color: rgb(255, 255, 255);
 	display: block;
 	float: left;
 	margin: 0;
@@ -105,11 +105,12 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav ul li li a {
-  opacity: 0.75;
   padding: 10px 10%;
   text-shadow: none;
   visibility: visible;
   width: 80%;
+  background-color:olivedrab;
+  color: white;
 }
 
 .mean-container .mean-nav ul li.mean-last a {
@@ -133,8 +134,7 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav ul li a:hover {
-	background: #252525;
-	background: rgba(255,255,255,0.1);
+	background: burlywood;
 }
 
 .mean-container .mean-nav ul li a.mean-expand {

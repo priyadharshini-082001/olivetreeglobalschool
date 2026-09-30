@@ -1059,13 +1059,13 @@
     }
 
     .otgs-about-leaf-heading h2 {
-        font-size: 34px;
+        font-size:30px;
     }
 
     .otgs-about-leaf-intro {
         padding: 15px 16px;
 
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.7;
     }
 
@@ -1154,16 +1154,16 @@
     }
 
     .otgs-about-leaf-heading h2 {
-        font-size: 29px;
+        font-size: 24px;
     }
 
     .otgs-about-leaf-intro {
-        font-size: 13.5px;
+        font-size: 15px;
         line-height: 1.65;
     }
 
     .otgs-about-leaf-text p {
-        font-size: 13.5px;
+        font-size: 15px;
         line-height: 1.65;
     }
 
@@ -1172,11 +1172,11 @@
     }
 
     .otgs-about-leaf-value strong {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .otgs-about-leaf-value small {
-        font-size: 11px;
+        font-size: 13px;
     }
 }
 
@@ -1210,7 +1210,7 @@
     }
 
     .otgs-about-leaf-heading h2 {
-        font-size: 26px;
+        font-size: 23px;
     }
 }
 /* =========================================================
@@ -1321,12 +1321,10 @@
 
     padding: 11px;
 
-    background: #f4f0e8;
+    background: #b17908;
 
     border: 1px solid #b79a78;
 
-    box-shadow:
-        0 18px 45px rgba(71, 57, 43, 0.12);
 }
 
 
@@ -1421,11 +1419,11 @@
 .otgs-legacy-tree-year small {
     margin-bottom: 5px;
 
-    font-size: 9px;
+    font-size: 10px;
 
     letter-spacing: 2px;
 
-    color: #e8eddf;
+    color: #ffffff;
 
     font-weight: 600;
 }
@@ -2079,7 +2077,7 @@
     }
 
     .otgs-growth-text strong {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .otgs-legacy-tree-facts {
@@ -2091,11 +2089,11 @@
     }
 
     .otgs-legacy-tree-facts strong {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .otgs-legacy-tree-facts span {
-        font-size: 7px;
+        font-size: 13px;
         letter-spacing: 0.7px;
     }
 }
@@ -2127,7 +2125,7 @@
     }
 
     .otgs-legacy-tree-year small {
-        font-size: 7px;
+        font-size: 10px;
         letter-spacing: 1.3px;
     }
 
@@ -2140,7 +2138,7 @@
     }
 
     .otgs-legacy-tree-title small {
-        font-size: 7px;
+        font-size: 15px;
         letter-spacing: 1px;
     }
 
@@ -2149,7 +2147,7 @@
     }
 
     .otgs-legacy-tree-content .legacy-tree-intro {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .otgs-legacy-tree-growth {
@@ -2290,7 +2288,7 @@
 
     grid-template-columns: 1.02fr 0.98fr;
 
-    gap: 65px;
+    gap: 55px;
 
     align-items: center;
 }
@@ -2686,12 +2684,10 @@
 
     padding: 25px;
 
-    background: rgba(255,255,255,0.94);
+    background:#f4fb99f0;
 
     border: 1px solid #c8b79e;
 
-    box-shadow:
-        0 14px 35px rgba(69, 57, 44, 0.10);
 }
 
 .otgs-philosophy-core::before {
@@ -2881,7 +2877,7 @@
     }
 
     .otgs-philosophy-container {
-        gap: 40px;
+        gap: 30px;
     }
 
     .otgs-philosophy-content h2 {
@@ -2928,7 +2924,7 @@
 
         flex-direction: column;
 
-        gap: 35px;
+        gap: 15px;
     }
 
     .otgs-philosophy-content {
@@ -2995,13 +2991,13 @@
     }
 
     .otgs-philosophy-label {
-        font-size: 10px;
+        font-size: 15px;
 
         letter-spacing: 2px;
     }
 
     .otgs-philosophy-line small {
-        font-size: 7px;
+        font-size: 13px;
 
         letter-spacing: 1px;
     }
@@ -3011,7 +3007,7 @@
     }
 
     .otgs-philosophy-content .otgs-philosophy-intro {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .otgs-philosophy-visual {
@@ -3512,7 +3508,7 @@
 .otgs-ribbon-vertical-label span {
     color: #ffffff;
 
-    font-size: 11px;
+    font-size: 8px;
     line-height: 1;
 
     writing-mode: vertical-rl;
@@ -4023,7 +4019,7 @@
     .otgs-ribbon-intro {
         margin: 18px 0;
 
-        font-size: 18px;
+        font-size: 15px;
         line-height: 1.7;
     }
 
@@ -4179,7 +4175,7 @@
     --chair-red: #7e3f32;
     --chair-brown: #806043;
     --chair-black: #000000;
-    --chair-line: #ddd8cf;
+    --chair-line: #636260;
     --chair-soft: #f4f1e9;
 }
 
@@ -4739,7 +4735,7 @@
 .otgs-chairman-editorial-text .chairman-greeting {
     margin-bottom: 14px;
 
-    color: var(--chair-green);
+    color:darkgreen;
 
     font-weight: 700;
 }
@@ -4913,7 +4909,7 @@
 @media (max-width: 767px) {
 
     .otgs-chairman-editorial {
-        padding: 50px 16px 45px;
+        padding: 50px 20px;
     }
 
     .otgs-chairman-editorial-heading {
@@ -4994,6 +4990,34 @@
 
         padding: 9px 12px;
     }
+    .otgs-chairman-editorial-signature span {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-editorial-signature strong {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-editorial-signature small {
+    font-size: 15px;
+
+}
+.otgs-chairman-portrait-name span {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-portrait-name strong {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-portrait-name small {
+    font-size: 15px;
+}
+
 }
 
 
@@ -5004,7 +5028,7 @@
 @media (max-width: 480px) {
 
     .otgs-chairman-editorial {
-        padding: 42px 13px 40px;
+        padding: 42px 10px;
     }
 
     .otgs-chairman-editorial-main {
@@ -5056,6 +5080,36 @@
     .otgs-chairman-editorial-values > div:last-child {
         border-bottom: none;
     }
+        .otgs-chairman-editorial-text p {
+    font-size: 15px;
+}
+.otgs-chairman-editorial-signature span {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-editorial-signature strong {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-editorial-signature small {
+    font-size: 15px;
+}
+.otgs-chairman-portrait-name span {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-portrait-name strong {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-portrait-name small {
+    font-size: 15px;
+}
+
 }
 
 
@@ -5092,6 +5146,26 @@
     .otgs-chairman-portrait-name {
         min-width: 155px;
     }
+    .otgs-chairman-editorial-text p {
+    margin: 0 0 14px;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+.otgs-chairman-portrait-name span {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-portrait-name strong {
+    font-size: 15px;
+}
+
+
+.otgs-chairman-portrait-name small {
+    font-size: 15px;
+}
 }
 /* =========================================================
    OLIVE TREE GLOBAL SCHOOL
