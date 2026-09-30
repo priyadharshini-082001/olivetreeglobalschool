@@ -4103,8 +4103,8 @@
     }
 
     .otgs-award-ribbon-text {
-        grid-template-columns: 95px 1fr;
-        gap: 8px;
+        grid-template-columns: 120px 1fr;
+        gap: 20px;
     }
 
     .otgs-ribbon-bottom-line {
