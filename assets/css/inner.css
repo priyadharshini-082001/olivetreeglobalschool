@@ -7025,3 +7025,7534 @@
     }
 
 }
+/* =========================
+   CURRICULUM SECTION
+========================= */
+
+.curriculum-section {
+    width: 100%;
+    padding:50px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.curriculum-container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   TOP HEADING
+========================= */
+
+.curriculum-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+.curriculum-number {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    border-radius: 50%;
+    background: #075c3c;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.curriculum-number span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.curriculum-number small {
+    font-size: 7px;
+    letter-spacing: 1px;
+}
+
+.small-title {
+    display: block;
+    margin-bottom: 7px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-weight: 700;
+
+    color: #8b1e2d;
+}
+
+.curriculum-heading h2 {
+    margin: 0;
+
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: #075c3c;
+}
+
+.curriculum-heading h2 b {
+    color: #8b1e2d;
+        font-weight: 700;
+
+}
+
+.curriculum-heading p {
+    margin: 8px 0 0;
+
+    font-size: 18px;
+    line-height: 1.5;
+
+    color: #000000;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.curriculum-main {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 55px;
+    align-items: stretch;
+}
+
+
+/* =========================
+   LEFT IMAGE AREA
+========================= */
+
+.curriculum-images {
+    position: relative;
+
+    width: 100%;
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-card {
+    position: absolute;
+
+    background:darkred;
+    padding: 8px;
+
+    transition: all 0.4s ease;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* FIRST IMAGE */
+
+.image-one {
+    width: 70%;
+    height: 330px;
+
+    top: 20px;
+    left: 0;
+
+    transform: rotate(-2deg);
+
+    z-index: 1;
+}
+
+
+/* SECOND IMAGE */
+
+.image-two {
+    width: 70%;
+    height: 330px;
+
+    right: 0;
+    bottom: 20px;
+
+    transform: rotate(2deg);
+
+    z-index: 2;
+}
+
+
+/* IMAGE HOVER */
+
+.image-card:hover {
+    transform: rotate(0deg) scale(1.02);
+    z-index: 5;
+}
+
+
+/* =========================
+   IMAGE LABEL
+========================= */
+
+.image-label {
+    position: absolute;
+
+    left: 0;
+    bottom: 30px;
+
+    z-index: 6;
+
+    background: #8b1e2d;
+    color: #ffffff;
+    font-weight: 700;
+
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-label span {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.image-label strong {
+    font-size: 14px;
+}
+
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.curriculum-content {
+    width: 100%;
+    min-width: 0;
+}
+
+.content-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-weight: 700;
+
+    color: #8b1e2d;
+}
+
+.curriculum-content h3 {
+    margin: 0 0 15px;
+
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #075c3c;
+}
+
+.intro-text {
+    width: 100%;
+
+    margin: 0 0 25px;
+
+    font-size: 18px;
+    line-height: 1.65;
+
+    color: #000000;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   SKILLS GRID
+========================= */
+
+.skills-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.skill-item {
+    width: 100%;
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 14px;
+
+    background: rgb(242, 255, 180);
+
+    border:1px solid darkgreen;
+
+    box-sizing: border-box;
+
+    
+}
+
+
+
+
+/* SKILL HEADING */
+
+.skill-item h4 {
+    margin: 0 0 4px;
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    color: darkgreen;
+}
+
+
+/* SKILL DESCRIPTION */
+
+.skill-item p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.45;
+
+    color:darkred;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    .curriculum-section {
+        padding: 55px 4%;
+    }
+
+    .curriculum-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .curriculum-images {
+        min-height: 520px;
+    }
+
+    .image-one,
+    .image-two {
+        width: 60%;
+        height: 290px;
+    }
+
+    .curriculum-content {
+        width: 100%;
+    }
+
+    .curriculum-content h3 {
+        font-size: 26px;
+    }
+
+    .intro-text {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .curriculum-section {
+        padding: 45px 18px;
+    }
+
+    .curriculum-heading {
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 35px;
+    }
+
+    .curriculum-number {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .curriculum-number span {
+        font-size: 12px;
+    }
+
+    .small-title {
+        font-size:12px;
+        letter-spacing: 1.5px;
+    }
+
+    .curriculum-heading h2 {
+        font-size: 24px;
+    }
+
+    .curriculum-heading p {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #000000;
+    }
+
+
+    /* IMAGE */
+
+    .curriculum-images {
+        min-height: 390px;
+    }
+
+    .image-one,
+    .image-two {
+        width: 72%;
+        height: 220px;
+    }
+
+    .image-one {
+        top: 5px;
+        left: 0;
+    }
+
+    .image-two {
+        right: 0;
+        bottom: 5px;
+    }
+
+    .image-label {
+        left: 0;
+        bottom: 20px;
+        padding: 9px 15px;
+    }
+
+    .image-label span {
+        font-size: 8px;
+    }
+
+    .image-label strong {
+        font-size: 11px;
+    }
+
+
+    /* CONTENT */
+
+    .content-label {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .curriculum-content h3 {
+        font-size: 23px;
+        line-height: 1.3;
+    }
+
+    .intro-text {
+        font-size: 15px;
+        line-height: 1.65;
+        color: #000000;
+    }
+
+
+    /* SKILLS */
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .skill-item {
+        min-height: 65px;
+        padding: 10px 12px;
+    }
+
+    .skill-number {
+        width: 27px;
+        height: 27px;
+        min-width: 27px;
+    }
+
+    .skill-item h4 {
+        font-size: 15px;
+    }
+
+    .skill-item p {
+        font-size: 13px;
+        color: #000000;
+    }
+}
+
+
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   PEDAGOGY - FRESH EDITORIAL DESIGN
+========================================================= */
+
+.ot-pedagogy-new {
+    width: 100%;
+    padding: 50px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.ot-ped-new-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ot-ped-new-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    margin-bottom: 65px;
+}
+
+.ot-ped-new-number {
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+
+    border-radius: 50%;
+
+    background: #075c3c;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ot-ped-new-number strong {
+    font-size: 17px;
+    line-height: 1;
+}
+
+.ot-ped-new-number small {
+    margin-top: 4px;
+
+    font-size: 7px;
+    letter-spacing: 1px;
+}
+
+.ot-ped-new-heading {
+    width: 100%;
+}
+
+.ot-ped-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #8b1e2d;
+}
+
+.ot-ped-new-heading h2 {
+    margin: 0;
+
+    font-size: 48px;
+    line-height: 1.05;
+    text-align: center;
+
+    color: #075c3c;
+}
+
+.ot-ped-new-heading h2 em {
+    display: block;
+
+    font-style: normal;
+    text-align: center;
+
+    color: #8b1e2d;
+}
+
+.ot-ped-new-heading p {
+    max-width: 720px;
+
+    margin: 15px 0 0;
+
+    font-size: 18px;
+    line-height: 1.55;
+    text-align: center;
+
+    color: #000000;
+}
+
+.ot-ped-short-line {
+    width: 55px;
+    height: 3px;
+    text-align: center;
+
+    margin-top: 20px;
+
+    background: #075c3c;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.ot-ped-new-main {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   PHILOSOPHY AREA
+========================================================= */
+
+.ot-ped-philosophy {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.ot-ped-photo-wrap {
+    position: relative;
+
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ot-ped-photo-shape {
+    position: relative;
+
+    width: 100%;
+    max-width: 350px;
+
+    height: 430px;
+
+    overflow: hidden;
+
+    border-radius: 45% 12% 45% 12%;
+
+    z-index: 2;
+}
+
+.ot-ped-photo-shape img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* DECORATIVE LEAVES */
+
+.ot-ped-photo-leaf {
+    position: absolute;
+
+    width: 130px;
+    height: 80px;
+
+    border-radius: 100% 0 100% 0;
+
+    background: #e7f0e5;
+
+    z-index: 1;
+}
+
+.leaf-a {
+    top: 10px;
+    left: -20px;
+
+    transform: rotate(-25deg);
+}
+
+.leaf-b {
+    right: -20px;
+    bottom: 25px;
+
+    transform: rotate(150deg);
+}
+
+
+/* PHOTO CAPTION */
+
+.ot-ped-photo-caption {
+    position: absolute;
+
+    left: -20px;
+    bottom: 30px;
+
+    z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 15px;
+
+    background: rgba(255,255,255,.92);
+
+    color: #075c3c;
+
+    font-size: 14px;
+    line-height: 1.1;
+
+    transform: rotate(-6deg);
+}
+
+.ot-ped-photo-caption strong {
+    font-size: 18px;
+}
+
+.ot-ped-photo-caption span:last-child {
+    color: #8b1e2d;
+}
+
+
+/* =========================================================
+   PHILOSOPHY TEXT
+========================================================= */
+
+.ot-ped-small-heading {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #8b1e2d;
+}
+
+.ot-ped-philosophy-text h3 {
+    margin: 0;
+
+    font-size: 42px;
+    line-height: 1.12;
+
+    color: #075c3c;
+}
+
+.ot-ped-philosophy-text h3 em {
+    font-style: normal;
+    color: #8b1e2d;
+}
+
+.ot-ped-red-line {
+    width: 45px;
+    height: 3px;
+
+    margin: 18px 0 22px;
+
+    background: #8b1e2d;
+}
+
+.ot-ped-philosophy-text p {
+    margin: 0 0 18px;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #000000;
+
+    text-align: justify;
+}
+
+.ot-ped-philosophy-text strong {
+    color: #075c3c;
+}
+
+
+/* =========================================================
+   LEARNING FLOW
+========================================================= */
+
+.ot-ped-learning-flow {
+    position: relative;
+
+    padding: 28px;
+    border: 1px solid darkgreen;
+
+    background: #f6faf7;
+
+    border-radius: 22px;
+
+}
+
+.ot-flow-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.ot-flow-heading span {
+    white-space: nowrap;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #8b1e2d;
+}
+
+.ot-flow-heading i {
+    width: 100%;
+    height: 1px;
+
+    background: #b9c8bf;
+}
+
+
+/* FLOW CARD */
+
+.ot-flow-card {
+    position: relative;
+
+    min-height: 88px;
+
+    margin-bottom: 12px;
+
+    padding: 13px 15px;
+
+    display: grid;
+    grid-template-columns: 55px 35px 1fr;
+
+    align-items: center;
+    border: 1px solid darkred;
+
+    gap: 10px;
+
+    border-radius: 45px;
+
+    background: #edf5ef;
+}
+
+.red-flow {
+    background: #fbf0f2;
+}
+
+.ot-flow-card:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ICON */
+
+.ot-flow-icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 25px;
+}
+
+.green-flow .ot-flow-icon {
+    background: #075c3c;
+}
+
+.red-flow .ot-flow-icon {
+    background: #a52236;
+}
+
+
+/* NUMBER */
+
+.ot-flow-number {
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #075c3c;
+}
+
+.red-flow .ot-flow-number {
+    color: #a52236;
+}
+
+
+/* CONTENT */
+
+.ot-flow-content h4 {
+    margin: 0 0 5px;
+
+    font-size: 21px;
+
+    color: #075c3c;
+}
+
+.red-flow .ot-flow-content h4 {
+    color: #a52236;
+}
+
+.ot-flow-content p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.4;
+
+    color: #000000;
+}
+
+
+/* =========================================================
+   RATIO AREA
+========================================================= */
+
+.ot-ped-ratio-area {
+    display: grid;
+
+    grid-template-columns: 1.15fr .8fr .8fr .9fr;
+
+    gap: 18px;
+
+    margin-top: 75px;
+
+    padding: 40px 0 0;
+
+    border-top: 1px solid #dfe5e1;
+}
+
+
+/* INTRO */
+
+.ot-ped-ratio-intro {
+    padding: 10px 15px 10px 0;
+}
+
+.ot-ped-ratio-intro > span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #8b1e2d;
+}
+
+.ot-ped-ratio-intro h3 {
+    margin: 10px 0 0;
+
+    font-size: 31px;
+    line-height: 1.15;
+
+    color: #075c3c;
+}
+
+.ot-ped-ratio-intro h3 em {
+    display: block;
+
+    font-style: normal;
+
+    color: #8b1e2d;
+}
+
+.ot-ped-ratio-intro p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.55;
+
+    color: #000000;
+}
+
+
+/* =========================================================
+   RATIO BOX
+========================================================= */
+
+.ot-ratio-box {
+    position: relative;
+
+    min-height: 245px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #cfdad4;
+
+    border-radius: 18px;
+
+    transition: .35s ease;
+}
+
+.ot-ratio-box:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .09);
+}
+
+.ratio-green {
+    border-color: #075c3c;
+}
+
+.ratio-red {
+    border-color: #a52236;
+}
+
+
+/* RATIO CIRCLE */
+
+.ot-ratio-circle {
+    width: 88px;
+    height: 88px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.ratio-green .ot-ratio-circle {
+    background: #075c3c;
+}
+
+.ratio-red .ot-ratio-circle {
+    background: #a52236;
+}
+
+.ot-ratio-circle span {
+    font-size: 18px;
+}
+
+
+/* LABEL */
+
+.ot-ratio-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #8b1e2d;
+}
+
+
+/* HEADING */
+
+.ot-ratio-box h4 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+
+    color: #075c3c;
+}
+
+
+/* TEXT */
+
+.ot-ratio-box p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.45;
+
+    color: #000000;
+}
+
+
+/* ICON */
+
+.ot-ratio-icon {
+    margin-top: 12px;
+
+    font-size: 23px;
+
+    color: #075c3c;
+}
+
+.ratio-red .ot-ratio-icon {
+    color: #a52236;
+}
+
+
+/* =========================================================
+   RATIO IMAGE
+========================================================= */
+
+.ot-ratio-image {
+    min-height: 245px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.ot-ratio-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.ot-ratio-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   BOTTOM MESSAGE
+========================================================= */
+
+.ot-ped-bottom {
+    max-width: 850px;
+
+    margin: 45px auto 0;
+
+    text-align: center;
+}
+
+.ot-bottom-decoration {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
+.ot-bottom-decoration span {
+    width: 35px;
+    height: 1px;
+
+    background: #075c3c;
+}
+
+.ot-bottom-decoration i {
+    width: 10px;
+    height: 10px;
+
+    background: #a52236;
+
+    transform: rotate(45deg);
+}
+
+.ot-ped-bottom p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: #000000;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .ot-ped-new-main {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .ot-ped-philosophy {
+        grid-template-columns: .8fr 1.2fr;
+    }
+
+    .ot-ped-ratio-area {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ot-ped-ratio-intro {
+        grid-column: 1 / -1;
+    }
+
+    .ot-ratio-image {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ot-pedagogy-new {
+        padding: 45px 18px;
+    }
+
+
+    /* HEADER */
+
+    .ot-ped-new-header {
+        gap: 12px;
+
+        margin-bottom: 40px;
+    }
+
+    .ot-ped-new-number {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .ot-ped-new-number strong {
+        font-size: 13px;
+    }
+
+    .ot-ped-new-number small {
+        font-size: 6px;
+    }
+
+    .ot-ped-label {
+        font-size: 13px;
+        letter-spacing: 1.3px;
+    }
+
+    .ot-ped-new-heading h2 {
+        font-size: 31px;
+    }
+
+    .ot-ped-new-heading p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+
+    /* MAIN */
+
+    .ot-ped-philosophy {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    /* PHOTO */
+
+    .ot-ped-photo-wrap {
+        min-height: 350px;
+    }
+
+    .ot-ped-photo-shape {
+        width: 78%;
+        height: 330px;
+    }
+
+    .ot-ped-photo-caption {
+        left: 2%;
+        bottom: 20px;
+    }
+
+
+    /* TEXT */
+
+    .ot-ped-small-heading {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .ot-ped-philosophy-text h3 {
+        font-size: 32px;
+    }
+
+    .ot-ped-philosophy-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* FLOW */
+
+    .ot-ped-learning-flow {
+        padding: 18px 12px;
+        border-radius: 16px;
+    }
+
+    .ot-flow-heading {
+        gap: 10px;
+    }
+
+    .ot-flow-heading span {
+        font-size:13px;
+        letter-spacing: 1.4px;
+    }
+
+    .ot-flow-card {
+        min-height: 75px;
+
+        grid-template-columns: 45px 28px 1fr;
+
+        padding: 10px;
+    }
+
+    .ot-flow-icon {
+        width: 43px;
+        height: 43px;
+
+        font-size: 19px;
+    }
+
+    .ot-flow-number {
+        font-size: 11px;
+    }
+
+    .ot-flow-content h4 {
+        font-size: 17px;
+    }
+
+    .ot-flow-content p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+
+    /* RATIO */
+
+    .ot-ped-ratio-area {
+        grid-template-columns: 1fr;
+
+        margin-top: 50px;
+
+        padding-top: 35px;
+    }
+
+    .ot-ped-ratio-intro {
+        grid-column: auto;
+    }
+
+    .ot-ped-ratio-intro h3 {
+        font-size: 27px;
+    }
+
+    .ot-ped-ratio-intro p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .ot-ratio-box {
+        min-height: 220px;
+
+        padding: 22px;
+    }
+
+    .ot-ratio-circle {
+        width: 78px;
+        height: 78px;
+
+        font-size: 24px;
+    }
+
+    .ot-ratio-box h4 {
+        font-size: 17px;
+    }
+
+    .ot-ratio-box p {
+        font-size: 15px;
+    }
+
+
+    /* FOOTER */
+
+    .ot-ped-bottom {
+        margin-top: 35px;
+    }
+
+    .ot-ped-bottom p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+}
+/* =========================================
+   GLOBE READY EDUCATION
+========================================= */
+
+.globe-ready-section {
+    position: relative;
+    width: 100%;
+    min-height: 1000px;
+    padding:50px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.globe-container {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    z-index: 2;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.globe-heading {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.globe-heading span {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #1769aa;
+}
+
+.globe-heading h2 {
+    margin: 0 0 18px;
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #102a43;
+}
+
+.globe-heading p {
+    margin: 8px auto;
+    max-width: 820px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+
+/* =========================================
+   GLOBE WHEEL
+========================================= */
+
+.globe-wheel {
+    position: relative;
+    width: 900px;
+    height: 850px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   DOTTED CIRCLE
+========================================= */
+
+.globe-circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 150px;
+    top: 105px;
+
+    border: 2px dashed #09427a;
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   CENTER GLOBE
+========================================= */
+
+.globe-center {
+    position: absolute;
+
+    width: 285px;
+    height: 285px;
+
+    left: 307px;
+    top: 262px;
+
+    border-radius: 50%;
+
+    background: rgb(215, 245, 169);
+    border: 12px solid  greenyellow;
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.globe-icon {
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.globe-center h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 800;
+    color: #12395b;
+}
+
+.globe-center span {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+
+/* =========================================
+   GLOBE ITEMS
+========================================= */
+
+.globe-item {
+    position: absolute;
+
+    width: 220px;
+    min-height: 145px;
+
+    padding: 22px 18px;
+
+    border-radius: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #edf2f7;
+
+    text-align: center;
+
+    /* NO HOVER ANIMATION */
+    transition: none;
+}
+
+.globe-item:hover {
+    transform: none;
+}
+
+
+.globe-item .number {
+    width: 42px;
+    height: 42px;
+
+    margin: -43px auto 12px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    border: 5px solid #ffffff;
+}
+
+
+.globe-item h4 {
+    margin: 0 0 8px;
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+.globe-item p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   CARD COLORS
+========================================= */
+
+.item-1 {
+    top: 0;
+    left: 340px;
+    border: 1px solid #1769aa;
+    background-color:#1769aa;
+   
+}
+
+.item-1 .number {
+    background: #1769aa;
+}
+
+
+.item-2 {
+    top: 110px;
+    right: 15px;
+        border: 1px solid #ef8b2c;
+    background-color:#ef8b2c;
+}
+
+.item-2 .number {
+    background: #ef8b2c;
+}
+
+
+.item-3 {
+    top: 330px;
+    right: 0;
+      border: 1px solid #e0b300;
+    background-color:#e0b300;
+}
+
+.item-3 .number {
+    background: #e0b300;
+}
+
+
+.item-4 {
+    bottom: 80px;
+    right: 80px;
+          border: 1px solid  #3b9b63;
+    background-color: #3b9b63;
+}
+
+.item-4 .number {
+    background: #3b9b63;
+}
+
+
+.item-5 {
+    bottom: 80px;
+    left: 80px;
+        border: 1px solid   #168b91;
+    background-color:  #168b91;
+}
+
+.item-5 .number {
+    background: #168b91;
+}
+
+
+.item-6 {
+    top: 330px;
+    left: 0;
+         border: 1px solid  #249bc7;
+    background-color:  #249bc7;
+}
+
+.item-6 .number {
+    background: #249bc7;
+}
+
+
+.item-7 {
+    top: 110px;
+    left: 15px;
+         border: 1px solid #7957b7;
+    background-color:  #7957b7;
+}
+
+.item-7 .number {
+    background: #7957b7;
+}
+
+
+/* =========================================
+   FOOTER TEXT
+========================================= */
+
+.globe-footer {
+    margin-top: -5px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #52708a;
+}
+
+
+/* =========================================
+   FALLING PETALS
+   ONLY ANIMATION
+========================================= */
+
+.falling-petals {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+.petal {
+    position: absolute;
+
+    top: -60px;
+
+    display: block;
+
+    font-size: 18px;
+
+    opacity: 0.65;
+
+    animation-name: petalFall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+/* Different positions */
+
+.p1 {
+    left: 5%;
+    animation-duration: 12s;
+    animation-delay: 0s;
+}
+
+.p2 {
+    left: 13%;
+    animation-duration: 15s;
+    animation-delay: 3s;
+}
+
+.p3 {
+    left: 22%;
+    animation-duration: 11s;
+    animation-delay: 5s;
+}
+
+.p4 {
+    left: 31%;
+    animation-duration: 16s;
+    animation-delay: 1s;
+}
+
+.p5 {
+    left: 42%;
+    animation-duration: 13s;
+    animation-delay: 6s;
+}
+
+.p6 {
+    left: 51%;
+    animation-duration: 17s;
+    animation-delay: 2s;
+}
+
+.p7 {
+    left: 60%;
+    animation-duration: 12s;
+    animation-delay: 7s;
+}
+
+.p8 {
+    left: 69%;
+    animation-duration: 15s;
+    animation-delay: 4s;
+}
+
+.p9 {
+    left: 77%;
+    animation-duration: 11s;
+    animation-delay: 8s;
+}
+
+.p10 {
+    left: 85%;
+    animation-duration: 16s;
+    animation-delay: 2s;
+}
+
+.p11 {
+    left: 92%;
+    animation-duration: 13s;
+    animation-delay: 5s;
+}
+
+.p12 {
+    left: 97%;
+    animation-duration: 18s;
+    animation-delay: 1s;
+}
+
+
+/* =========================================
+   PETAL FALL ANIMATION
+========================================= */
+
+@keyframes petalFall {
+
+    0% {
+        transform: translateY(-80px) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: translateY(500px) translateX(35px) rotate(180deg);
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(1100px) translateX(-35px) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .globe-wheel {
+        transform: scale(0.85);
+        transform-origin: top center;
+        margin-bottom: -100px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .globe-ready-section {
+        padding: 65px 15px 50px;
+    }
+
+    .globe-heading {
+        margin-bottom: 35px;
+    }
+
+    .globe-heading h2 {
+        font-size: 36px;
+    }
+
+    .globe-heading p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .globe-wheel {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        transform: none;
+
+        margin: 0;
+    }
+
+
+    /* Hide desktop circle */
+
+    .globe-circle {
+        display: none;
+    }
+
+
+    /* Center */
+
+    .globe-center {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 230px;
+        height: 230px;
+
+        margin-bottom: 60px;
+    }
+
+
+    .globe-icon {
+        font-size: 55px;
+    }
+
+
+    /* Cards */
+
+    .globe-item {
+        position: relative;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: min(100%, 340px);
+
+        margin: 30px 0 15px;
+
+        min-height: auto;
+
+        padding: 25px 20px;
+    }
+
+
+    .globe-item .number {
+        margin: -46px auto 15px;
+    }
+
+
+    .globe-item h4 {
+        font-size: 20px;
+    }
+
+
+    .globe-item p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    .globe-footer {
+        margin-top: 35px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .globe-heading h2 {
+        font-size: 30px;
+    }
+
+    .globe-heading span {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .globe-center {
+        width: 210px;
+        height: 210px;
+    }
+
+    .globe-item {
+        width: 100%;
+    }
+
+}
+/* =========================================
+   SMART SCORE SECTION
+========================================= */
+
+.smart-score-section {
+    position: relative;
+    width: 100%;
+    padding:50px 20px;
+    background: #f8fbff;
+    overflow: hidden;
+}
+
+
+.smart-score-container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   LEFT IMAGE
+========================================= */
+
+.smart-score-image {
+    position: relative;
+
+    width: 100%;
+    height: 520px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background: #eaf3fa;
+}
+
+
+.smart-score-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* IMAGE OVERLAY */
+
+.smart-score-image::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 35%;
+
+    background: linear-gradient(
+        to top,
+        rgba(12, 43, 72, 0.55),
+        transparent
+    );
+}
+
+
+/* IMAGE BADGE */
+
+.image-badge {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    padding: 14px 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.95);
+}
+
+
+.image-badge span {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #1769aa;
+}
+
+
+.image-badge strong {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 22px;
+
+    color: #142d4c;
+}
+
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+.smart-score-content {
+    position: relative;
+}
+
+
+.smart-score-label {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #1769aa;
+}
+
+
+.smart-score-content h2 {
+    margin: 0;
+
+    font-size: 52px;
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: #142d4c;
+}
+
+
+.smart-score-content h2 span {
+    color: #e59a22;
+}
+
+
+.smart-score-line {
+    width: 70px;
+    height: 4px;
+
+    margin: 20px 0 25px;
+
+    border-radius: 20px;
+
+    background: #e59a22;
+}
+
+
+.smart-score-intro {
+    margin: 0 0 28px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #000000;
+
+    text-align: justify;
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.smart-highlights {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.smart-highlight {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #0a3f6e;
+
+    border-radius: 17px;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.highlight-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #edf6ff;
+
+    font-size: 24px;
+
+    color: #1769aa;
+}
+
+
+/* Different icon colors */
+
+.smart-highlight:nth-child(1) .highlight-icon {
+    color: #1769aa;
+    background: #eaf4ff;
+}
+
+.smart-highlight:nth-child(2) .highlight-icon {
+    color: #e59a22;
+    background: #fff5df;
+}
+
+.smart-highlight:nth-child(3) .highlight-icon {
+    color: #319568;
+    background: #eaf8f1;
+}
+
+
+/* =========================================
+   HIGHLIGHT TEXT
+========================================= */
+
+.smart-highlight h4 {
+    margin: 0 0 4px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    color: #203b57;
+}
+
+
+.smart-highlight p {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    color: #000000;
+}
+
+
+/* =========================================
+   SCHOLARSHIP
+========================================= */
+
+.smart-scholarship {
+    max-width: 1150px;
+
+    margin: 60px auto 0;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background: #102f50;
+
+    border-radius: 25px;
+}
+
+
+/* =========================================
+   SCHOLARSHIP ICON
+========================================= */
+
+.scholarship-icon {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    color: #f4c15d;
+
+    font-size: 30px;
+}
+
+
+/* =========================================
+   SCHOLARSHIP CONTENT
+========================================= */
+
+.scholarship-content {
+    flex: 1;
+}
+
+
+.scholarship-content > span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #f4c15d;
+}
+
+
+.scholarship-content h3 {
+    margin: 0 0 7px;
+
+    font-size: 25px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+.scholarship-content h3 strong {
+    color: #f4c15d;
+}
+
+
+.scholarship-content p {
+    max-width: 760px;
+
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #feffff;
+}
+
+
+/* =========================================
+   SCHOLARSHIP BADGE
+========================================= */
+
+.scholarship-badge {
+    min-width: 180px;
+
+    padding: 15px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border: 1px solid rgba(244, 193, 93, 0.45);
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.07);
+}
+
+
+.scholarship-badge i {
+    font-size: 27px;
+
+    color: #f4c15d;
+}
+
+
+.scholarship-badge div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.scholarship-badge strong {
+    font-size: 20px;
+
+    color: #f4c15d;
+}
+
+
+.scholarship-badge span {
+    margin-top: 2px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #d7e3ed;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .smart-score-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .smart-score-image {
+        height: 430px;
+
+        max-width: 650px;
+
+        margin: auto;
+    }
+
+
+    .smart-score-content {
+        max-width: 700px;
+
+        margin: auto;
+    }
+
+
+    .smart-scholarship {
+        max-width: 700px;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .smart-score-section {
+        padding: 65px 15px;
+    }
+
+
+    .smart-score-image {
+        height: 350px;
+
+        border-radius: 23px;
+    }
+
+
+    .smart-score-content h2 {
+        font-size: 38px;
+    }
+
+
+    .smart-score-intro {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .smart-highlight {
+        padding: 14px;
+    }
+
+
+    .smart-highlight h4 {
+        font-size: 16px;
+    }
+
+
+    .smart-highlight p {
+        font-size: 14px;
+    }
+
+
+    .smart-scholarship {
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        padding: 30px 20px;
+
+        margin-top: 45px;
+    }
+
+
+    .scholarship-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .scholarship-content h3 {
+        font-size: 22px;
+    }
+
+
+    .scholarship-content p {
+        font-size: 15px;
+    }
+
+
+    .scholarship-badge {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   CREATIVE CO-CURRICULAR SECTION
+   CLEAN VERSION
+   - No font-family
+   - No box-shadow
+   - Paragraph: 18px desktop
+   - Paragraph: 15px mobile
+   - Paragraph color: black
+========================================= */
+
+.creative-activity-section {
+    position: relative;
+    overflow: hidden;
+    background: #f8ffdf;
+    padding: 50px 20px;
+    color: #172554;
+}
+
+.creative-activity-container {
+    width: min(1180px, 100%);
+    margin: auto;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.creative-activity-header {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.creative-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: darkgreen;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.creative-eyebrow span {
+    width: 35px;
+    height: 1px;
+    background: darkred;
+}
+
+.creative-activity-header h2 {
+    margin: 0;
+    font-size: clamp(38px, 5vw, 48px);
+    line-height: 1.05;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+
+.creative-activity-header h2 strong {
+    display: block;
+    color: darkred;
+    font-weight: 700;
+}
+
+.creative-activity-header p {
+    max-width: 700px;
+    margin: 5px auto 0;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   MAIN FLOW
+========================================= */
+
+.creative-flow {
+    position: relative;
+}
+
+.creative-line {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    bottom: 80px;
+    width: 1px;
+    background: #dbe5f5;
+    transform: translateX(-50%);
+}
+
+.line-dot {
+    position: absolute;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: darkred;
+    transform: translateX(-50%);
+}
+
+.dot-one {
+    top: 0;
+}
+
+.dot-two {
+    bottom: 0;
+}
+
+
+/* =========================================
+   FEATURE BLOCK
+========================================= */
+
+.creative-block {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 90px;
+    min-height: 570px;
+}
+
+.creative-block-two {
+    margin-top: 80px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.creative-image-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 490px;
+    margin: auto;
+}
+
+.creative-image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px 35px 35px 5px;
+}
+
+.creative-image-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        transparent 55%,
+        rgba(15, 23, 42, 0.35)
+    );
+}
+
+.creative-image-card img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform .8s ease;
+}
+
+.creative-image-card:hover img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================
+   NUMBER CIRCLE
+========================================= */
+
+.creative-number {
+    position: absolute;
+    top: -40px;
+    right: -35px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkred;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    z-index: 3;
+}
+
+.second-number {
+    background: #0f172a;
+    left: -40px;
+    right: auto;
+}
+
+
+/* =========================================
+   IMAGE LABEL
+========================================= */
+
+.creative-image-tag {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    z-index: 4;
+    padding: 12px 18px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, .95);
+    color: #172554;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.creative-image-tag i {
+    color:darkred;
+    margin-right: 7px;
+}
+
+.second-tag i {
+    color: #f59e0b;
+}
+
+
+/* =========================================
+   FLOATING CARDS
+========================================= */
+
+.creative-floating-card {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #ffffff;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #172554;
+    animation: floatCard 4s ease-in-out infinite;
+}
+
+.creative-floating-card i {
+    font-size: 19px;
+    color: #2563eb;
+}
+
+.floating-top {
+    top: 65px;
+    left: -55px;
+}
+
+.floating-bottom {
+    right: -45px;
+    bottom: 75px;
+    animation-delay: 1s;
+}
+
+.floating-bottom i {
+    color: #f97316;
+}
+
+@keyframes floatCard {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.creative-content {
+    position: relative;
+    z-index: 2;
+}
+
+.creative-small-title {
+    color:darkgreen;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.creative-content h3 {
+    max-width: 500px;
+    margin: 18px 0;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    color: #0f172a;
+}
+
+.creative-content h3 strong {
+    display: block;
+    color: darkgreen;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   ALL PARAGRAPHS
+========================================= */
+
+.creative-content > p {
+    max-width: 600px;
+    margin-bottom: 35px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.creative-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.creative-skill {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 15px;
+    border: 1px solid rgb(155, 183, 16);
+    border-radius: 15px;
+    background: rgb(234, 247, 169);
+    transition: .35s ease;
+}
+
+.creative-skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    min-width:63px;
+    height:63px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:25px;
+}
+
+.skill-icon.blue {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.skill-icon.orange {
+    background: #fff7ed;
+    color: #f97316;
+}
+
+.skill-icon.purple {
+    background: #f5f3ff;
+    color: #7c3aed;
+}
+
+.skill-icon.green {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.creative-skill strong {
+    display: block;
+    color: #172554;
+    font-size: 15px;
+}
+
+.creative-skill small {
+    display: block;
+    margin-top: 3px;
+    color: #000000;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   MIDDLE FLOW
+========================================= */
+
+.creative-middle {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.middle-line {
+    width: 80px;
+    height: 1px;
+    background: #dbe5f5;
+}
+
+.middle-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulseCircle 2.5s infinite;
+}
+
+@keyframes pulseCircle {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, .15);
+    }
+
+    50% {
+        box-shadow: 0 0 0 12px rgba(37, 99, 235, 0);
+    }
+}
+
+
+/* =========================================
+   GROWTH CARDS
+========================================= */
+
+.creative-growth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.growth-card {
+    position: relative;
+    padding: 12px;
+    border-radius: 18px;
+   background: rgb(234, 247, 169);
+   border: 1px solid rgb(155, 183, 16);
+    overflow: hidden;
+    transition: .35s ease;
+}
+
+.growth-card:hover {
+    transform: translateY(-6px);
+}
+
+.growth-number {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #cbd5e1;
+}
+
+.growth-icon {
+    width:45px;
+    height:45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    font-size: 25px;
+}
+
+.growth-icon.pink {
+    background: #fdf2f8;
+    color: #db2777;
+}
+
+.growth-icon.yellow {
+    background: #fefce8;
+    color: #ca8a04;
+}
+
+.growth-icon.red {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.growth-icon.teal {
+    background: #f0fdfa;
+    color: darkgreen;
+}
+
+.growth-card strong {
+    display: block;
+    color: #000000;
+    font-size: 15px;
+}
+
+.growth-card p {
+    margin: 5px 0 0;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SECOND IMAGE
+========================================= */
+
+.second-card {
+    border-radius: 35px 5px 35px 35px;
+    transform: rotate(2deg);
+}
+
+.second-wrap {
+    order: 2;
+}
+
+.second-wrap .creative-quote {
+    position: absolute;
+    right: -45px;
+    top: 70px;
+    z-index: 5;
+    padding: 20px;
+    background: #0f172a;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.creative-quote i {
+    display: block;
+    margin-bottom: 10px;
+    color: darkgreen;
+}
+
+
+/* =========================================
+   MUSIC SECTION
+========================================= */
+
+.creative-music {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 100px;
+    padding: 35px 45px;
+    overflow: hidden;
+    border-radius: 25px;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+.music-symbol {
+    min-width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkgreen;
+    font-size: 24px;
+}
+
+.music-text {
+    position: relative;
+    z-index: 2;
+}
+
+.music-text span {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.music-text h3 {
+    margin: 6px 0;
+    font-size: 27px;
+}
+
+.music-text p {
+    max-width: 700px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.music-notes {
+    position: absolute;
+    right: 50px;
+    top: -15px;
+    font-size: 110px;
+    color: rgb(255, 255, 255);
+}
+
+.music-wave {
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.music-wave span {
+    display: block;
+    width: 3px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    animation: musicWave 1.2s ease-in-out infinite;
+}
+
+.music-wave span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.music-wave span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.music-wave span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.music-wave span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+.music-wave span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+.music-wave span:nth-child(7) {
+    animation-delay: .6s;
+}
+
+@keyframes musicWave {
+
+    0%,
+    100% {
+        height: 10px;
+    }
+
+    50% {
+        height: 35px;
+    }
+}
+
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.creative-hidden {
+    opacity: 0;
+    transform: translateY(45px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.creative-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.creative-skill.creative-hidden,
+.growth-card.creative-hidden {
+    transform: translateY(25px);
+}
+
+.creative-skill.creative-visible,
+.growth-card.creative-visible {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .creative-activity-section {
+        padding: 80px 20px;
+    }
+
+    .creative-line {
+        display: none;
+    }
+
+    .creative-block {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .creative-block-two {
+        margin-top: 80px;
+    }
+
+    .creative-image-wrap {
+        max-width: 600px;
+    }
+
+    .creative-content {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .second-wrap {
+        order: initial;
+    }
+
+    .creative-middle {
+        margin: 60px 0;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .creative-activity-section {
+        padding: 65px 15px;
+    }
+
+    .creative-activity-header {
+        margin-bottom: 25px;
+    }
+
+    .creative-eyebrow {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .creative-activity-header h2 {
+        font-size: 38px;
+    }
+
+    /* MOBILE PARAGRAPH */
+
+    .creative-activity-header p,
+    .creative-content > p,
+    .music-text p {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #000000;
+    }
+
+    .creative-image-card img {
+        height: 360px;
+    }
+
+    .creative-number {
+        width: 75px;
+        height: 75px;
+        right: -10px;
+        top: -25px;
+        font-size: 22px;
+    }
+
+    .second-number {
+        left: -10px;
+    }
+
+    .floating-top {
+        left: -5px;
+        top: 35px;
+    }
+
+    .floating-bottom {
+        right: -5px;
+        bottom: 35px;
+    }
+
+    .creative-floating-card {
+        padding: 10px 12px;
+        font-size: 10px;
+    }
+
+    .creative-content h3 {
+        font-size: 34px;
+    }
+
+    .creative-skills,
+    .creative-growth {
+        grid-template-columns: 1fr;
+    }
+
+    .second-wrap .creative-quote {
+        right: -5px;
+        top: 35px;
+    }
+
+    .creative-music {
+        margin-top: 70px;
+        padding: 25px;
+        align-items: flex-start;
+    }
+
+    .music-symbol {
+        min-width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .music-text h3 {
+        font-size: 22px;
+    }
+
+    .music-text p {
+        font-size: 15px;
+    }
+
+    .music-notes,
+    .music-wave {
+        display: none;
+    }
+
+}
+
+/* =========================================================
+   GRAND EXTRA-CURRICULAR ACTIVITIES
+   NO ANIMATION • NO SHADOW
+========================================================= */
+
+.grand-eca-section {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 20px;
+    background: var(--brown-light);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.grand-eca-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.grand-eca-heading {
+    max-width: 780px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.grand-eca-kicker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    margin-bottom: 18px;
+
+    color: darkred;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.grand-eca-kicker span {
+    width: 52px;
+    height: 1px;
+    background:darkred;
+}
+
+.grand-eca-heading h2 {
+    margin: 0;
+
+    color: #173f2a;
+
+    font-size: 46px;
+    line-height: 1.15;
+    font-weight: 750;
+    letter-spacing: -0.7px;
+}
+
+.grand-eca-heading h2 em {
+    color: darkred;
+    font-style: normal;
+}
+
+.grand-eca-heading p {
+    max-width: 710px;
+    margin: 20px auto 0;
+
+    color: #000000;
+
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   ACTIVITY ROW
+========================================================= */
+
+.grand-eca-row {
+    display: grid;
+    grid-template-columns: 56% 44%;
+    align-items: center;
+
+    min-height: 410px;
+    margin-bottom: 80px;
+}
+
+.grand-eca-row:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   REVERSE ROW
+========================================================= */
+
+.grand-eca-row-reverse {
+    grid-template-columns: 44% 56%;
+}
+
+.grand-eca-row-reverse .grand-eca-photo {
+    order: 2;
+}
+
+.grand-eca-row-reverse .grand-eca-text {
+    order: 1;
+
+    padding-left: 0;
+    padding-right: 75px;
+}
+
+
+/* =========================================================
+   ACTIVITY IMAGE
+========================================================= */
+
+.grand-eca-photo {
+    position: relative;
+
+    width: 100%;
+    height: 410px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 5px solid darkred;
+
+    border-radius: 4px 70px 4px 70px;
+}
+
+.grand-eca-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.grand-eca-row:hover .grand-eca-photo img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   IMAGE INNER BORDER
+========================================================= */
+
+.grand-eca-photo::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    border-radius: 0 55px 0 55px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGE LABEL
+========================================================= */
+
+.grand-eca-photo-label {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 9px 16px 9px 9px;
+
+    background: #ffffff;
+
+    color: #173f2a;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    z-index: 3;
+}
+
+.grand-eca-photo-label span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 31px;
+    height: 31px;
+
+    background: darkred;
+
+    color: #ffffff;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TEXT AREA
+========================================================= */
+
+.grand-eca-text {
+    padding-left: 75px;
+}
+
+.grand-eca-small-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #c5aa70;
+    border-radius: 50%;
+
+    background: #f8f6ed;
+
+    color: #a87927;
+
+    font-size: 20px;
+}
+
+.grand-eca-category {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: darkred;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.grand-eca-text h3 {
+    margin: 0 0 16px;
+
+    color: #173f2a;
+
+    font-size: 32px;
+    line-height: 1.2;
+
+    font-weight: 750;
+}
+
+.grand-eca-text p {
+    max-width: 480px;
+
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.grand-eca-text a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 24px;
+
+    color: #8b6728;
+
+    font-size: 12px;
+    font-weight: 750;
+
+    text-decoration: none;
+
+    transition: gap 0.25s ease;
+}
+
+.grand-eca-text a:hover {
+    gap: 15px;
+}
+
+.grand-eca-text a i {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .grand-eca-section {
+        padding: 80px 20px 90px;
+    }
+
+    .grand-eca-heading {
+        margin-bottom: 60px;
+    }
+
+    .grand-eca-heading h2 {
+        font-size: 39px;
+    }
+
+    .grand-eca-row,
+    .grand-eca-row-reverse {
+        grid-template-columns: 1fr;
+        gap: 35px;
+
+        min-height: auto;
+        margin-bottom: 70px;
+    }
+
+    .grand-eca-row-reverse .grand-eca-photo {
+        order: 1;
+    }
+
+    .grand-eca-row-reverse .grand-eca-text {
+        order: 2;
+        padding: 0 20px;
+    }
+
+    .grand-eca-text {
+        padding: 0 20px;
+    }
+
+    .grand-eca-photo {
+        height: 360px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .grand-eca-section {
+        padding: 65px 15px 75px;
+    }
+
+    .grand-eca-heading {
+        margin-bottom: 50px;
+    }
+
+    .grand-eca-kicker {
+        gap: 8px;
+
+        font-size: 15px;
+        letter-spacing: 1.5px;
+    }
+
+    .grand-eca-kicker span {
+        width: 30px;
+    }
+
+    .grand-eca-heading h2 {
+        font-size: 30px;
+    }
+
+    .grand-eca-heading p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .grand-eca-row,
+    .grand-eca-row-reverse {
+        gap: 27px;
+        margin-bottom: 55px;
+    }
+
+    .grand-eca-photo {
+        height: 260px;
+
+        border-width: 5px;
+
+        border-radius: 3px 40px 3px 40px;
+    }
+
+    .grand-eca-photo::after {
+        inset: 9px;
+
+        border-radius: 0 30px 0 30px;
+    }
+
+    .grand-eca-photo-label {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .grand-eca-text,
+    .grand-eca-row-reverse .grand-eca-text {
+        padding: 0 5px;
+    }
+
+    .grand-eca-small-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 17px;
+    }
+
+    .grand-eca-category {
+        font-size:15px;
+        letter-spacing: 1.3px;
+    }
+
+    .grand-eca-text h3 {
+        font-size: 25px;
+    }
+
+    .grand-eca-text p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+
+/* =========================================================
+   SCHOOL RULES & REGULATIONS
+   COLORFUL • MEDIUM FONT • MODERN SCHOOL STYLE
+========================================================= */
+
+.school-rules-section {
+    width: 100%;
+    padding: 50px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.school-rules-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.school-rules-header {
+    max-width: 780px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.school-rules-header span {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    color: #668044;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.school-rules-header h2 {
+    margin: 0 0 12px;
+
+    color: #75482d;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.school-rules-header p {
+    max-width: 700px;
+    margin: auto;
+
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   RULE BOX
+========================================================= */
+
+.school-rule-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 215px;
+
+    margin-bottom: 16px;
+    padding: 14px;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(100, 70, 45, .08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.school-rule-box:hover {
+    transform: translateY(-4px);
+
+}
+
+
+/* =========================================================
+   PHOTOS
+========================================================= */
+
+.school-rule-photo {
+    position: relative;
+
+    width: 31%;
+    height: 300px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 11px;
+
+    border: 3px solid rgba(255, 255, 255, .95);
+
+}
+
+.school-rule-photo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .5s ease;
+}
+
+.school-rule-box:hover .school-rule-photo img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.school-rule-content {
+    flex: 1;
+
+    padding: 10px 25px;
+}
+
+.reverse-rule .school-rule-content {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+.school-rule-content h3 {
+    margin: 0 0 9px;
+
+    color: #70462d;
+
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+
+/* Different heading colors */
+
+.rule-brown .school-rule-content h3 {
+    color: darkred;
+}
+
+.rule-cream .school-rule-content h3 {
+    color: darkblue;
+}
+
+.rule-green .school-rule-content h3 {
+    color: darkgreen;
+}
+
+.rule-sand .school-rule-content h3 {
+    color: darkorange;
+}
+
+.rule-olive .school-rule-content h3 {
+    color: darkolivegreen;
+}
+
+.rule-light .school-rule-content h3 {
+    color:darkred;
+}
+
+.rule-green-light .school-rule-content h3 {
+    color:darkgreen;
+}
+
+.rule-brown-light .school-rule-content h3 {
+    color: #925b3d;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.school-rule-content p {
+    margin: 0 0 9px;
+
+    color: #000000;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   RULE LIST
+========================================================= */
+
+.school-rule-content ul {
+    margin: 7px 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.school-rule-content li {
+    position: relative;
+
+    margin: 4px 0;
+    padding-left: 19px;
+
+    color: #000000;
+
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.school-rule-content li::before {
+    content: "➜";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   COLORFUL BULLET COLORS
+========================================================= */
+
+.rule-brown .school-rule-content li::before {
+    color: #c15b3b;
+}
+
+.rule-cream .school-rule-content li::before {
+    color: #b58b26;
+}
+
+.rule-green .school-rule-content li::before {
+    color: #5e874b;
+}
+
+.rule-sand .school-rule-content li::before {
+    color: #a57a32;
+}
+
+.rule-olive .school-rule-content li::before {
+    color: #71864a;
+}
+
+.rule-light .school-rule-content li::before {
+    color: #9b6040;
+}
+
+.rule-green-light .school-rule-content li::before {
+    color: #5f8550;
+}
+
+.rule-brown-light .school-rule-content li::before {
+    color: #925b3d;
+}
+
+
+/* =========================================================
+   ALTERNATING LAYOUT
+========================================================= */
+
+.reverse-rule {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   COLORFUL BACKGROUNDS
+========================================================= */
+
+.rule-brown {
+    background: #f5dcd5;
+    border: 1px solid red;
+}
+
+.rule-cream {
+    background: #e0e7f7;
+    border: 1px solid blue;
+}
+
+.rule-green {
+    background: #dff0d4;
+    border: 1px solid green;
+}
+
+.rule-sand {
+    background: #f5edc8;
+    border: 1px solid orange;
+}
+
+.rule-olive {
+    background: #e7edd6;
+    border: 1px solid olive;
+}
+
+.rule-light {
+    background: #f0e4dc;
+    border: 1px solid grey;
+}
+
+.rule-green-light {
+    background: #dcefd9;
+    border: 1px solid lightgreen;
+}
+
+.rule-brown-light {
+    background: #eadbd0;
+    border: 1px solid brown;
+}
+
+
+/* =========================================================
+   LEFT / RIGHT COLOR ACCENTS
+========================================================= */
+
+.rule-brown::before,
+.rule-sand::before,
+.rule-light::before,
+.rule-brown-light::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 25%;
+
+    width: 5px;
+    height: 50%;
+
+    background: #b65a3d;
+
+    border-radius: 0 5px 5px 0;
+}
+
+.rule-cream::before {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 25%;
+
+    width: 5px;
+    height: 50%;
+
+    background: #667db2;
+
+    border-radius: 5px 0 0 5px;
+}
+
+.rule-green::before,
+.rule-olive::before,
+.rule-green-light::before {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 25%;
+
+    width: 5px;
+    height: 50%;
+
+    background: #62834e;
+
+    border-radius: 5px 0 0 5px;
+}
+
+
+/* =========================================================
+   IMAGE NUMBER EFFECT
+========================================================= */
+
+.school-rule-photo::after {
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+    bottom: 10px;
+
+    width: 30px;
+    height: 4px;
+
+    background: rgba(255,255,255,.8);
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   FOOTER MESSAGE
+========================================================= */
+
+.school-rules-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+
+    margin-top: 22px;
+    padding: 21px 25px;
+
+    background: #704b34;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 24px rgba(91, 63, 42, .15);
+}
+
+.footer-leaf {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #718b58;
+
+    color: #fff;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+.school-rules-footer h3 {
+    margin: 0 0 5px;
+
+    color: #fff9ef;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.school-rules-footer p {
+    margin: 0;
+
+    color: rgba(255,255,255,.84);
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .school-rules-section {
+        padding: 55px 15px;
+    }
+
+    .school-rule-box {
+        min-height: 200px;
+    }
+
+    .school-rule-photo {
+        width: 34%;
+        height: 165px;
+    }
+
+    .school-rule-content {
+        padding: 10px 18px;
+    }
+
+    .school-rule-content h3 {
+        font-size: 18px;
+    }
+
+    .school-rule-content p {
+        font-size: 15px;
+    }
+
+    .school-rule-content li {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .school-rules-section {
+        padding: 42px 12px;
+    }
+
+    .school-rules-header {
+        margin-bottom: 28px;
+    }
+
+    .school-rules-header span {
+        font-size: 11px;
+    }
+
+    .school-rules-header h2 {
+        font-size: 28px;
+    }
+
+    .school-rules-header p {
+        font-size: 13px;
+    }
+
+
+    .school-rule-box,
+    .school-rule-box.reverse-rule {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        min-height: auto;
+
+        padding: 9px;
+
+        border-radius: 13px;
+    }
+
+
+    .school-rule-photo {
+        width: 100%;
+        height: 190px;
+
+        border-radius: 9px;
+    }
+
+
+    .school-rule-content,
+    .reverse-rule .school-rule-content {
+        padding: 17px 9px 12px;
+    }
+
+
+    .school-rule-content h3 {
+        font-size: 19px;
+    }
+
+    .school-rule-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .school-rule-content li {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+
+    .school-rules-footer {
+        padding: 18px;
+
+        align-items: flex-start;
+    }
+
+    .footer-leaf {
+        width: 43px;
+        height: 43px;
+
+        font-size: 17px;
+    }
+
+    .school-rules-footer h3 {
+        font-size: 15px;
+    }
+
+    .school-rules-footer p {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   PARENTS' GUIDELINES
+   Brown + Green School Theme
+========================================================= */
+
+.parents-guidelines {
+    width: 100%;
+    padding: 50px 20px;
+    background:blanchedalmond;
+    position: relative;
+    overflow: hidden;
+}
+
+.parents-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.parents-heading {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 55px;
+}
+
+.parents-small-title {
+    display: inline-block;
+    color: darkred;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.parents-heading h2 {
+    margin: 0;
+    color:darkgreen;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.parents-heading h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    margin: 16px auto 18px;
+    border-radius: 10px;
+    background: #789653;
+}
+
+.parents-heading p {
+    margin: 0;
+    color: black;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.guideline-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 27px 25px 25px 30px;
+    background: #ffffff;
+    border: 1px solid #e4ded3;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(76, 55, 35, 0.07);
+    overflow: hidden;
+    transition: 0.35s ease;
+}
+
+.guideline-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #789653;
+    transition: 0.35s ease;
+}
+
+.guideline-card:nth-child(even)::before {
+    background: #9a6843;
+}
+
+.guideline-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(76, 55, 35, 0.13);
+    border-color: #c9d4b9;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.guideline-number {
+    position: absolute;
+    right: 18px;
+    top: 13px;
+    font-size: 38px;
+    font-weight: 800;
+    color: rgba(89, 59, 39, 0.06);
+    line-height: 1;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.guideline-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf3e6;
+    border-radius: 15px;
+    font-size: 25px;
+    border: 1px solid #d8e4ca;
+}
+
+.guideline-card:nth-child(even) .guideline-icon {
+    background: #f4ebe2;
+    border-color: #ead8c7;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.guideline-content {
+    padding-right: 30px;
+}
+
+.guideline-content h3 {
+    margin: 2px 0 10px;
+    color: #593b27;
+    font-size: 19px;
+    font-weight: 750;
+}
+
+.guideline-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.guideline-content li {
+    position: relative;
+    padding-left: 17px;
+    margin-bottom: 7px;
+    color:black;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.guideline-content li:last-child {
+    margin-bottom: 0;
+}
+
+.guideline-content li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #789653;
+}
+
+.guideline-card:nth-child(even) .guideline-content li::before {
+    background: #9a6843;
+}
+
+/* =========================================================
+   BOTTOM MESSAGE
+========================================================= */
+
+.parents-message {
+    margin-top: 45px;
+    padding: 28px 35px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: #edf3e7;
+    border: 1px solid #d5e0c8;
+    border-radius: 20px;
+    position: relative;
+}
+
+.message-leaf {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #789653;
+    border-radius: 50%;
+    font-size: 26px;
+}
+
+.parents-message h3 {
+    margin: 0 0 6px;
+    color: #4f7135;
+    font-size: 21px;
+}
+
+.parents-message p {
+    margin: 0;
+    color: #625e58;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .parents-guidelines {
+        padding: 65px 18px;
+    }
+
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .parents-heading h2 {
+        font-size: 36px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .parents-guidelines {
+        padding: 50px 14px;
+    }
+
+    .parents-heading {
+        margin-bottom: 35px;
+    }
+
+    .parents-small-title {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .parents-heading h2 {
+        font-size: 30px;
+    }
+
+    .parents-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .guideline-card {
+        padding: 22px 18px 22px 22px;
+        gap: 13px;
+        border-radius: 15px;
+    }
+
+    .guideline-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        font-size: 21px;
+        border-radius: 12px;
+    }
+
+    .guideline-content {
+        padding-right: 10px;
+    }
+
+    .guideline-content h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .guideline-content li {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .guideline-number {
+        font-size: 30px;
+        right: 12px;
+    }
+
+    .parents-message {
+        margin-top: 30px;
+        padding: 22px;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .message-leaf {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 22px;
+    }
+
+    .parents-message h3 {
+        font-size: 18px;
+    }
+
+    .parents-message p {
+        font-size: 13px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .guideline-card {
+        display: block;
+    }
+
+    .guideline-icon {
+        margin-bottom: 14px;
+    }
+
+    .guideline-content {
+        padding-right: 0;
+    }
+
+    .guideline-number {
+        top: 15px;
+    }
+}
+
+/* =========================================================
+   SCHOOL HOUSE SYSTEM
+   CLEAN WHITE PREMIUM DESIGN
+   Desktop paragraph : 18px
+   Mobile paragraph  : 15px
+========================================================= */
+
+.house-system {
+    width: 100%;
+    padding: 50px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.house-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 48% 52%;
+    align-items: center;
+
+    gap:50px;
+}
+
+
+/* =========================================================
+   LEFT IMAGE GALLERY
+========================================================= */
+
+.house-gallery {
+    position: relative;
+    width: 100%;
+    height: 570px;
+
+    animation: galleryReveal 1s ease both;
+}
+
+
+/* Main Image */
+
+.house-image {
+    position: absolute;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 7px solid #ffffff;
+    border-radius: 22px;
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+
+    cursor: pointer;
+}
+
+.house-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.5s ease;
+}
+
+
+/* =========================================================
+   LARGE MAIN IMAGE
+========================================================= */
+
+.house-image-one {
+    width: 69%;
+    height: 400px;
+
+    left: 2%;
+    top: 75px;
+
+    z-index: 2;
+
+    transform: rotate(-2deg);
+
+    animation: imageOne 1s ease 0.15s both;
+}
+
+
+/* =========================================================
+   TOP RIGHT IMAGE
+========================================================= */
+
+.house-image-two {
+    width: 47%;
+    height: 245px;
+
+    right: 1%;
+    top: 5px;
+
+    z-index: 3;
+
+    transform: rotate(4deg);
+
+    animation: imageTwo 1s ease 0.35s both;
+}
+
+
+/* =========================================================
+   BOTTOM RIGHT IMAGE
+========================================================= */
+
+.house-image-three {
+    width: 47%;
+    height: 250px;
+
+    right: 0;
+    bottom: 15px;
+
+    z-index: 4;
+
+    transform: rotate(-4deg);
+
+    animation: imageThree 1s ease 0.5s both;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.house-image:hover {
+    transform:
+        translateY(-8px)
+        rotate(0deg)
+        scale(1.025);
+
+    z-index: 20;
+
+}
+
+.house-image:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   IMAGE LABEL
+========================================================= */
+
+.image-label {
+    position: absolute;
+
+    left: 18px;
+    bottom: 18px;
+
+    padding: 8px 16px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    color: #593b27;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.6px;
+
+
+    transition: 0.3s ease;
+}
+
+.house-image:hover .image-label {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   DECORATIVE CIRCLE
+========================================================= */
+
+.house-gallery-circle {
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    left: -45px;
+    bottom: 20px;
+
+    border-radius: 50%;
+
+    border: 22px solid rgba(120, 150, 83, 0.13);
+
+    z-index: 1;
+
+    animation:
+        circleRotate 14s linear infinite;
+}
+
+
+/* =========================================================
+   HOUSE BADGE
+========================================================= */
+
+.house-badge {
+    position: absolute;
+
+    left: -22px;
+    top: 25px;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #789653;
+    color: #ffffff;
+
+    border: 6px solid #ffffff;
+
+    z-index: 8;
+
+    animation: badgeFloat 3.5s ease-in-out infinite;
+}
+
+.house-badge strong {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.house-badge span {
+    margin-top: 3px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.house-content {
+    width: 100%;
+
+    animation:
+        contentReveal 1s ease 0.25s both;
+}
+
+.house-subtitle {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: darkgreen;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.house-content h2 {
+    margin: 0;
+
+    color: #593b27;
+
+    font-size: 45px;
+    line-height: 1.2;
+
+    font-weight: 800;
+}
+
+.house-content h2 span {
+    color: darkgreen;
+}
+
+
+/* =========================================================
+   TITLE LINE
+========================================================= */
+
+.house-line {
+    position: relative;
+
+    width: 75px;
+    height: 4px;
+
+    margin: 18px 0 25px;
+
+    background: #789653;
+
+    border-radius: 20px;
+}
+
+.house-line::after {
+    content: "";
+
+    position: absolute;
+
+    left: 30px;
+    top: 0;
+
+    width: 42px;
+    height: 4px;
+
+    border-radius: 20px;
+
+    background: #9a6843;
+}
+
+
+/* =========================================================
+   INTRO PARAGRAPH
+   DESKTOP = 18px
+========================================================= */
+
+.house-intro {
+    max-width: 650px;
+
+    margin: 0 0 32px;
+
+    color: #000000;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   HOUSE POINTS
+========================================================= */
+
+.house-points {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 28px;
+}
+
+.house-point {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+
+    animation: pointReveal 0.7s ease both;
+}
+
+.house-point:nth-child(1) {
+    animation-delay: 0.35s;
+}
+
+.house-point:nth-child(2) {
+    animation-delay: 0.45s;
+}
+
+.house-point:nth-child(3) {
+    animation-delay: 0.55s;
+}
+
+.house-point:nth-child(4) {
+    animation-delay: 0.65s;
+}
+
+.house-point{
+    transform: translateY(-6px);
+
+    border-color: #789653;
+}
+
+
+/* =========================================================
+   POINT NUMBER
+========================================================= */
+
+.point-icon {
+    width: 38px;
+    height: 38px;
+
+    min-width: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #edf3e6;
+
+    color: #668744;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.house-point:nth-child(even) .point-icon {
+    background: #f4ebe2;
+    color: #9a6843;
+}
+
+
+/* =========================================================
+   POINT CONTENT
+========================================================= */
+
+.house-point h3 {
+    margin: 0 0 5px;
+
+    color: #593b27;
+
+    font-size: 17px;
+    line-height: 1.35;
+
+    font-weight: 750;
+}
+
+.house-point p {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   HOUSE NAME CARDS
+========================================================= */
+
+.house-names {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.house-name-card {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    min-height: 58px;
+
+    padding:5px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e4e4;
+
+    border-radius: 11px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.house-name-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   HOUSE DOT
+========================================================= */
+
+.house-dot {
+    width: 12px;
+    height: 12px;
+
+    min-width: 12px;
+
+    border-radius: 50%;
+}
+
+.house-green .house-dot {
+    background: #789653;
+}
+
+.house-brown .house-dot {
+    background: #9a6843;
+}
+
+.house-gold .house-dot {
+    background: #c49a45;
+}
+
+.house-blue .house-dot {
+    background: #527c9b;
+}
+
+
+/* =========================================================
+   HOUSE NAME TEXT
+========================================================= */
+
+.house-name-card strong {
+    display: block;
+
+    color: #593b27;
+
+    font-size: 15px;
+    font-weight: 750;
+}
+
+.house-name-card small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #000000;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes galleryReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes contentReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes imageOne {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateX(-45px)
+            rotate(-9deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-2deg);
+    }
+
+}
+
+
+@keyframes imageTwo {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateY(-45px)
+            rotate(12deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(4deg);
+    }
+
+}
+
+
+@keyframes imageThree {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateY(45px)
+            rotate(-12deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-4deg);
+    }
+
+}
+
+
+@keyframes badgeFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(-4deg);
+    }
+
+    50% {
+        transform:
+            translateY(-10px)
+            rotate(3deg);
+    }
+
+}
+
+
+@keyframes circleRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes pointReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .house-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .house-gallery {
+        width: 90%;
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+    .house-content {
+        max-width: 900px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .house-system {
+        padding: 70px 20px;
+    }
+
+    .house-gallery {
+        height: 510px;
+    }
+
+    .house-image-one {
+        height: 355px;
+    }
+
+    .house-image-two {
+        height: 220px;
+    }
+
+    .house-image-three {
+        height: 225px;
+    }
+
+    .house-content h2 {
+        font-size: 39px;
+    }
+
+    .house-intro {
+        font-size: 17px;
+    }
+
+    .house-points {
+        gap: 15px;
+    }
+
+    .house-name-card {
+        min-height: 55px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   Paragraph = 15px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .house-system {
+        padding: 55px 15px;
+    }
+
+    .house-container {
+        gap: 42px;
+    }
+
+
+    /* Gallery */
+
+    .house-gallery {
+        width: 100%;
+        height: 405px;
+    }
+
+    .house-image {
+        border-width: 5px;
+        border-radius: 17px;
+    }
+
+    .house-image-one {
+        width: 71%;
+        height: 285px;
+
+        left: 2%;
+        top: 45px;
+    }
+
+    .house-image-two {
+        width: 48%;
+        height: 175px;
+
+        right: 0;
+        top: 0;
+    }
+
+    .house-image-three {
+        width: 48%;
+        height: 180px;
+
+        right: 0;
+        bottom: 0;
+    }
+
+
+    /* Badge */
+
+    .house-badge {
+        width: 76px;
+        height: 76px;
+
+        left: -3px;
+        top: 8px;
+
+        border-width: 4px;
+    }
+
+    .house-badge strong {
+        font-size: 11px;
+    }
+
+    .house-badge span {
+        font-size: 9px;
+    }
+
+
+    /* Decorative circle */
+
+    .house-gallery-circle {
+        width: 75px;
+        height: 75px;
+
+        left: -22px;
+        bottom: 10px;
+
+        border-width: 14px;
+    }
+
+
+    /* Content */
+
+    .house-subtitle {
+        font-size: 15px;
+        letter-spacing: 1.4px;
+
+        margin-bottom: 9px;
+    }
+
+    .house-content h2 {
+        font-size: 31px;
+    }
+
+    .house-line {
+        margin: 14px 0 20px;
+    }
+
+
+    /* Mobile paragraph = 15px */
+
+    .house-intro {
+        margin-bottom: 25px;
+
+        color: #000000;
+
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+
+    /* Points */
+
+    .house-points {
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+
+        margin-bottom: 22px;
+    }
+
+    .house-point {
+        padding: 16px;
+
+        border-radius: 13px;
+    }
+
+    .house-point h3 {
+        font-size: 16px;
+    }
+
+    .house-point p {
+        color: #000000;
+
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* House Names */
+
+    .house-names {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .house-name-card {
+        min-height: 55px;
+
+        padding: 8px 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .house-system {
+        padding: 45px 13px;
+    }
+
+    .house-gallery {
+        height: 355px;
+    }
+
+    .house-image-one {
+        height: 250px;
+    }
+
+    .house-image-two {
+        height: 150px;
+    }
+
+    .house-image-three {
+        height: 155px;
+    }
+
+    .house-content h2 {
+        font-size: 28px;
+    }
+
+    .house-intro,
+    .house-point p {
+        font-size: 15px;
+    }
+
+    .house-name-card strong {
+        font-size: 11px;
+    }
+
+    .house-name-card small {
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .house-gallery,
+    .house-content,
+    .house-image-one,
+    .house-image-two,
+    .house-image-three,
+    .house-badge,
+    .house-gallery-circle,
+    .house-point {
+        animation: none;
+    }
+
+    .house-image,
+    .house-point,
+    .house-name-card {
+        transition: none;
+    }
+}
+
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL - ADMISSIONS
+   COMPLETE CSS
+   Theme: Dark Green + Brown + White
+   Responsive: Desktop / Tablet / Mobile
+========================================================= */
+
+:root {
+    --otg-green: #4f7131;
+    --otg-green-dark: #304a1d;
+    --otg-green-deep: #243817;
+    --otg-green-light: #edf4e5;
+
+    --otg-brown: #3f2819;
+    --otg-brown-light: #76553c;
+    --otg-gold: #b28a45;
+
+    --otg-black: #000000;
+    --otg-white: #ffffff;
+    --otg-bg: #ffffff;
+    --otg-soft-bg: #f7f9f3;
+
+    --otg-border: #d9e2ce;
+
+    --otg-shadow: 0 15px 40px rgba(38, 55, 25, 0.12);
+    --otg-shadow-dark: 0 20px 50px rgba(31, 42, 22, 0.20);
+}
+
+
+/* =========================================================
+   MAIN ADMISSIONS SECTION
+========================================================= */
+
+.otg-admissions {
+    position: relative;
+    width: 100%;
+    padding: 50px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.otg-admissions::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: -160px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(79, 113, 49, 0.05);
+    pointer-events: none;
+}
+
+.otg-admissions::after {
+    content: "";
+    position: absolute;
+    bottom: -180px;
+    left: -180px;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background: rgba(63, 40, 25, 0.035);
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.otg-admission-container {
+    position: relative;
+    z-index: 2;
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO SECTION
+========================================================= */
+
+.otg-admission-intro {
+    display: grid;
+    grid-template-columns: 1fr 0.92fr;
+    align-items: center;
+    gap: 65px;
+    margin-bottom: 95px;
+}
+
+
+/* =========================================================
+   INTRO TEXT
+========================================================= */
+
+.otg-admission-text {
+    position: relative;
+}
+
+.otg-admission-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--otg-green);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.otg-admission-kicker::before {
+    content: "";
+    width: 35px;
+    height: 3px;
+    border-radius: 20px;
+    background: var(--otg-green);
+}
+
+.otg-admission-text h2 {
+    margin: 0 0 22px;
+    color: var(--otg-brown);
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+}
+
+.otg-admission-text h2 span {
+    display: block;
+    color: var(--otg-green);
+}
+
+.otg-title-line {
+    width: 80px;
+    height: 5px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    background: var(--otg-green);
+}
+
+.otg-admission-text p {
+    margin: 0 0 17px;
+    color: #000000 !important;
+    font-size: 18px;
+    line-height: 1.85;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   ENQUIRY AREA
+========================================================= */
+
+.otg-enquiry-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    max-width: 730px;
+    margin-top: 32px;
+    padding: 14px;
+
+    background: #f2f6ec;
+    border: 1px solid #cddbbd;
+    border-radius: 18px;
+
+    overflow: visible;
+
+    animation: enquiryBoxGlow 3s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   ENQUIRY ICON
+========================================================= */
+
+.otg-enquiry-icon {
+    position: relative;
+
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--otg-green);
+    color: #ffffff;
+
+    font-size: 22px;
+
+    animation: enquiryIconPulse 1.8s ease-in-out infinite;
+}
+
+.otg-enquiry-icon::before {
+    content: "";
+
+    position: absolute;
+    inset: -6px;
+
+    border: 2px solid rgba(79, 113, 49, 0.35);
+
+    border-radius: 50%;
+
+    animation: iconRing 1.8s ease-out infinite;
+}
+
+
+/* =========================================================
+   ENQUIRY INFORMATION
+========================================================= */
+
+.otg-enquiry-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.otg-enquiry-info strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--otg-brown) !important;
+
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+.otg-enquiry-info small {
+    display: block;
+
+    color: #000000 !important;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ADMISSION ENQUIRY BUTTON
+========================================================= */
+
+.otg-enquiry-btn {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-width: 215px;
+
+    padding: 16px 23px;
+
+    background: var(--otg-green);
+    color: #ffffff !important;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+    border: 2px solid #6e914d;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 0.3px;
+
+    overflow: hidden;
+    z-index: 1;
+
+    animation: admissionBlink 2s ease-in-out infinite;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Button shine */
+
+.otg-enquiry-btn::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    animation: buttonShine 3.2s ease-in-out infinite;
+
+    z-index: -1;
+}
+
+
+/* Button outer ring */
+
+.otg-enquiry-btn::after {
+    content: "";
+
+    position: absolute;
+    inset: -5px;
+
+    border-radius: 15px;
+
+    border: 2px solid rgba(79, 113, 49, 0.35);
+
+    animation: buttonRing 1.8s ease-out infinite;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   BUTTON ARROW
+========================================================= */
+
+.otg-btn-arrow {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    font-size: 18px;
+    line-height: 1;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.otg-enquiry-btn:hover {
+    background: var(--otg-green-dark);
+
+    transform: translateY(-5px);
+
+    animation: none;
+}
+
+.otg-enquiry-btn:hover .otg-btn-arrow {
+    transform: translateX(6px);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+
+/* =========================================================
+   INTRO IMAGE AREA
+========================================================= */
+
+.otg-admission-visual {
+    position: relative;
+
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Main image */
+
+.otg-image-main {
+    position: relative;
+
+    width: 82%;
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    z-index: 2;
+}
+
+.otg-image-main img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.8s ease;
+}
+
+.otg-image-main:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   SMALL IMAGES
+========================================================= */
+
+.otg-image-small {
+    position: absolute;
+
+    width: 190px;
+    height: 155px;
+
+    overflow: hidden;
+
+    border: 7px solid #ffffff;
+
+    border-radius: 20px;
+
+
+    z-index: 4;
+
+    animation: floatingImage 4s ease-in-out infinite;
+}
+
+.otg-image-small img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+.otg-image-small:hover img {
+    transform: scale(1.08);
+}
+
+.otg-image-small-one {
+    top: 35px;
+    right: 0;
+}
+
+.otg-image-small-two {
+    bottom: 25px;
+    left: 0;
+
+    animation-delay: 1s;
+}
+
+
+/* =========================================================
+   VISUAL BADGE
+========================================================= */
+
+.otg-visual-badge {
+    position: absolute;
+
+    right: 8%;
+    bottom: 0;
+
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    border-radius: 50%;
+
+    background: var(--otg-brown);
+
+    color: #ffffff;
+
+    text-align: center;
+
+    border: 7px solid #ffffff;
+
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 800;
+
+    z-index: 6;
+
+    animation: badgeFloat 3s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.otg-section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 50px;
+color:darkgreen;
+    text-align: center;
+}
+
+.otg-section-heading h2 {
+    margin: 0 0 15px;
+
+    color:darkgreen;
+
+    font-size: clamp(30px, 3.5vw, 44px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+.otg-section-heading p {
+    margin: 0;
+
+    color:darkgreen !important;
+
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   ADMISSION PROCEDURE
+========================================================= */
+
+.otg-procedure {
+    padding: 80px 0;
+
+    background:#f2ffcb;
+
+    border-radius: 35px;
+}
+
+
+/* =========================================================
+   STEPS GRID
+========================================================= */
+
+.otg-steps {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+
+    padding: 0 45px;
+}
+
+
+/* =========================================================
+   STEP CARD
+========================================================= */
+
+.otg-step {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--otg-border);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.otg-step::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 5px;
+
+    background: var(--otg-green);
+
+    transform: scaleY(0);
+
+    transform-origin: bottom;
+
+    transition: transform 0.35s ease;
+
+    transform: translateY(-8px);
+
+    border-color: #b9caa8;
+
+    transform: scaleY(1);
+}
+
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+
+.otg-step-number {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: var(--otg-green);
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+}
+
+
+/* =========================================================
+   STEP ICON
+========================================================= */
+
+.otg-step-icon {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f0f5e9;
+
+    color: var(--otg-green);
+
+    font-size: 16px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+
+    transform: rotate(12deg) scale(1.1);
+
+    background: var(--otg-green);
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   STEP CONTENT
+========================================================= */
+
+.otg-step-content {
+    flex: 1;
+
+    padding-right: 35px;
+}
+
+.otg-step-content h3 {
+    margin: 0 0 8px;
+
+    color: var(--otg-brown);
+
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    font-weight: 800;
+}
+
+.otg-step-content p {
+    margin: 0;
+
+    color: #000000 !important;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   DOCUMENT SECTION
+========================================================= */
+
+.otg-documents {
+    padding: 95px 0;
+}
+
+
+/* =========================================================
+   DOCUMENT HEADING
+========================================================= */
+
+.otg-document-heading {
+    margin-bottom: 45px;
+}
+
+.otg-document-heading h2 {
+    margin: 0 0 12px;
+
+    color: var(--otg-brown);
+
+    font-size: clamp(30px, 3.5vw, 42px);
+
+    font-weight: 800;
+}
+
+.otg-document-heading p {
+    margin: 0;
+
+    color: #000000 !important;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DOCUMENT LAYOUT
+========================================================= */
+
+.otg-document-layout {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   DOCUMENT IMAGE
+========================================================= */
+
+.otg-document-image {
+    position: relative;
+
+    height: 460px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+}
+
+.otg-document-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.8s ease;
+}
+
+.otg-document-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   DOCUMENT IMAGE OVERLAY
+========================================================= */
+
+.otg-document-overlay {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+
+    padding: 18px 20px;
+
+    background: rgba(36, 56, 23, 0.92);
+
+    border-radius: 15px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    font-weight: 700;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.otg-checklist {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 13px;
+}
+
+.otg-check-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 17px 16px;
+
+    background: #f7f9f3;
+
+    border: 1px solid #dce6d3;
+
+    border-radius: 13px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.otg-check-item:hover {
+    transform: translateX(5px);
+
+    background: #eef4e7;
+
+}
+
+.otg-check-item i {
+    width: 25px;
+    height: 25px;
+
+    min-width: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--otg-green);
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    margin-top: 2px;
+}
+
+.otg-check-item p {
+    margin: 0;
+
+    color: #000000 !important;
+
+    font-size: 15px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.otg-final-cta {
+    position: relative;
+
+    margin-top: 30px;
+
+    padding: 65px 55px;
+
+    background: var(--otg-green);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 45px rgba(55, 82, 31, 0.22);
+}
+
+.otg-final-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    right: -80px;
+    top: -100px;
+
+    border-radius: 50%;
+
+    border: 50px solid rgba(255, 255, 255, 0.06);
+}
+
+.otg-final-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    left: -90px;
+    bottom: -120px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+
+.otg-cta-content {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.otg-cta-content h2 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: clamp(27px, 3vw, 40px);
+
+    line-height: 1.2;
+
+    font-weight: 800;
+}
+
+.otg-cta-content p {
+    margin: 0;
+
+    max-width: 650px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.otg-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 190px;
+
+    padding: 15px 24px;
+
+    background: #ffffff;
+
+    color: var(--otg-brown) !important;
+
+    text-decoration: none;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 8px 0 rgba(45, 65, 27, 0.30),
+        0 15px 30px rgba(0, 0, 0, 0.16);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.otg-cta-button:hover {
+    background: #f3f6ec;
+
+    color: var(--otg-brown) !important;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 0 rgba(45, 65, 27, 0.25),
+        0 20px 35px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+/* Enquiry button blinking */
+
+@keyframes admissionBlink {
+
+    0%,
+    100% {
+        transform: scale(1);
+
+        box-shadow:
+            0 8px 0 #354d21,
+            0 14px 25px rgba(55, 82, 31, 0.28);
+    }
+
+    50% {
+        transform: scale(1.035);
+
+        box-shadow:
+            0 8px 0 #354d21,
+            0 18px 38px rgba(55, 82, 31, 0.45);
+    }
+}
+
+
+/* Button ring */
+
+@keyframes buttonRing {
+
+    0% {
+        opacity: 0.75;
+        transform: scale(0.95);
+    }
+
+    70% {
+        opacity: 0;
+        transform: scale(1.12);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.12);
+    }
+}
+
+
+/* Button shine */
+
+@keyframes buttonShine {
+
+    0% {
+        left: -120%;
+    }
+
+    45%,
+    100% {
+        left: 150%;
+    }
+}
+
+
+/* Enquiry icon */
+
+@keyframes enquiryIconPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+
+/* Icon ring */
+
+@keyframes iconRing {
+
+    0% {
+        opacity: 0.8;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.35);
+    }
+}
+
+
+/* Enquiry box glow */
+
+@keyframes enquiryBoxGlow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 10px 30px rgba(50, 70, 30, 0.10);
+    }
+
+    50% {
+        box-shadow:
+            0 14px 40px rgba(50, 70, 30, 0.20);
+    }
+}
+
+
+/* Floating images */
+
+@keyframes floatingImage {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Badge animation */
+
+@keyframes badgeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .otg-admissions {
+        padding: 75px 0;
+    }
+
+    .otg-admission-intro {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        margin-bottom: 75px;
+    }
+
+    .otg-admission-text {
+        max-width: 850px;
+
+        margin: auto;
+    }
+
+    .otg-admission-visual {
+        max-width: 700px;
+
+        width: 100%;
+
+        margin: auto;
+
+        min-height: 500px;
+    }
+
+    .otg-document-layout {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .otg-document-image {
+        max-width: 650px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+    .otg-steps {
+        padding: 0 30px;
+    }
+
+    .otg-cta-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .otg-admissions {
+        padding: 60px 0;
+    }
+
+    .otg-admission-container {
+        width: 92%;
+    }
+
+    /* Intro */
+
+    .otg-admission-intro {
+        gap: 40px;
+
+        margin-bottom: 60px;
+    }
+
+    .otg-admission-kicker {
+        font-size: 12px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .otg-admission-text h2 {
+        font-size: 32px;
+
+        line-height: 1.12;
+
+        letter-spacing: -0.5px;
+    }
+
+    .otg-admission-text p,
+    .otg-section-heading p,
+    .otg-step-content p,
+    .otg-document-heading p,
+    .otg-check-item p,
+    .otg-cta-content p {
+        color: #000000 !important;
+
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+
+    /* Enquiry */
+
+    .otg-enquiry-area {
+        display: grid;
+
+        grid-template-columns: 48px 1fr;
+
+        gap: 10px;
+
+        padding: 13px;
+
+        margin-top: 25px;
+    }
+
+    .otg-enquiry-icon {
+        width: 48px;
+        height: 48px;
+
+        min-width: 48px;
+
+        font-size: 19px;
+    }
+
+    .otg-enquiry-info strong {
+        font-size: 13px;
+    }
+
+    .otg-enquiry-info small {
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+    .otg-enquiry-btn {
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        min-width: 0;
+
+        padding: 15px 18px;
+
+        font-size: 14px;
+
+        border-radius: 11px;
+    }
+
+
+    /* Visual */
+
+    .otg-admission-visual {
+        min-height: 420px;
+    }
+
+    .otg-image-main {
+        width: 82%;
+
+        height: 370px;
+
+        border-radius: 22px;
+    }
+
+    .otg-image-small {
+        width: 145px;
+
+        height: 120px;
+
+        border-width: 5px;
+
+        border-radius: 15px;
+    }
+
+    .otg-image-small-one {
+        top: 20px;
+
+        right: 0;
+    }
+
+    .otg-image-small-two {
+        bottom: 20px;
+
+        left: 0;
+    }
+
+    .otg-visual-badge {
+        width: 100px;
+        height: 100px;
+
+        right: 5%;
+
+        font-size: 11px;
+
+        padding: 15px;
+
+        border-width: 5px;
+    }
+
+
+    /* Procedure */
+
+    .otg-procedure {
+        padding: 55px 0;
+
+        border-radius: 25px;
+    }
+
+    .otg-section-heading {
+        margin-bottom: 35px;
+    }
+
+    .otg-section-heading h2,
+    .otg-document-heading h2 {
+        font-size: 30px;
+    }
+
+    .otg-steps {
+        grid-template-columns: 1fr;
+
+        gap: 17px;
+
+        padding: 0 15px;
+    }
+
+    .otg-step {
+        padding: 22px 18px;
+
+        gap: 14px;
+
+        border-radius: 17px;
+    }
+
+    .otg-step-number {
+        width: 42px;
+        height: 42px;
+
+        min-width: 42px;
+
+        border-radius: 11px;
+
+        font-size: 14px;
+    }
+
+    .otg-step-icon {
+        width: 32px;
+        height: 32px;
+
+        right: 14px;
+        top: 15px;
+
+        font-size: 13px;
+    }
+
+    .otg-step-content {
+        padding-right: 28px;
+    }
+
+    .otg-step-content h3 {
+        font-size: 17px;
+    }
+
+
+    /* Documents */
+
+    .otg-documents {
+        padding: 65px 0;
+    }
+
+    .otg-document-heading {
+        margin-bottom: 30px;
+    }
+
+    .otg-document-layout {
+        gap: 30px;
+    }
+
+    .otg-document-image {
+        height: 330px;
+
+        border-radius: 20px;
+    }
+
+    .otg-document-overlay {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+
+        padding: 13px 15px;
+
+        font-size: 13px;
+    }
+
+    .otg-checklist {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .otg-check-item {
+        padding: 14px;
+
+        border-radius: 11px;
+    }
+
+
+    /* Final CTA */
+
+    .otg-final-cta {
+        margin-top: 15px;
+
+        padding: 45px 25px;
+
+        border-radius: 23px;
+    }
+
+    .otg-cta-content {
+        gap: 25px;
+
+        text-align: left;
+    }
+
+    .otg-cta-content h2 {
+        font-size: 28px;
+    }
+
+    .otg-cta-button {
+        width: 100%;
+
+        min-width: 0;
+
+        padding: 14px 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .otg-admissions {
+        padding: 50px 0;
+    }
+
+    .otg-admission-text h2 {
+        font-size: 29px;
+    }
+
+    .otg-admission-text p,
+    .otg-section-heading p,
+    .otg-step-content p,
+    .otg-document-heading p,
+    .otg-check-item p,
+    .otg-cta-content p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+    .otg-admission-visual {
+        min-height: 350px;
+    }
+
+    .otg-image-main {
+        height: 310px;
+
+        width: 80%;
+    }
+
+    .otg-image-small {
+        width: 115px;
+
+        height: 95px;
+
+        border-width: 4px;
+
+        border-radius: 12px;
+    }
+
+    .otg-image-small-one {
+        top: 10px;
+    }
+
+    .otg-image-small-two {
+        bottom: 10px;
+    }
+
+    .otg-visual-badge {
+        width: 82px;
+        height: 82px;
+
+        padding: 10px;
+
+        font-size: 9px;
+
+        border-width: 4px;
+    }
+
+    .otg-step {
+        padding: 18px 15px;
+    }
+
+    .otg-step-number {
+        width: 38px;
+        height: 38px;
+
+        min-width: 38px;
+
+        font-size: 13px;
+    }
+
+    .otg-step-content h3 {
+        font-size: 16px;
+    }
+
+    .otg-document-image {
+        height: 280px;
+    }
+
+    .otg-final-cta {
+        padding: 38px 20px;
+    }
+
+    .otg-cta-content h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .otg-admission-container {
+        width: 94%;
+    }
+
+    .otg-admission-text h2 {
+        font-size: 26px;
+    }
+
+    .otg-admission-text p {
+        font-size: 15px;
+    }
+
+    .otg-enquiry-area {
+        grid-template-columns: 43px 1fr;
+
+        padding: 10px;
+    }
+
+    .otg-enquiry-icon {
+        width: 43px;
+        height: 43px;
+
+        min-width: 43px;
+    }
+
+    .otg-enquiry-btn {
+        padding: 14px 12px;
+
+        font-size: 13px;
+    }
+
+    .otg-btn-arrow {
+        width: 25px;
+        height: 25px;
+
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.otg-enquiry-btn:focus-visible,
+.otg-cta-button:focus-visible {
+    outline: 3px solid #b28a45;
+
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .otg-enquiry-area,
+    .otg-enquiry-icon,
+    .otg-enquiry-icon::before,
+    .otg-enquiry-btn,
+    .otg-enquiry-btn::before,
+    .otg-enquiry-btn::after,
+    .otg-image-small,
+    .otg-visual-badge {
+        animation: none !important;
+    }
+
+    .otg-step,
+    .otg-image-main img,
+    .otg-image-small img,
+    .otg-check-item,
+    .otg-cta-button {
+        transition: none !important;
+    }
+}
