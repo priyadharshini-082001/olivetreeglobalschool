@@ -13936,3 +13936,1274 @@
         font-size: 13px;
     }
 }
+/* =========================================================
+   OLIVE TREE GLOBAL SCHOOL
+   ADMISSIONS SECTION
+   WHITE BACKGROUND + COLORFUL BOX DESIGN
+========================================================= */
+
+.otg-admissions {
+    position: relative;
+    width: 100%;
+    padding:50px 40px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.otg-admissions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(
+        90deg,
+        #176b3a 0%,
+        #8b5e34 25%,
+        #e2b93b 50%,
+        #626a42 75%,
+        #176b3a 100%
+    );
+}
+
+.otg-admission-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO / INTRO
+========================================================= */
+
+.otg-admission-intro {
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 100px;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.otg-admission-text {
+    position: relative;
+    z-index: 2;
+}
+
+.otg-admission-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #176b3a;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+.otg-admission-kicker::before {
+    content: "";
+    width: 38px;
+    height: 4px;
+
+    background: #d39b36;
+
+    border-radius: 20px;
+}
+
+.otg-admission-text h2 {
+    margin: 0;
+
+    max-width: 680px;
+
+    color: #245331;
+
+    font-size: clamp(40px, 4vw, 58px);
+    line-height: 1.08;
+    font-weight: 700;
+}
+
+.otg-admission-text h2 span {
+    display: block;
+
+    color: #8b5e34;
+
+    font-style: italic;
+    font-weight: 600;
+}
+
+.otg-title-line {
+    width: 100px;
+    height: 5px;
+
+    margin: 25px 0 22px;
+
+    background: linear-gradient(
+        90deg,
+        #176b3a,
+        #d39b36,
+        #8b5e34
+    );
+
+    border-radius: 20px;
+}
+
+.otg-admission-text > p {
+    max-width: 680px;
+
+    margin: 0 0 30px;
+
+    color: #000000 !important;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+/* =========================================================
+   ENQUIRY AREA
+========================================================= */
+
+.otg-enquiry-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    max-width: 690px;
+
+    padding: 17px 18px;
+
+    background: #f2f8f3;
+
+    border: 2px solid #c9dfcf;
+
+    border-left: 6px solid #176b3a;
+
+    border-radius: 18px;
+
+    transition: all 0.3s ease;
+}
+
+.otg-enquiry-area:hover {
+    border-color: #176b3a;
+    transform: translateY(-3px);
+}
+
+.otg-enquiry-icon {
+    width: 53px;
+    height: 53px;
+
+    flex: 0 0 53px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #176b3a;
+    color: #ffffff;
+
+    border-radius: 15px;
+
+    font-size: 22px;
+}
+
+.otg-enquiry-info {
+    flex: 1;
+}
+
+.otg-enquiry-info strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #245331;
+
+    font-size: 15px;
+}
+
+.otg-enquiry-info small {
+    display: block;
+
+    color: #000000;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.otg-enquiry-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    padding: 13px 19px;
+
+    background: #8b5e34;
+    color: #ffffff;
+
+    border-radius: 11px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+.otg-enquiry-btn:hover {
+    background: #176b3a;
+    color: #ffffff;
+}
+
+.otg-btn-arrow {
+    font-size: 18px;
+
+    transition: transform 0.3s ease;
+}
+
+.otg-enquiry-btn:hover .otg-btn-arrow {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   HERO IMAGE AREA
+========================================================= */
+
+.otg-admission-visual {
+    position: relative;
+
+    min-height: 570px;
+}
+
+.otg-image-main {
+    position: absolute;
+
+    top: 30px;
+    right: 20px;
+
+    width: 78%;
+    height: 470px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 8px solid #e7c96d;
+
+    border-radius: 35px 35px 90px 35px;
+
+    transform: rotate(3deg);
+
+    z-index: 1;
+}
+
+.otg-image-main img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.otg-admission-visual:hover .otg-image-main img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   SMALL IMAGES
+========================================================= */
+
+.otg-image-small {
+    position: absolute;
+
+    width: 185px;
+    height: 145px;
+
+    overflow: hidden;
+
+    padding: 7px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    z-index: 3;
+
+    transition: all 0.4s ease;
+}
+
+.otg-image-small img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+.otg-image-small-one {
+    left: 0;
+    top: 105px;
+
+    border: 5px solid #d9eadf;
+
+    transform: rotate(-6deg);
+}
+
+.otg-image-small-two {
+    right: 0;
+    bottom: 45px;
+
+    border: 5px solid #f1dfb7;
+
+    transform: rotate(-5deg);
+}
+
+.otg-admission-visual:hover .otg-image-small-one {
+    transform: rotate(-2deg) translateY(-5px);
+}
+
+.otg-admission-visual:hover .otg-image-small-two {
+    transform: rotate(-2deg) translateY(5px);
+}
+
+
+/* =========================================================
+   VISUAL BADGE
+========================================================= */
+
+.otg-visual-badge {
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #176b3a;
+    color: #ffffff;
+
+    border: 8px solid #ffffff;
+
+    border-radius: 50%;
+
+    z-index: 5;
+
+    text-align: center;
+}
+
+.otg-visual-badge span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.otg-visual-badge strong {
+    margin: 3px 0;
+
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   COMMON SECTION HEADINGS
+========================================================= */
+
+.otg-section-heading,
+.otg-document-heading {
+    position: relative;
+}
+
+.otg-section-heading {
+    max-width: 750px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.otg-section-heading > span,
+.otg-document-heading > span {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #a36b32;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.otg-section-heading h2,
+.otg-document-heading h2 {
+    margin: 0;
+
+    color: #245331;
+
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.2;
+}
+
+.otg-section-heading p,
+.otg-document-heading > p {
+    margin: 14px auto 0;
+
+    color: #000000;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ADMISSION PROCEDURE
+========================================================= */
+
+.otg-procedure {
+    margin-bottom: 100px;
+}
+
+
+/* =========================================================
+   STEP GRID
+========================================================= */
+
+.otg-steps {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   STEP BOX
+========================================================= */
+
+.otg-step {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 58px 50px 1fr;
+
+    align-items: start;
+
+    gap: 15px;
+
+    min-height: 180px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 2px solid #e2eadf;
+
+    border-radius: 22px;
+
+    transition: all 0.35s ease;
+}
+
+.otg-step:nth-child(1) {
+    border-top: 5px solid #176b3a;
+    background: #f5fbf6;
+}
+
+.otg-step:nth-child(2) {
+    border-top: 5px solid #d39b36;
+    background: #fffaf0;
+}
+
+.otg-step:nth-child(3) {
+    border-top: 5px solid #6d7e4b;
+    background: #f7f9f1;
+}
+
+.otg-step:nth-child(4) {
+    border-top: 5px solid #8b5e34;
+    background: #fcf7f2;
+}
+
+.otg-step:nth-child(5) {
+    border-top: 5px solid #277a59;
+    background: #f3faf7;
+}
+
+.otg-step:nth-child(6) {
+    border-top: 5px solid #b46a3c;
+    background: #fff7f3;
+}
+
+.otg-step:nth-child(7) {
+    border-top: 5px solid #176b3a;
+    background: #f5fbf6;
+}
+
+.otg-step:hover {
+    transform: translateY(-5px);
+
+    border-color: #176b3a;
+}
+
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+
+.otg-step-number {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    color: #176b3a;
+
+    border: 2px solid #cbdccc;
+
+    border-radius: 15px;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   STEP ICON
+========================================================= */
+
+.otg-step-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #176b3a;
+    color: #ffffff;
+
+    border-radius: 13px;
+
+    font-size: 19px;
+}
+
+.otg-step:nth-child(2) .otg-step-icon {
+    background: #d39b36;
+}
+
+.otg-step:nth-child(3) .otg-step-icon {
+    background: #6d7e4b;
+}
+
+.otg-step:nth-child(4) .otg-step-icon {
+    background: #8b5e34;
+}
+
+.otg-step:nth-child(5) .otg-step-icon {
+    background: #277a59;
+}
+
+.otg-step:nth-child(6) .otg-step-icon {
+    background: #b46a3c;
+}
+
+
+/* =========================================================
+   STEP CONTENT
+========================================================= */
+
+.otg-step-content h3 {
+    margin: 2px 0 9px;
+
+    color: #245331;
+
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.otg-step-content p {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DOCUMENTS
+========================================================= */
+
+.otg-documents {
+    padding: 65px 55px;
+
+    background: #ffffff;
+
+    border: 2px solid #e2eadf;
+
+    border-radius: 35px;
+}
+
+.otg-document-heading {
+    margin-bottom: 42px;
+}
+
+.otg-document-heading > p {
+    margin-left: 0;
+    text-align: left;
+}
+
+.otg-document-heading strong {
+    color: #176b3a;
+}
+
+
+/* =========================================================
+   DOCUMENT LAYOUT
+========================================================= */
+
+.otg-document-layout {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+
+/* =========================================================
+   DOCUMENT IMAGE
+========================================================= */
+
+.otg-document-image {
+    position: relative;
+
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    border: 7px solid #e5d5a8;
+}
+
+.otg-document-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.otg-document-image:hover img {
+    transform: scale(1.05);
+}
+
+.otg-document-overlay {
+    position: absolute;
+
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+
+    padding: 18px 20px;
+
+    background: rgba(255,255,255,0.95);
+
+    border-left: 5px solid #176b3a;
+
+    border-radius: 15px;
+}
+
+.otg-document-overlay strong {
+    display: block;
+
+    color: #245331;
+
+    font-size: 20px;
+}
+
+.otg-document-overlay span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #000000;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   CHECKLIST
+========================================================= */
+
+.otg-checklist {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 13px;
+}
+
+.otg-check-item {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    min-height: 65px;
+
+    padding: 12px 15px;
+
+    background: #f7faf5;
+
+    border: 1px solid #dce8dc;
+
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.otg-check-item:nth-child(2n) {
+    background: #fffaf1;
+    border-color: #eee0bd;
+}
+
+.otg-check-item:hover {
+    border-color: #176b3a;
+    transform: translateX(4px);
+}
+
+.otg-check-item > span {
+    width: 29px;
+    height: 29px;
+
+    flex: 0 0 29px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #176b3a;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.otg-check-item:nth-child(2n) > span {
+    background: #b17a32;
+}
+
+.otg-check-item p {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .otg-admission-intro {
+        gap: 45px;
+    }
+
+    .otg-admission-text h2 {
+        font-size: 44px;
+    }
+
+    .otg-admission-visual {
+        min-height: 520px;
+    }
+
+    .otg-image-main {
+        width: 80%;
+        height: 430px;
+    }
+
+    .otg-image-small {
+        width: 155px;
+        height: 125px;
+    }
+
+    .otg-document-layout {
+        gap: 35px;
+    }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .otg-admissions {
+        padding: 70px 20px;
+    }
+
+    .otg-admission-intro {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .otg-admission-text {
+        text-align: center;
+    }
+
+    .otg-admission-kicker {
+        justify-content: center;
+    }
+
+    .otg-admission-text h2 {
+        margin: 0 auto;
+    }
+
+    .otg-title-line {
+        margin: 22px auto;
+    }
+
+    .otg-admission-text > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .otg-enquiry-area {
+        margin: 0 auto;
+
+        text-align: left;
+    }
+
+    .otg-admission-visual {
+        width: 100%;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+    }
+
+    .otg-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .otg-document-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .otg-document-image {
+        width: 100%;
+        max-width: 600px;
+
+        margin: 0 auto;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .otg-admissions {
+        padding: 60px 15px;
+    }
+
+    .otg-admission-intro {
+        margin-bottom: 75px;
+    }
+
+    .otg-admission-text h2 {
+        font-size: 37px;
+    }
+
+    .otg-admission-text > p {
+        font-size: 15px;
+
+        line-height: 1.75;
+
+        text-align: justify !important;
+    }
+
+    .otg-enquiry-area {
+        flex-wrap: wrap;
+
+        padding: 15px;
+    }
+
+    .otg-enquiry-info {
+        min-width: calc(100% - 70px);
+    }
+
+    .otg-enquiry-btn {
+        width: 100%;
+
+        justify-content: center;
+
+        margin-top: 5px;
+    }
+
+    .otg-admission-visual {
+        min-height: 460px;
+    }
+
+    .otg-image-main {
+        top: 25px;
+        right: 25px;
+
+        width: 78%;
+        height: 375px;
+
+        border-width: 6px;
+
+        border-radius: 25px 25px 65px 25px;
+    }
+
+    .otg-image-small {
+        width: 135px;
+        height: 110px;
+
+        padding: 5px;
+    }
+
+    .otg-image-small-one {
+        left: 0;
+        top: 75px;
+    }
+
+    .otg-image-small-two {
+        right: 0;
+        bottom: 45px;
+    }
+
+    .otg-visual-badge {
+        width: 100px;
+        height: 100px;
+
+        border-width: 6px;
+    }
+
+    .otg-visual-badge span {
+        font-size: 8px;
+    }
+
+    .otg-visual-badge strong {
+        font-size: 14px;
+    }
+
+    .otg-section-heading,
+    .otg-document-heading {
+        margin-bottom: 35px;
+    }
+
+    .otg-section-heading h2,
+    .otg-document-heading h2 {
+        font-size: 31px;
+    }
+
+    .otg-section-heading p,
+    .otg-document-heading > p {
+        font-size: 15px;
+    }
+
+    .otg-step {
+        grid-template-columns: 50px 43px 1fr;
+
+        gap: 11px;
+
+        padding: 19px;
+    }
+
+    .otg-step-number {
+        width: 46px;
+        height: 46px;
+    }
+
+    .otg-step-icon {
+        width: 41px;
+        height: 41px;
+
+        font-size: 17px;
+    }
+
+    .otg-step-content h3 {
+        font-size: 16px;
+    }
+
+    .otg-step-content p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .otg-documents {
+        padding: 42px 20px;
+
+        border-radius: 25px;
+    }
+
+    .otg-checklist {
+        grid-template-columns: 1fr;
+    }
+
+    .otg-check-item p {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .otg-admissions {
+        padding: 50px 12px;
+    }
+
+    .otg-admission-text h2 {
+        font-size: 31px;
+    }
+
+    .otg-admission-kicker {
+        font-size: 11px;
+
+        letter-spacing: 1.2px;
+    }
+
+    .otg-admission-text > p {
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        text-align: justify !important;
+    }
+
+    .otg-admission-visual {
+        min-height: 395px;
+    }
+
+    .otg-image-main {
+        top: 20px;
+        right: 10px;
+
+        width: 78%;
+        height: 330px;
+    }
+
+    .otg-image-small {
+        width: 110px;
+        height: 90px;
+    }
+
+    .otg-image-small-one {
+        left: 0;
+        top: 65px;
+    }
+
+    .otg-image-small-two {
+        right: 0;
+        bottom: 40px;
+    }
+
+    .otg-visual-badge {
+        width: 82px;
+        height: 82px;
+
+        bottom: 5px;
+    }
+
+    .otg-visual-badge strong {
+        font-size: 12px;
+    }
+
+    .otg-step {
+        grid-template-columns: 44px 1fr;
+
+        gap: 12px;
+
+        padding: 18px;
+    }
+
+    .otg-step-number {
+        width: 42px;
+        height: 42px;
+
+        font-size: 12px;
+    }
+
+    .otg-step-icon {
+        display: none;
+    }
+
+    .otg-step-content {
+        grid-column: 2;
+    }
+
+    .otg-step-content h3 {
+        margin-top: 0;
+
+        font-size: 15px;
+    }
+
+    .otg-step-content p {
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+    .otg-documents {
+        padding: 32px 15px;
+        margin-top:-20%;
+    }
+
+    .otg-document-heading h2 {
+        font-size: 27px;
+    }
+
+    .otg-document-heading > p {
+        font-size: 15px;
+    }
+
+    .otg-document-image {
+        height: 300px;
+
+        border-radius: 20px;
+
+        border-width: 5px;
+    }
+
+    .otg-document-overlay {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+
+        padding: 14px;
+    }
+
+    .otg-document-overlay strong {
+        font-size: 17px;
+    }
+
+    .otg-check-item {
+        min-height: 56px;
+
+        padding: 10px 12px;
+    }
+
+    .otg-check-item > span {
+        width: 25px;
+        height: 25px;
+
+        flex: 0 0 25px;
+
+        font-size: 11px;
+    }
+
+    .otg-check-item p {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .otg-admission-text h2 {
+        font-size: 27px;
+    }
+
+    .otg-admission-visual {
+        min-height: 355px;
+    }
+
+    .otg-image-main {
+        height: 290px;
+    }
+
+    .otg-image-small {
+        width: 90px;
+        height: 75px;
+    }
+
+    .otg-visual-badge {
+        width: 70px;
+        height: 70px;
+    }
+
+    .otg-visual-badge span {
+        font-size: 6px;
+    }
+
+    .otg-visual-badge strong {
+        font-size: 10px;
+    }
+
+    .otg-step-content p {
+        font-size: 15px;
+    }
+
+    .otg-check-item p {
+        font-size: 15px;
+    }
+}
