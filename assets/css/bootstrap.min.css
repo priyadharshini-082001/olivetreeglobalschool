@@ -28,3 +28,8 @@
         width: 20%;
     }
 }
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover, a:not([href]):not([class]):focus {
+    color: white;
+    text-decoration: none;
+}

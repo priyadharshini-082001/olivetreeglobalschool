@@ -12838,1721 +12838,1140 @@
     }
 }
 
-/* =========================================================
-   OLIVE TREE GLOBAL SCHOOL - ADMISSIONS
-   COMPLETE CSS
-   Theme: Dark Green + Brown + White
-   Responsive: Desktop / Tablet / Mobile
-========================================================= */
-
-:root {
-    --otg-green: #4f7131;
-    --otg-green-dark: #304a1d;
-    --otg-green-deep: #243817;
-    --otg-green-light: #edf4e5;
-
-    --otg-brown: #3f2819;
-    --otg-brown-light: #76553c;
-    --otg-gold: #b28a45;
-
-    --otg-black: #000000;
-    --otg-white: #ffffff;
-    --otg-bg: #ffffff;
-    --otg-soft-bg: #f7f9f3;
-
-    --otg-border: #d9e2ce;
-
-    --otg-shadow: 0 15px 40px rgba(38, 55, 25, 0.12);
-    --otg-shadow-dark: 0 20px 50px rgba(31, 42, 22, 0.20);
-}
 
 
-/* =========================================================
-   MAIN ADMISSIONS SECTION
-========================================================= */
-
-.otg-admissions {
-    position: relative;
+.admission-section {
     width: 100%;
-    padding: 50px 20px;
-    background: #ffffff;
-    overflow: hidden;
-}
-
-.otg-admissions::before {
-    content: "";
-    position: absolute;
-    top: -160px;
-    right: -160px;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background: rgba(79, 113, 49, 0.05);
-    pointer-events: none;
-}
-
-.otg-admissions::after {
-    content: "";
-    position: absolute;
-    bottom: -180px;
-    left: -180px;
-    width: 430px;
-    height: 430px;
-    border-radius: 50%;
-    background: rgba(63, 40, 25, 0.035);
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.otg-admission-container {
-    position: relative;
-    z-index: 2;
-    width: min(1180px, 92%);
-    margin: 0 auto;
-}
-
-
-/* =========================================================
-   INTRO SECTION
-========================================================= */
-
-.otg-admission-intro {
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 0.92fr;
-    align-items: center;
-    gap: 65px;
-    margin-bottom: 95px;
+    grid-template-columns: 42% 58%;
 }
 
+/* LEFT PICTURE */
 
-/* =========================================================
-   INTRO TEXT
-========================================================= */
-
-.otg-admission-text {
+.admission-picture {
     position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #164d35;
 }
 
-.otg-admission-kicker {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    color: var(--otg-green);
-    font-size: 14px;
+.admission-picture > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.admission-picture::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(5, 38, 24, 0.15) 5%,
+        rgba(5, 38, 24, 0.35) 40%,
+        rgba(5, 38, 24, 0.94) 100%
+    );
+}
+
+.picture-overlay {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 55px 45px;
+    color: white;
+}
+
+.school-tag {
+    margin-bottom: 18px;
+    padding: 9px 15px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.picture-overlay h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(34px, 3.5vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.picture-overlay p {
+    max-width: 410px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #f0f4ed;
+}
+
+.picture-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 35px;
+    padding-left: 15px;
+    border-left: 4px solid #d9b64b;
+}
+
+.picture-bottom span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.picture-bottom strong {
+    color: #f3d36b;
+    font-size: 23px;
+}
+
+/* RIGHT CONTENT */
+
+.admission-content {
+    padding: 35px clamp(22px, 4vw, 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+
+.admission-header {
+    margin-bottom: 28px;
+}
+
+.section-label {
+    color: #23784d;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 2px;
-    text-transform: uppercase;
 }
 
-.otg-admission-kicker::before {
-    content: "";
-    width: 35px;
-    height: 3px;
-    border-radius: 20px;
-    background: var(--otg-green);
+.admission-header h2 {
+    margin: 10px 0;
+    color: #145438;
+    font-family: Georgia, serif;
+    font-size: clamp(34px, 3.2vw, 46px);
 }
 
-.otg-admission-text h2 {
-    margin: 0 0 22px;
-    color: var(--otg-brown);
-    font-size: clamp(34px, 4vw, 52px);
-    line-height: 1.08;
-    font-weight: 800;
-    letter-spacing: -1.2px;
+.admission-header p {
+    max-width: 570px;
+    color: #69776c;
+    font-size: 15px;
+    line-height: 1.7;
 }
 
-.otg-admission-text h2 span {
-    display: block;
-    color: var(--otg-green);
+.form-subtitle {
+    margin-bottom: 17px;
+    padding-bottom: 10px;
+    color: #175a3b;
+    border-bottom: 1px solid #e3eae2;
+    font-size: 17px;
 }
 
-.otg-title-line {
-    width: 80px;
-    height: 5px;
-    margin-bottom: 25px;
-    border-radius: 30px;
-    background: var(--otg-green);
+.parent-title {
+    margin-top: 27px;
 }
 
-.otg-admission-text p {
-    margin: 0 0 17px;
-    color: #000000 !important;
-    font-size: 18px;
-    line-height: 1.85;
-    font-weight: 400;
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 20px;
 }
 
-
-/* =========================================================
-   ENQUIRY AREA
-========================================================= */
-
-.otg-enquiry-area {
-    position: relative;
+.form-field {
+    min-width: 0;
     display: flex;
-    align-items: center;
-    gap: 17px;
-    max-width: 730px;
-    margin-top: 32px;
-    padding: 14px;
-
-    background: #f2f6ec;
-    border: 1px solid #cddbbd;
-    border-radius: 18px;
-
-    overflow: visible;
-
-    animation: enquiryBoxGlow 3s ease-in-out infinite;
+    flex-direction: column;
 }
 
+.form-field label {
+    margin-bottom: 8px;
+    color: #34463a;
+    font-size: 14px;
+    font-weight: 700;
+}
 
-/* =========================================================
-   ENQUIRY ICON
-========================================================= */
+.form-field label span {
+    color: #cf3737;
+}
 
-.otg-enquiry-icon {
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    min-height: 45px;
+    padding: 11px 13px;
+    border: 1px solid #d9e2da;
+    border-radius: 7px;
+    background: #fff;
+    color: #26382d;
+    font: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.form-field textarea {
+    min-height: 72px;
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #278253;
+    box-shadow: 0 0 0 3px rgba(39, 130, 83, 0.1);
+}
+
+.form-field input[type="file"] {
+    padding: 8px;
+}
+
+.form-field small {
+    margin-top: 6px;
+    color: #7b887e;
+    font-size: 12px;
+}
+
+.full-field {
+    grid-column: 1 / -1;
+}
+
+.consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 22px 0;
+    color: #617064;
+    font-size: 13px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.consent input {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: #176b43;
+    flex-shrink: 0;
+}
+
+.submit-button {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #09663e;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-button span {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #064a30;
+    box-shadow: 0 8px 20px rgba(9, 102, 62, 0.2);
+}
+
+.submit-button:hover span {
+    transform: translateX(5px);
+}
+
+.form-footer {
+    margin-top: 14px;
+    color: #859087;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .admission-section {
+        grid-template-columns: 38% 62%;
+    }
+
+    .picture-overlay {
+        padding: 35px 25px;
+    }
+
+    .picture-overlay p {
+        font-size: 15px;
+    }
+
+    .admission-content {
+        padding: 30px 24px;
+    }
+
+    .form-grid {
+        gap: 16px 13px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .admission-section {
+        grid-template-columns: 1fr;
+    }
+
+    .admission-picture {
+        min-height: 480px;
+    }
+
+    .picture-overlay {
+        padding: 35px 25px;
+    }
+
+    .picture-overlay h1 {
+        font-size: 38px;
+    }
+
+    .picture-overlay p {
+        font-size: 15px;
+    }
+
+    .admission-content {
+        padding: 35px 22px;
+    }
+
+    .admission-header h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admission-picture {
+        min-height: 420px;
+    }
+
+    .picture-overlay {
+        padding: 25px 20px;
+    }
+
+    .picture-overlay h1 {
+        font-size: 32px;
+    }
+
+    .picture-overlay p {
+        font-size: 14px;
+    }
+
+    .admission-content {
+        padding: 28px 16px;
+    }
+
+    .admission-header h2 {
+        font-size: 31px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .full-field {
+        grid-column: auto;
+    }
+
+    .form-subtitle {
+        font-size: 16px;
+    }
+}
+/* ==========================================
+   OLIVE TREE GLOBAL SCHOOL
+   CONTACT PAGE - FULL RESPONSIVE CSS
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: clip;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f5ef;
+    color: #26382d;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img,
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+}
+
+/* ==========================================
+   MAIN TWO-COLUMN LAYOUT
+========================================== */
+
+.admission-section {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(0, 42%) minmax(0, 58%);
+    align-items: stretch;
+}
+
+/* ==========================================
+   LEFT PICTURE SECTION
+========================================== */
+
+.admission-picture {
     position: relative;
+    min-width: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    isolation: isolate;
+    background: #164d35;
+}
 
-    width: 56px;
-    height: 56px;
-    min-width: 56px;
+.admission-picture > img {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+}
 
+.admission-picture::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(4, 36, 22, 0.12) 0%,
+        rgba(4, 36, 22, 0.38) 38%,
+        rgba(4, 36, 22, 0.95) 100%
+    );
+}
+
+.picture-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.school-tag {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 9px 14px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    overflow-wrap: anywhere;
+}
+
+.picture-overlay h1 {
+    max-width: 100%;
+    margin-bottom: 18px;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 3.3vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.picture-overlay > p {
+    max-width: 430px;
+    margin-bottom: 25px;
+    color: #f0f4ed;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   CONTACT DETAILS ON LEFT
+========================================== */
+
+.contact-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 5px;
+}
+
+.contact-item {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border-radius: 50%;
-
-    background: var(--otg-green);
-    color: #ffffff;
-
-    font-size: 22px;
-
-    animation: enquiryIconPulse 1.8s ease-in-out infinite;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 11px;
+    font-size: 21px;
 }
 
-.otg-enquiry-icon::before {
-    content: "";
-
-    position: absolute;
-    inset: -6px;
-
-    border: 2px solid rgba(79, 113, 49, 0.35);
-
-    border-radius: 50%;
-
-    animation: iconRing 1.8s ease-out infinite;
-}
-
-
-/* =========================================================
-   ENQUIRY INFORMATION
-========================================================= */
-
-.otg-enquiry-info {
+.contact-item > div {
     flex: 1;
     min-width: 0;
 }
 
-.otg-enquiry-info strong {
-    display: block;
-
+.contact-item h3 {
     margin-bottom: 4px;
-
-    color: var(--otg-brown) !important;
-
-    font-size: 16px;
-    line-height: 1.4;
-    font-weight: 800;
+    color: #f2d675;
+    font-size: 15px;
+    font-weight: 700;
 }
 
-.otg-enquiry-info small {
+.contact-item p {
+    margin: 0;
+    color: #f3f5ef;
+    font-size: 14px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* LEFT FOOTER */
+
+.picture-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 28px;
+    padding-left: 14px;
+    border-left: 4px solid #d9b64b;
+}
+
+.picture-bottom span {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.picture-bottom strong {
+    color: #f3d36b;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* ==========================================
+   RIGHT CONTACT CONTENT
+========================================== */
+
+.admission-content {
+    min-width: 0;
+    width: 100%;
+    padding: 38px clamp(22px, 4vw, 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+
+.admission-header {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.section-label {
+    display: inline-block;
+    color: #23784d;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.admission-header h2 {
+    margin: 10px 0 12px;
+    color: #145438;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 3.1vw, 45px);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.admission-header > p {
+    max-width: 580px;
+    color: #69776c;
+    font-size: 15px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.admission-content form {
+    width: 100%;
+    min-width: 0;
+}
+
+.form-subtitle {
+    margin-bottom: 19px;
+    padding-bottom: 11px;
+    color: #175a3b;
+    border-bottom: 1px solid #e3eae2;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 19px 18px;
+}
+
+.form-field {
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    margin-bottom: 8px;
+    color: #34463a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.form-field label span {
+    color: #cf3737;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
     display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    padding: 11px 12px;
+    color: #26382d;
+    background: #fff;
+    border: 1px solid #d9e2da;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
 
-    color: #000000 !important;
+.form-field select {
+    cursor: pointer;
+}
 
+.form-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #89948b;
+    opacity: 1;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #278253;
+    box-shadow: 0 0 0 3px rgba(39, 130, 83, 0.1);
+}
+
+.form-field input[type="file"] {
+    min-height: 44px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.form-field small {
+    margin-top: 6px;
+    color: #7b887e;
     font-size: 12px;
     line-height: 1.5;
 }
 
-
-/* =========================================================
-   ADMISSION ENQUIRY BUTTON
-========================================================= */
-
-.otg-enquiry-btn {
-    position: relative;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-
-    min-width: 215px;
-
-    padding: 16px 23px;
-
-    background: var(--otg-green);
-    color: #ffffff !important;
-
-    text-decoration: none;
-
-    border-radius: 12px;
-    border: 2px solid #6e914d;
-
-    font-size: 14px;
-    font-weight: 800;
-
-    letter-spacing: 0.3px;
-
-    overflow: hidden;
-    z-index: 1;
-
-    animation: admissionBlink 2s ease-in-out infinite;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        box-shadow 0.25s ease;
+.full-field {
+    grid-column: 1 / -1;
 }
 
-
-/* Button shine */
-
-.otg-enquiry-btn::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    left: -120%;
-
-    width: 70%;
-    height: 100%;
-
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.45),
-        transparent
-    );
-
-    transform: skewX(-20deg);
-
-    animation: buttonShine 3.2s ease-in-out infinite;
-
-    z-index: -1;
+.parent-title {
+    margin-top: 27px;
 }
 
+/* ==========================================
+   CONSENT
+========================================== */
 
-/* Button outer ring */
-
-.otg-enquiry-btn::after {
-    content: "";
-
-    position: absolute;
-    inset: -5px;
-
-    border-radius: 15px;
-
-    border: 2px solid rgba(79, 113, 49, 0.35);
-
-    animation: buttonRing 1.8s ease-out infinite;
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   BUTTON ARROW
-========================================================= */
-
-.otg-btn-arrow {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 28px;
-    height: 28px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.18);
-
-    font-size: 18px;
-    line-height: 1;
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease;
-}
-
-.otg-enquiry-btn:hover {
-    background: var(--otg-green-dark);
-
-    transform: translateY(-5px);
-
-    animation: none;
-}
-
-.otg-enquiry-btn:hover .otg-btn-arrow {
-    transform: translateX(6px);
-    background: rgba(255, 255, 255, 0.28);
-}
-
-
-/* =========================================================
-   INTRO IMAGE AREA
-========================================================= */
-
-.otg-admission-visual {
-    position: relative;
-
-    min-height: 520px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* Main image */
-
-.otg-image-main {
-    position: relative;
-
-    width: 82%;
-    height: 450px;
-
-    overflow: hidden;
-
-    border-radius: 28px;
-
-    z-index: 2;
-}
-
-.otg-image-main img {
+.consent {
     width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: transform 0.8s ease;
-}
-
-.otg-image-main:hover img {
-    transform: scale(1.06);
-}
-
-
-/* =========================================================
-   SMALL IMAGES
-========================================================= */
-
-.otg-image-small {
-    position: absolute;
-
-    width: 190px;
-    height: 155px;
-
-    overflow: hidden;
-
-    border: 7px solid #ffffff;
-
-    border-radius: 20px;
-
-
-    z-index: 4;
-
-    animation: floatingImage 4s ease-in-out infinite;
-}
-
-.otg-image-small img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: transform 0.6s ease;
-}
-
-.otg-image-small:hover img {
-    transform: scale(1.08);
-}
-
-.otg-image-small-one {
-    top: 35px;
-    right: 0;
-}
-
-.otg-image-small-two {
-    bottom: 25px;
-    left: 0;
-
-    animation-delay: 1s;
-}
-
-
-/* =========================================================
-   VISUAL BADGE
-========================================================= */
-
-.otg-visual-badge {
-    position: absolute;
-
-    right: 8%;
-    bottom: 0;
-
-    width: 125px;
-    height: 125px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-
-    border-radius: 50%;
-
-    background: var(--otg-brown);
-
-    color: #ffffff;
-
-    text-align: center;
-
-    border: 7px solid #ffffff;
-
-    font-size: 13px;
-    line-height: 1.4;
-    font-weight: 800;
-
-    z-index: 6;
-
-    animation: badgeFloat 3s ease-in-out infinite;
-}
-
-
-/* =========================================================
-   SECTION HEADING
-========================================================= */
-
-.otg-section-heading {
-    max-width: 760px;
-
-    margin: 0 auto 50px;
-color:darkgreen;
-    text-align: center;
-}
-
-.otg-section-heading h2 {
-    margin: 0 0 15px;
-
-    color:darkgreen;
-
-    font-size: clamp(30px, 3.5vw, 44px);
-
-    line-height: 1.15;
-
-    font-weight: 800;
-}
-
-.otg-section-heading p {
-    margin: 0;
-
-    color:darkgreen !important;
-
-    font-size: 18px;
-    line-height: 1.75;
-}
-
-
-/* =========================================================
-   ADMISSION PROCEDURE
-========================================================= */
-
-.otg-procedure {
-    padding: 80px 0;
-
-    background:#f2ffcb;
-
-    border-radius: 35px;
-}
-
-
-/* =========================================================
-   STEPS GRID
-========================================================= */
-
-.otg-steps {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 22px;
-
-    padding: 0 45px;
-}
-
-
-/* =========================================================
-   STEP CARD
-========================================================= */
-
-.otg-step {
-    position: relative;
-
     display: flex;
     align-items: flex-start;
-
-    gap: 18px;
-
-    padding: 28px;
-
-    background: #ffffff;
-
-    border: 1px solid var(--otg-border);
-
-    border-radius: 20px;
-
-    overflow: hidden;
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease,
-        border-color 0.35s ease;
-}
-
-.otg-step::before {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    top: 0;
-    bottom: 0;
-
-    width: 5px;
-
-    background: var(--otg-green);
-
-    transform: scaleY(0);
-
-    transform-origin: bottom;
-
-    transition: transform 0.35s ease;
-
-    transform: translateY(-8px);
-
-    border-color: #b9caa8;
-
-    transform: scaleY(1);
-}
-
-
-/* =========================================================
-   STEP NUMBER
-========================================================= */
-
-.otg-step-number {
-    width: 48px;
-    height: 48px;
-
-    min-width: 48px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-
-    background: var(--otg-green);
-
-    color: #ffffff;
-
-    font-size: 16px;
-
-    font-weight: 800;
-
-}
-
-
-/* =========================================================
-   STEP ICON
-========================================================= */
-
-.otg-step-icon {
-    position: absolute;
-
-    right: 20px;
-    top: 20px;
-
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #f0f5e9;
-
-    color: var(--otg-green);
-
-    font-size: 16px;
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease;
-
-    transform: rotate(12deg) scale(1.1);
-
-    background: var(--otg-green);
-
-    color: #ffffff;
-}
-
-
-/* =========================================================
-   STEP CONTENT
-========================================================= */
-
-.otg-step-content {
-    flex: 1;
-
-    padding-right: 35px;
-}
-
-.otg-step-content h3 {
-    margin: 0 0 8px;
-
-    color: var(--otg-brown);
-
-    font-size: 19px;
-
-    line-height: 1.35;
-
-    font-weight: 800;
-}
-
-.otg-step-content p {
-    margin: 0;
-
-    color: #000000 !important;
-
-    font-size: 16px;
-
-    line-height: 1.75;
-}
-
-
-/* =========================================================
-   DOCUMENT SECTION
-========================================================= */
-
-.otg-documents {
-    padding: 95px 0;
-}
-
-
-/* =========================================================
-   DOCUMENT HEADING
-========================================================= */
-
-.otg-document-heading {
-    margin-bottom: 45px;
-}
-
-.otg-document-heading h2 {
-    margin: 0 0 12px;
-
-    color: var(--otg-brown);
-
-    font-size: clamp(30px, 3.5vw, 42px);
-
-    font-weight: 800;
-}
-
-.otg-document-heading p {
-    margin: 0;
-
-    color: #000000 !important;
-
-    font-size: 18px;
-
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   DOCUMENT LAYOUT
-========================================================= */
-
-.otg-document-layout {
-    display: grid;
-
-    grid-template-columns: 0.9fr 1.1fr;
-
-    gap: 60px;
-
-    align-items: center;
-}
-
-
-/* =========================================================
-   DOCUMENT IMAGE
-========================================================= */
-
-.otg-document-image {
-    position: relative;
-
-    height: 460px;
-
-    overflow: hidden;
-
-    border-radius: 28px;
-
-}
-
-.otg-document-image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: transform 0.8s ease;
-}
-
-.otg-document-image:hover img {
-    transform: scale(1.06);
-}
-
-
-/* =========================================================
-   DOCUMENT IMAGE OVERLAY
-========================================================= */
-
-.otg-document-overlay {
-    position: absolute;
-
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
-
-    padding: 18px 20px;
-
-    background: rgba(36, 56, 23, 0.92);
-
-    border-radius: 15px;
-
-    color: #ffffff;
-
-    font-size: 15px;
-
-    line-height: 1.5;
-
-    font-weight: 700;
-
-    backdrop-filter: blur(8px);
-}
-
-
-/* =========================================================
-   CHECKLIST
-========================================================= */
-
-.otg-checklist {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 13px;
-}
-
-.otg-check-item {
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 12px;
-
-    padding: 17px 16px;
-
-    background: #f7f9f3;
-
-    border: 1px solid #dce6d3;
-
-    border-radius: 13px;
-
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.otg-check-item:hover {
-    transform: translateX(5px);
-
-    background: #eef4e7;
-
-}
-
-.otg-check-item i {
-    width: 25px;
-    height: 25px;
-
-    min-width: 25px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: var(--otg-green);
-
-    color: #ffffff;
-
-    font-size: 11px;
-
-    margin-top: 2px;
-}
-
-.otg-check-item p {
-    margin: 0;
-
-    color: #000000 !important;
-
-    font-size: 15px;
-
-    line-height: 1.55;
-}
-
-
-/* =========================================================
-   FINAL CTA
-========================================================= */
-
-.otg-final-cta {
-    position: relative;
-
-    margin-top: 30px;
-
-    padding: 65px 55px;
-
-    background: var(--otg-green);
-
-    border-radius: 30px;
-
-    overflow: hidden;
-
-    box-shadow: 0 20px 45px rgba(55, 82, 31, 0.22);
-}
-
-.otg-final-cta::before {
-    content: "";
-
-    position: absolute;
-
-    width: 280px;
-    height: 280px;
-
-    right: -80px;
-    top: -100px;
-
-    border-radius: 50%;
-
-    border: 50px solid rgba(255, 255, 255, 0.06);
-}
-
-.otg-final-cta::after {
-    content: "";
-
-    position: absolute;
-
-    width: 200px;
-    height: 200px;
-
-    left: -90px;
-    bottom: -120px;
-
-    border-radius: 50%;
-
-    background: rgba(0, 0, 0, 0.06);
-}
-
-
-/* =========================================================
-   CTA CONTENT
-========================================================= */
-
-.otg-cta-content {
-    position: relative;
-
-    z-index: 2;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 40px;
-}
-
-.otg-cta-content h2 {
-    margin: 0 0 10px;
-
-    color: #ffffff;
-
-    font-size: clamp(27px, 3vw, 40px);
-
-    line-height: 1.2;
-
-    font-weight: 800;
-}
-
-.otg-cta-content p {
-    margin: 0;
-
-    max-width: 650px;
-
-    color: #ffffff;
-
-    font-size: 17px;
-
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   CTA BUTTON
-========================================================= */
-
-.otg-cta-button {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
     gap: 10px;
-
-    min-width: 190px;
-
-    padding: 15px 24px;
-
-    background: #ffffff;
-
-    color: var(--otg-brown) !important;
-
-    text-decoration: none;
-
-    border: 2px solid #ffffff;
-
-    border-radius: 12px;
-
-    font-size: 14px;
-
-    font-weight: 800;
-
-    white-space: nowrap;
-
-    box-shadow:
-        0 8px 0 rgba(45, 65, 27, 0.30),
-        0 15px 30px rgba(0, 0, 0, 0.16);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
+    margin: 23px 0;
+    color: #617064;
+    font-size: 13px;
+    line-height: 1.65;
+    cursor: pointer;
 }
 
-.otg-cta-button:hover {
-    background: #f3f6ec;
-
-    color: var(--otg-brown) !important;
-
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 8px 0 rgba(45, 65, 27, 0.25),
-        0 20px 35px rgba(0, 0, 0, 0.22);
+.consent input {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 17px;
+    margin-top: 3px;
+    accent-color: #176b43;
+    cursor: pointer;
 }
 
-
-/* =========================================================
-   ANIMATIONS
-========================================================= */
-
-/* Enquiry button blinking */
-
-@keyframes admissionBlink {
-
-    0%,
-    100% {
-        transform: scale(1);
-
-        box-shadow:
-            0 8px 0 #354d21,
-            0 14px 25px rgba(55, 82, 31, 0.28);
-    }
-
-    50% {
-        transform: scale(1.035);
-
-        box-shadow:
-            0 8px 0 #354d21,
-            0 18px 38px rgba(55, 82, 31, 0.45);
-    }
+.consent span {
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
 
-/* Button ring */
-
-@keyframes buttonRing {
-
-    0% {
-        opacity: 0.75;
-        transform: scale(0.95);
-    }
-
-    70% {
-        opacity: 0;
-        transform: scale(1.12);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(1.12);
-    }
+.submit-button {
+    width: 100%;
+    min-height: 50px;
+    padding: 13px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #fff;
+    background: #09663e;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s, box-shadow 0.25s;
 }
 
-
-/* Button shine */
-
-@keyframes buttonShine {
-
-    0% {
-        left: -120%;
-    }
-
-    45%,
-    100% {
-        left: 150%;
-    }
+.submit-button span {
+    font-size: 22px;
+    transition: transform 0.25s;
 }
 
-
-/* Enquiry icon */
-
-@keyframes enquiryIconPulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.08);
-    }
+.submit-button:hover {
+    background: #064a30;
+    box-shadow: 0 7px 18px rgba(9, 102, 62, 0.18);
 }
 
-
-/* Icon ring */
-
-@keyframes iconRing {
-
-    0% {
-        opacity: 0.8;
-        transform: scale(0.9);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(1.35);
-    }
+.submit-button:hover span {
+    transform: translateX(4px);
 }
 
-
-/* Enquiry box glow */
-
-@keyframes enquiryBoxGlow {
-
-    0%,
-    100% {
-        box-shadow:
-            0 10px 30px rgba(50, 70, 30, 0.10);
-    }
-
-    50% {
-        box-shadow:
-            0 14px 40px rgba(50, 70, 30, 0.20);
-    }
+.form-footer {
+    margin-top: 14px;
+    color: #859087;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+    overflow-wrap: anywhere;
 }
 
+/* ==========================================
+   SMALL DESKTOP / TABLET
+========================================== */
 
-/* Floating images */
-
-@keyframes floatingImage {
-
-    0%,
-    100% {
-        transform: translateY(0);
+@media (max-width: 1100px) {
+    .admission-section {
+        grid-template-columns: minmax(0, 38%) minmax(0, 62%);
     }
 
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-
-/* Badge animation */
-
-@keyframes badgeFloat {
-
-    0%,
-    100% {
-        transform: translateY(0) rotate(0deg);
+    .picture-overlay {
+        padding: 30px 24px;
     }
 
-    50% {
-        transform: translateY(-8px) rotate(2deg);
-    }
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1000px) {
-
-    .otg-admissions {
-        padding: 75px 0;
+    .picture-overlay h1 {
+        font-size: 34px;
     }
 
-    .otg-admission-intro {
-        grid-template-columns: 1fr;
-
-        gap: 50px;
-
-        margin-bottom: 75px;
-    }
-
-    .otg-admission-text {
-        max-width: 850px;
-
-        margin: auto;
-    }
-
-    .otg-admission-visual {
-        max-width: 700px;
-
-        width: 100%;
-
-        margin: auto;
-
-        min-height: 500px;
-    }
-
-    .otg-document-layout {
-        grid-template-columns: 1fr;
-
-        gap: 45px;
-    }
-
-    .otg-document-image {
-        max-width: 650px;
-
-        width: 100%;
-
-        margin: auto;
-    }
-
-    .otg-steps {
-        padding: 0 30px;
-    }
-
-    .otg-cta-content {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 700px) {
-
-    .otg-admissions {
-        padding: 60px 0;
-    }
-
-    .otg-admission-container {
-        width: 92%;
-    }
-
-    /* Intro */
-
-    .otg-admission-intro {
-        gap: 40px;
-
-        margin-bottom: 60px;
-    }
-
-    .otg-admission-kicker {
-        font-size: 12px;
-
-        letter-spacing: 1.5px;
-    }
-
-    .otg-admission-text h2 {
-        font-size: 32px;
-
-        line-height: 1.12;
-
-        letter-spacing: -0.5px;
-    }
-
-    .otg-admission-text p,
-    .otg-section-heading p,
-    .otg-step-content p,
-    .otg-document-heading p,
-    .otg-check-item p,
-    .otg-cta-content p {
-        color: #000000 !important;
-
+    .picture-overlay > p {
         font-size: 15px;
+    }
 
+    .contact-details {
+        gap: 16px;
+    }
+
+    .contact-icon {
+        width: 37px;
+        height: 37px;
+        flex-basis: 37px;
+    }
+
+    .admission-content {
+        padding: 30px 24px;
+    }
+
+    .form-grid {
+        gap: 17px 13px;
+    }
+}
+
+/* ==========================================
+   TABLET PORTRAIT
+========================================== */
+
+@media (max-width: 850px) {
+    .admission-section {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .admission-picture {
+        min-height: 0;
+        height: auto;
+    }
+
+    .admission-picture > img {
+        z-index: -2;
+        height: 100%;
+        object-position: center 40%;
+    }
+
+    .picture-overlay {
+        min-height: 0;
+        padding: 50px 35px 40px;
+        justify-content: flex-end;
+    }
+
+    .picture-overlay h1 {
+        font-size: 40px;
+    }
+
+    .picture-overlay > p {
+        max-width: 520px;
+    }
+
+    .contact-details {
+        max-width: 500px;
+    }
+
+    .picture-bottom {
+        max-width: 500px;
+    }
+
+    .admission-content {
+        padding: 40px 35px;
+    }
+
+    .admission-header h2 {
+        font-size: 38px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    .admission-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Picture stays above the contact form */
+
+    .admission-picture {
+        width: 100%;
+        min-height: 0;
+        height: auto;
+    }
+
+    .admission-picture > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .picture-overlay {
+        width: 100%;
+        min-height: 0;
+        padding: 38px 22px 30px;
+        justify-content: flex-end;
+    }
+
+    .school-tag {
+        margin-bottom: 16px;
+        padding: 8px 11px;
+        font-size: 10px;
+        letter-spacing: 0.8px;
+    }
+
+    .picture-overlay h1 {
+        margin-bottom: 13px;
+        font-size: 33px;
+        line-height: 1.22;
+    }
+
+    .picture-overlay > p {
+        margin-bottom: 22px;
+        font-size: 14px;
         line-height: 1.75;
     }
 
-
-    /* Enquiry */
-
-    .otg-enquiry-area {
-        display: grid;
-
-        grid-template-columns: 48px 1fr;
-
-        gap: 10px;
-
-        padding: 13px;
-
-        margin-top: 25px;
+    .contact-details {
+        gap: 16px;
+        margin-top: 0;
     }
 
-    .otg-enquiry-icon {
-        width: 48px;
-        height: 48px;
+    .contact-item {
+        gap: 11px;
+    }
 
-        min-width: 48px;
-
+    .contact-icon {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+        border-radius: 9px;
         font-size: 19px;
     }
 
-    .otg-enquiry-info strong {
-        font-size: 13px;
-    }
-
-    .otg-enquiry-info small {
-        font-size: 11px;
-
-        line-height: 1.5;
-    }
-
-    .otg-enquiry-btn {
-        grid-column: 1 / -1;
-
-        width: 100%;
-
-        min-width: 0;
-
-        padding: 15px 18px;
-
+    .contact-item h3 {
         font-size: 14px;
-
-        border-radius: 11px;
     }
 
-
-    /* Visual */
-
-    .otg-admission-visual {
-        min-height: 420px;
+    .contact-item p {
+        font-size: 13px;
+        line-height: 1.6;
     }
 
-    .otg-image-main {
-        width: 82%;
-
-        height: 370px;
-
-        border-radius: 22px;
+    .picture-bottom {
+        margin-top: 23px;
+        padding-left: 12px;
     }
 
-    .otg-image-small {
-        width: 145px;
-
-        height: 120px;
-
-        border-width: 5px;
-
-        border-radius: 15px;
+    .picture-bottom span {
+        font-size: 10px;
     }
 
-    .otg-image-small-one {
-        top: 20px;
-
-        right: 0;
+    .picture-bottom strong {
+        font-size: 18px;
     }
 
-    .otg-image-small-two {
-        bottom: 20px;
+    /* Contact form */
 
-        left: 0;
+    .admission-content {
+        width: 100%;
+        min-width: 0;
+        padding: 30px 20px;
     }
 
-    .otg-visual-badge {
-        width: 100px;
-        height: 100px;
+    .admission-header {
+        margin-bottom: 25px;
+    }
 
-        right: 5%;
-
+    .section-label {
         font-size: 11px;
-
-        padding: 15px;
-
-        border-width: 5px;
+        letter-spacing: 1.4px;
     }
 
-
-    /* Procedure */
-
-    .otg-procedure {
-        padding: 55px 0;
-
-        border-radius: 25px;
+    .admission-header h2 {
+        margin: 9px 0 11px;
+        font-size: 33px;
     }
 
-    .otg-section-heading {
-        margin-bottom: 35px;
+    .admission-header > p {
+        font-size: 14px;
+        line-height: 1.75;
     }
 
-    .otg-section-heading h2,
-    .otg-document-heading h2 {
-        font-size: 30px;
+    .form-subtitle {
+        margin-bottom: 16px;
+        font-size: 16px;
     }
 
-    .otg-steps {
-        grid-template-columns: 1fr;
+    .parent-title {
+        margin-top: 25px;
+    }
 
+    /* One field per row on phones */
+
+    .form-grid {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
         gap: 17px;
-
-        padding: 0 15px;
     }
 
-    .otg-step {
-        padding: 22px 18px;
-
-        gap: 14px;
-
-        border-radius: 17px;
+    .form-field,
+    .full-field {
+        width: 100%;
+        min-width: 0;
+        grid-column: 1 / -1;
     }
 
-    .otg-step-number {
-        width: 42px;
-        height: 42px;
-
-        min-width: 42px;
-
-        border-radius: 11px;
-
+    .form-field label {
+        margin-bottom: 7px;
         font-size: 14px;
     }
 
-    .otg-step-icon {
-        width: 32px;
-        height: 32px;
-
-        right: 14px;
-        top: 15px;
-
-        font-size: 13px;
-    }
-
-    .otg-step-content {
-        padding-right: 28px;
-    }
-
-    .otg-step-content h3 {
-        font-size: 17px;
-    }
-
-
-    /* Documents */
-
-    .otg-documents {
-        padding: 65px 0;
-    }
-
-    .otg-document-heading {
-        margin-bottom: 30px;
-    }
-
-    .otg-document-layout {
-        gap: 30px;
-    }
-
-    .otg-document-image {
-        height: 330px;
-
-        border-radius: 20px;
-    }
-
-    .otg-document-overlay {
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
-
-        padding: 13px 15px;
-
-        font-size: 13px;
-    }
-
-    .otg-checklist {
-        grid-template-columns: 1fr;
-
-        gap: 10px;
-    }
-
-    .otg-check-item {
-        padding: 14px;
-
-        border-radius: 11px;
-    }
-
-
-    /* Final CTA */
-
-    .otg-final-cta {
-        margin-top: 15px;
-
-        padding: 45px 25px;
-
-        border-radius: 23px;
-    }
-
-    .otg-cta-content {
-        gap: 25px;
-
-        text-align: left;
-    }
-
-    .otg-cta-content h2 {
-        font-size: 28px;
-    }
-
-    .otg-cta-button {
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
         width: 100%;
-
         min-width: 0;
-
-        padding: 14px 20px;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .otg-admissions {
-        padding: 50px 0;
+        min-height: 46px;
+        padding: 11px 12px;
+        font-size: 16px;
     }
 
-    .otg-admission-text h2 {
-        font-size: 29px;
+    .form-field textarea {
+        min-height: 115px;
     }
 
-    .otg-admission-text p,
-    .otg-section-heading p,
-    .otg-step-content p,
-    .otg-document-heading p,
-    .otg-check-item p,
-    .otg-cta-content p {
-        font-size: 15px;
+    .form-field input[type="file"] {
+        min-height: 46px;
+        padding: 8px;
+        font-size: 13px;
+    }
 
+    .form-field small {
+        font-size: 12px;
+    }
+
+    .consent {
+        gap: 9px;
+        margin: 21px 0;
+        font-size: 12px;
         line-height: 1.7;
     }
 
-    .otg-admission-visual {
-        min-height: 350px;
+    .submit-button {
+        min-height: 49px;
+        padding: 13px 12px;
+        font-size: 14px;
     }
 
-    .otg-image-main {
-        height: 310px;
+    .form-footer {
+        font-size: 12px;
+    }
+}
 
-        width: 80%;
+/* ==========================================
+   EXTRA SMALL PHONES
+========================================== */
+
+@media (max-width: 380px) {
+    .picture-overlay {
+        padding: 30px 16px 25px;
     }
 
-    .otg-image-small {
-        width: 115px;
-
-        height: 95px;
-
-        border-width: 4px;
-
-        border-radius: 12px;
+    .picture-overlay h1 {
+        font-size: 29px;
     }
 
-    .otg-image-small-one {
-        top: 10px;
-    }
-
-    .otg-image-small-two {
-        bottom: 10px;
-    }
-
-    .otg-visual-badge {
-        width: 82px;
-        height: 82px;
-
-        padding: 10px;
-
-        font-size: 9px;
-
-        border-width: 4px;
-    }
-
-    .otg-step {
-        padding: 18px 15px;
-    }
-
-    .otg-step-number {
-        width: 38px;
-        height: 38px;
-
-        min-width: 38px;
-
+    .picture-overlay > p {
         font-size: 13px;
     }
 
-    .otg-step-content h3 {
-        font-size: 16px;
+    .contact-item {
+        gap: 9px;
     }
 
-    .otg-document-image {
-        height: 280px;
+    .contact-icon {
+        width: 33px;
+        height: 33px;
+        flex-basis: 33px;
+        font-size: 17px;
     }
 
-    .otg-final-cta {
-        padding: 38px 20px;
+    .contact-item p {
+        font-size: 12px;
     }
 
-    .otg-cta-content h2 {
-        font-size: 25px;
-    }
-}
-
-
-/* =========================================================
-   EXTRA SMALL DEVICES
-========================================================= */
-
-@media (max-width: 360px) {
-
-    .otg-admission-container {
-        width: 94%;
+    .admission-content {
+        padding: 26px 15px;
     }
 
-    .otg-admission-text h2 {
-        font-size: 26px;
+    .admission-header h2 {
+        font-size: 29px;
     }
 
-    .otg-admission-text p {
-        font-size: 15px;
-    }
-
-    .otg-enquiry-area {
-        grid-template-columns: 43px 1fr;
-
-        padding: 10px;
-    }
-
-    .otg-enquiry-icon {
-        width: 43px;
-        height: 43px;
-
-        min-width: 43px;
-    }
-
-    .otg-enquiry-btn {
-        padding: 14px 12px;
-
+    .form-field label {
         font-size: 13px;
-    }
-
-    .otg-btn-arrow {
-        width: 25px;
-        height: 25px;
-
-        font-size: 16px;
-    }
-}
-
-
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
-.otg-enquiry-btn:focus-visible,
-.otg-cta-button:focus-visible {
-    outline: 3px solid #b28a45;
-
-    outline-offset: 4px;
-}
-
-
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .otg-enquiry-area,
-    .otg-enquiry-icon,
-    .otg-enquiry-icon::before,
-    .otg-enquiry-btn,
-    .otg-enquiry-btn::before,
-    .otg-enquiry-btn::after,
-    .otg-image-small,
-    .otg-visual-badge {
-        animation: none !important;
-    }
-
-    .otg-step,
-    .otg-image-main img,
-    .otg-image-small img,
-    .otg-check-item,
-    .otg-cta-button {
-        transition: none !important;
     }
 }
