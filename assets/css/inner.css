@@ -10119,7 +10119,6 @@
 
 .second-card {
     border-radius: 35px 5px 35px 35px;
-    transform: rotate(2deg);
 }
 
 .second-wrap {
@@ -10132,7 +10131,7 @@
     top: 70px;
     z-index: 5;
     padding: 20px;
-    background: #0f172a;
+    background: #0f172aae;
     color: #ffffff;
     border-radius: 15px;
     font-size: 15px;
@@ -10348,7 +10347,7 @@
     }
 
     .creative-eyebrow {
-        font-size: 9px;
+        font-size:13px;
         letter-spacing: 2px;
     }
 
@@ -13204,44 +13203,6 @@
    OLIVE TREE GLOBAL SCHOOL
    CONTACT PAGE - FULL RESPONSIVE CSS
 ========================================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    width: 100%;
-    overflow-x: clip;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    width: 100%;
-    min-width: 0;
-    overflow-x: clip;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f4f5ef;
-    color: #26382d;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-img,
-input,
-select,
-textarea,
-button {
-    max-width: 100%;
-}
-
-input,
-select,
-textarea,
-button {
-    font-family: inherit;
-}
 
 /* ==========================================
    MAIN TWO-COLUMN LAYOUT
