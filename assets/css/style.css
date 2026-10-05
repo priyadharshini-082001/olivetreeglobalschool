@@ -2218,7 +2218,7 @@ body.dark-page .mouse-circle-mover-follow {
 }
 @media (max-width: 991px) {
   .cp-header-style-2 .menu-area {
-    padding: 0px 5px;
+    padding: 3px 5px;
     padding-bottom: 10px;
   }
 }
