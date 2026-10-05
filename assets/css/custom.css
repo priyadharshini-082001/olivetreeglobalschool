@@ -6,7 +6,7 @@
 .olive-about {
     position: relative;
     overflow: hidden;
-    padding:50px 0;
+    padding:50px 20px;
     background:white;
 
     font-family: "Poppins", sans-serif;
@@ -3109,7 +3109,7 @@ padding:2%;
 }
 
 .gb-gallery-container {
-    width:100%;
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -3200,9 +3200,7 @@ padding:2%;
 
 .gb-gallery-grid {
     display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
 }
 
@@ -3215,31 +3213,30 @@ padding:2%;
     position: relative;
 
     width: 100%;
-    height:300px;
+    height: 300px;
 
     overflow: hidden;
 
     background: #ddd;
 
     border-radius: 0;
+    border: 1px solid rgba(109, 75, 45, 0.18);
 
     cursor: pointer;
 
-    border: 1px solid rgba(109, 75, 45, .18);
-
     box-shadow:
-        0 8px 25px rgba(45, 62, 49, .08);
+        0 8px 25px rgba(45, 62, 49, 0.08);
 
     transition:
-        transform .45s ease,
-        box-shadow .45s ease;
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
 }
 
 .gb-gallery-item:hover {
     transform: translateY(-6px);
 
     box-shadow:
-        0 18px 38px rgba(45, 62, 49, .18);
+        0 18px 38px rgba(45, 62, 49, 0.18);
 }
 
 
@@ -3254,15 +3251,16 @@ padding:2%;
     display: block;
 
     object-fit: cover;
+    object-position: center;
 
     transition:
-        transform .8s cubic-bezier(.2,.7,.2,1),
-        filter .5s ease;
+        transform 0.8s cubic-bezier(.2, .7, .2, 1),
+        filter 0.5s ease;
 }
 
 .gb-gallery-item:hover img {
     transform: scale(1.09);
-    filter: brightness(.70);
+    filter: brightness(0.70);
 }
 
 
@@ -3279,19 +3277,17 @@ padding:2%;
     background:
         linear-gradient(
             to top,
-            rgba(17, 67, 45, .96) 0%,
-            rgba(17, 67, 45, .62) 32%,
+            rgba(17, 67, 45, 0.96) 0%,
+            rgba(17, 67, 45, 0.62) 32%,
             rgba(17, 67, 45, 0) 75%
         );
 
-    opacity: .95;
-
-    transition: .5s ease;
+    opacity: 0.95;
 
     pointer-events: none;
+
+    transition: opacity 0.5s ease;
 }
-
-
 
 
 /* =========================================================
@@ -3313,11 +3309,12 @@ padding:2%;
     align-items: flex-end;
     gap: 12px;
 
-    color: #fff;
+    color: #ffffff;
 
     transform: translateY(5px);
 
-    transition: .45s ease;
+    transition:
+        transform 0.45s ease;
 }
 
 .gb-gallery-item:hover .gb-gallery-overlay {
@@ -3331,20 +3328,21 @@ padding:2%;
 
 .gb-gallery-number {
     min-width: 38px;
+    width: 38px;
     height: 38px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(255,255,255,.65);
+    flex-shrink: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
 
     color: #e4c27a;
 
     font-size: 14px;
     font-weight: 700;
-
-    flex-shrink: 0;
 }
 
 
@@ -3355,7 +3353,7 @@ padding:2%;
 .gb-gallery-overlay h3 {
     margin: 0;
 
-    color: #fff;
+    color: #ffffff;
 
     font-size: 21px;
     line-height: 1.05;
@@ -3366,7 +3364,7 @@ padding:2%;
 .gb-gallery-overlay p {
     margin: 4px 0 0;
 
-    color: rgba(255,255,255,.82);
+    color: rgba(255, 255, 255, 0.82);
 
     font-size: 14px;
     line-height: 1.2;
@@ -3374,7 +3372,7 @@ padding:2%;
 
 
 /* =========================================================
-   PLUS
+   PLUS ICON
 ========================================================= */
 
 .gb-gallery-icon {
@@ -3389,15 +3387,19 @@ padding:2%;
 
     flex-shrink: 0;
 
-    border: 1px solid rgba(255,255,255,.65);
+    border: 1px solid rgba(255, 255, 255, 0.65);
 
-    color: #fff;
+    color: #ffffff;
 
     font-family: Arial, sans-serif;
     font-size: 22px;
     font-weight: 300;
 
-    transition: .45s ease;
+    transition:
+        background 0.45s ease,
+        border-color 0.45s ease,
+        color 0.45s ease,
+        transform 0.45s ease;
 }
 
 .gb-gallery-item:hover .gb-gallery-icon {
@@ -3411,7 +3413,7 @@ padding:2%;
 
 
 /* =========================================================
-   BROWN TOP ACCENT
+   TOP ACCENT
 ========================================================= */
 
 .gb-gallery-item:nth-child(1),
@@ -3433,18 +3435,26 @@ padding:2%;
 
 
 /* =========================================================
-   TABLET
+   LARGE TABLET / SMALL LAPTOP
 ========================================================= */
 
 @media (max-width: 1100px) {
 
+    .green-brown-gallery {
+        padding: 50px 25px;
+    }
+
     .gb-gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 15px;
     }
 
     .gb-gallery-item {
         height: 270px;
+    }
+
+    .gb-gallery-heading {
+        margin-bottom: 35px;
     }
 
     .gb-gallery-heading h2 {
@@ -3454,26 +3464,27 @@ padding:2%;
 
 
 /* =========================================================
-   TABLET / SMALL LAPTOP
+   TABLET
 ========================================================= */
 
 @media (max-width: 991px) {
 
     .green-brown-gallery {
-        padding: 60px 0 65px;
+        padding: 55px 0 60px;
     }
 
     .gb-gallery-container {
         width: 92%;
+        max-width: 100%;
     }
 
     .gb-gallery-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 14px;
     }
 
     .gb-gallery-item {
-        height: 260px;
+        height: 255px;
     }
 
     .gb-gallery-heading {
@@ -3482,6 +3493,37 @@ padding:2%;
 
     .gb-gallery-heading h2 {
         font-size: 36px;
+    }
+
+    .gb-gallery-heading p {
+        max-width: 650px;
+        font-size: 16px;
+    }
+
+    .gb-gallery-overlay {
+        padding: 16px;
+        gap: 9px;
+    }
+
+    .gb-gallery-overlay h3 {
+        font-size: 19px;
+    }
+
+    .gb-gallery-overlay p {
+        font-size: 13px;
+    }
+
+    .gb-gallery-number {
+        min-width: 34px;
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .gb-gallery-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 20px;
     }
 }
 
@@ -3500,8 +3542,12 @@ padding:2%;
         width: 92%;
     }
 
+    .gb-gallery-heading {
+        margin-bottom: 28px;
+    }
+
     .gb-gallery-heading span {
-        font-size: 15px;
+        font-size: 14px;
         letter-spacing: 2px;
     }
 
@@ -3513,44 +3559,52 @@ padding:2%;
 
     .gb-gallery-heading h2 {
         font-size: 31px;
+        line-height: 1.12;
     }
 
     .gb-gallery-heading p {
+        margin-top: 10px;
+
         font-size: 15px;
+        line-height: 1.5;
     }
 
     .gb-gallery-grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .gb-gallery-item {
-        height: 210px;
+        height: 225px;
     }
 
     .gb-gallery-overlay {
-        padding: 12px;
-        gap: 7px;
+        padding: 13px;
+        gap: 8px;
     }
 
     .gb-gallery-number {
-        min-width: 30px;
-        width: 30px;
-        height: 30px;
+        min-width: 31px;
+        width: 31px;
+        height: 31px;
+
         font-size: 11px;
     }
 
     .gb-gallery-overlay h3 {
-        font-size: 17px;
+        font-size: 18px;
+        line-height: 1.1;
     }
 
     .gb-gallery-overlay p {
+        margin-top: 3px;
         font-size: 12px;
     }
 
     .gb-gallery-icon {
-        width: 30px;
-        height: 30px;
+        width: 31px;
+        height: 31px;
+
         font-size: 18px;
     }
 }
@@ -3566,28 +3620,46 @@ padding:2%;
         padding: 42px 0 48px;
     }
 
+    .gb-gallery-container {
+        width: 91%;
+    }
+
     .gb-gallery-heading {
         margin-bottom: 23px;
     }
 
+    .gb-gallery-heading span {
+        font-size: 13px;
+        letter-spacing: 1.8px;
+    }
+
+    .gb-gallery-heading span::before,
+    .gb-gallery-heading span::after {
+        width: 16px;
+        margin: 0 5px;
+    }
+
     .gb-gallery-heading h2 {
         font-size: 27px;
+        line-height: 1.12;
     }
 
     .gb-gallery-heading p {
         font-size: 15px;
+        line-height: 1.45;
     }
 
     .gb-gallery-grid {
-        gap: 8px;
+        gap: 10px;
     }
 
     .gb-gallery-item {
-        height: 300px;
+        height: 260px;
     }
 
     .gb-gallery-overlay {
-        padding: 9px;
+        padding: 11px;
+        gap: 6px;
     }
 
     .gb-gallery-number {
@@ -3595,11 +3667,59 @@ padding:2%;
     }
 
     .gb-gallery-overlay h3 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .gb-gallery-overlay p {
         display: none;
+    }
+
+    .gb-gallery-icon {
+        width: 29px;
+        height: 29px;
+
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .green-brown-gallery {
+        padding: 38px 0 44px;
+    }
+
+    .gb-gallery-container {
+        width: 92%;
+    }
+
+    .gb-gallery-heading h2 {
+        font-size: 25px;
+    }
+
+    .gb-gallery-heading p {
+        font-size: 14px;
+    }
+
+    .gb-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .gb-gallery-item {
+        height: 240px;
+    }
+
+    .gb-gallery-overlay {
+        padding: 10px;
+    }
+
+    .gb-gallery-overlay h3 {
+        font-size: 15px;
     }
 
     .gb-gallery-icon {
@@ -3611,21 +3731,34 @@ padding:2%;
 
 
 /* =========================================================
-   EXTRA SMALL
+   TOUCH DEVICES
+   Prevent hover movement from feeling awkward on mobile
 ========================================================= */
 
-@media (max-width: 350px) {
+@media (hover: none) {
 
-    .gb-gallery-grid {
-        grid-template-columns: 1fr;
+    .gb-gallery-item:hover {
+        transform: none;
+        box-shadow:
+            0 8px 25px rgba(45, 62, 49, 0.08);
     }
 
-    .gb-gallery-item {
-        height:300px;
+    .gb-gallery-item:hover img {
+        transform: none;
+        filter: none;
+    }
+
+    .gb-gallery-item:hover .gb-gallery-overlay {
+        transform: translateY(5px);
+    }
+
+    .gb-gallery-item:hover .gb-gallery-icon {
+        transform: none;
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.65);
+        color: #ffffff;
     }
 }
-
-
 
     
 /* =========================================
@@ -4069,192 +4202,158 @@ padding:2%;
         height: 38px;
     }
 }
+/* =========================================================
+   OLIVE TREE - FLOATING WHATSAPP ICON
+========================================================= */
 
-/* =========================================
-   FLOATING WHATSAPP - BOTTOM LEFT
-========================================= */
-
-.floating-whatsapp {
+.ot-whatsapp-float {
     position: fixed;
-    left: 20px;
-    bottom: 20px;
 
-    z-index: 9999;
+    left: 22px;
+    bottom: 22px;
 
     width: 58px;
     height: 58px;
 
     display: flex;
     align-items: center;
-
-    padding: 5px;
+    justify-content: center;
 
     background: #25D366;
     color: #ffffff;
 
-    border-radius: 50px;
+    border-radius: 50%;
+
+    font-size: 30px;
+    line-height: 1;
 
     text-decoration: none;
 
-    overflow: hidden;
+    z-index: 99999;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
-
-    transition:
-        width 0.4s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
-}
-
-
-/* =========================================
-   WHATSAPP ICON
-========================================= */
-
-.whatsapp-icon {
-    width: 48px;
-    height: 48px;
-
-    min-width: 48px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #ffffff;
-    color: #25D366;
-
-    border-radius: 50%;
-
-    font-size: 27px;
-
-    transition: transform 0.3s ease;
-}
-
-
-/* =========================================
-   CHAT WITH US TEXT
-========================================= */
-
-.whatsapp-label {
-    margin-left: 10px;
-
-    white-space: nowrap;
-
-    font-size: 14px;
-    font-weight: 700;
-
-    opacity: 0;
-
-    transform: translateX(-15px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
 
     transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 
-/* =========================================
-   HOVER
-========================================= */
+/* =========================================================
+   PULSE EFFECT
+========================================================= */
 
-.floating-whatsapp:hover {
-    width: 165px;
-
-    background: #20bd5a;
-
-    color: #ffffff;
-
-    box-shadow:
-        0 10px 30px rgba(37, 211, 102, 0.35);
-}
-
-
-.floating-whatsapp:hover .whatsapp-label {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-
-.floating-whatsapp:hover .whatsapp-icon {
-    transform: rotate(8deg) scale(1.05);
-}
-
-
-/* =========================================
-   FLOATING PULSE
-========================================= */
-
-.floating-whatsapp::before {
+.ot-whatsapp-float::before {
     content: "";
 
     position: absolute;
 
-    inset: 0;
+    top: 0;
+    left: 0;
 
-    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
 
     border: 2px solid #25D366;
 
-    animation: whatsappPulse 2s infinite;
+    box-sizing: border-box;
 
-    pointer-events: none;
+    animation: otWhatsappPulse 2s infinite;
+
+    z-index: -1;
 }
 
 
-@keyframes whatsappPulse {
+@keyframes otWhatsappPulse {
 
     0% {
         transform: scale(1);
-        opacity: 0.7;
+        opacity: 0.75;
     }
 
     70% {
-        transform: scale(1.25);
+        transform: scale(1.4);
         opacity: 0;
     }
 
     100% {
-        transform: scale(1.25);
+        transform: scale(1.4);
         opacity: 0;
     }
 }
 
 
-/* =========================================
+/* =========================================================
+   HOVER
+========================================================= */
+
+.ot-whatsapp-float:hover {
+    color: #ffffff;
+
+    background: #20bd5a;
+
+    transform: scale(1.1);
+
+    box-shadow:
+        0 8px 28px rgba(37, 211, 102, 0.45);
+}
+
+
+/* =========================================================
    MOBILE
-========================================= */
+========================================================= */
 
 @media (max-width: 767px) {
 
-    .floating-whatsapp {
+    .ot-whatsapp-float {
         left: 15px;
         bottom: 15px;
 
         width: 52px;
         height: 52px;
 
-        padding: 4px;
-    }
-
-    .whatsapp-icon {
-        width: 44px;
-        height: 44px;
-
-        min-width: 44px;
-
-        font-size: 24px;
-    }
-
-    .floating-whatsapp:hover {
-        width: 145px;
-    }
-
-    .whatsapp-label {
-        font-size: 12px;
-        margin-left: 8px;
+        font-size: 27px;
     }
 }
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .ot-whatsapp-float {
+        left: 12px;
+        bottom: 12px;
+
+        width: 48px;
+        height: 48px;
+
+        font-size: 25px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .ot-whatsapp-float {
+        left: 10px;
+        bottom: 10px;
+
+        width: 45px;
+        height: 45px;
+
+        font-size: 23px;
+    }
+}
+
 /* =========================================================
    OLIVE TREE SCHOOL - ADMISSION MARQUEE
    COLORFUL • MODERN • COMPACT • RESPONSIVE
@@ -5434,7 +5533,8 @@ padding:2%;
 .vm-wood-card .project-item {
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 7px;
+    background:rgb(210 166 82);
 }
 
 /* Facility card */
@@ -5446,10 +5546,7 @@ padding:2%;
     overflow: hidden;
 
     background: #ffffff;
-    border: 3px solid rgba(214, 168, 75, 0.75);
     border-radius: 10px;
-
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
 
     transition: transform 0.35s ease,
                 box-shadow 0.35s ease;
@@ -5457,8 +5554,6 @@ padding:2%;
 
 .vm-wood-card .facility-card:hover {
     transform: translateY(-6px);
-
-    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
 }
 
 /* ==========================================

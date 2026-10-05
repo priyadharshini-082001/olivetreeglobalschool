@@ -15207,3 +15207,1657 @@
         font-size: 15px;
     }
 }
+
+/* =====================================================
+   OLIVE TREE GLOBAL SCHOOL
+   MANDATORY PUBLIC DISCLOSURE
+   MOBILE-FIRST RESPONSIVE DESIGN
+   WHITE + DARK GREEN + EARTHY BROWN
+===================================================== */
+
+.ot-disclosure {
+    width: 100%;
+    padding: 60px 20px;
+    background: #ffffff;
+    color: #000000;
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow: hidden;
+}
+
+.ot-disclosure *,
+.ot-disclosure *::before,
+.ot-disclosure *::after {
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MAIN FRAME
+===================================================== */
+
+.ot-disclosure-frame {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #ffffff;
+    border: 2px solid #245331;
+    outline: 1px solid #b58a5a;
+    outline-offset: 5px;
+}
+
+
+/* CORNER DESIGN */
+
+.ot-disclosure-frame::before,
+.ot-disclosure-frame::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    pointer-events: none;
+}
+
+.ot-disclosure-frame::before {
+    top: 7px;
+    left: 7px;
+    border-top: 4px solid #b58a5a;
+    border-left: 4px solid #b58a5a;
+}
+
+.ot-disclosure-frame::after {
+    right: 7px;
+    bottom: 7px;
+    border-right: 4px solid #b58a5a;
+    border-bottom: 4px solid #b58a5a;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.ot-disclosure-header {
+    position: relative;
+    padding: 28px 20px 30px;
+    text-align: center;
+    background: #f4f8f2;
+    border: 1px solid #d7e3d3;
+    border-bottom: 5px solid #245331;
+}
+
+.ot-disclosure-kicker {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #79512f;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.ot-disclosure-header h1 {
+    margin: 0;
+    color: #245331;
+    font-size: clamp(28px, 4vw, 43px);
+    line-height: 1.2;
+    font-weight: 750;
+}
+
+.ot-disclosure-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 18px auto 14px;
+}
+
+.ot-disclosure-divider span {
+    width: 60px;
+    height: 3px;
+    background: #b58a5a;
+}
+
+.ot-disclosure-divider i {
+    color: #245331;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.ot-disclosure-header p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.ot-disclosure-section {
+    margin-top: 35px;
+}
+
+.ot-disclosure-section-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    background: #edf4eb;
+    border-left: 6px solid #245331;
+    border-bottom: 1px solid #d5e2d1;
+}
+
+.ot-disclosure-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    color: #ffffff;
+    background: #79512f;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.ot-disclosure-section-title h2 {
+    margin: 0;
+    color: #245331;
+    font-size: 23px;
+    line-height: 1.35;
+    font-weight: 750;
+}
+
+
+/* =====================================================
+   TABLE FRAME
+===================================================== */
+
+.ot-table-frame {
+    width: 100%;
+    padding: 7px;
+    background: #ffffff;
+    border: 1px solid #c5d5c1;
+    border-bottom: 4px solid #79512f;
+}
+
+.ot-table-scroll {
+    width: 100%;
+}
+
+
+/* =====================================================
+   DESKTOP TABLE
+===================================================== */
+
+.ot-disclosure-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #000000;
+    font-size: 16px;
+}
+
+.ot-disclosure-table th {
+    padding: 14px 15px;
+    color: #ffffff;
+    background: #245331;
+    border: 1px solid #ffffff;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.ot-disclosure-table td {
+    padding: 14px 15px;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #d9e0d5;
+    line-height: 1.65;
+    vertical-align: middle;
+}
+
+.ot-disclosure-table tbody tr:nth-child(even) td {
+    background: #f6f8f3;
+}
+
+.ot-disclosure-table tbody tr:hover td {
+    background: #fff5e7;
+}
+
+
+/* SERIAL NUMBER */
+
+.ot-disclosure-table th:first-child,
+.ot-disclosure-table td:first-child {
+    width: 75px;
+    text-align: center;
+}
+
+.ot-disclosure-table td:first-child {
+    color: #79512f;
+    font-weight: 750;
+}
+
+
+/* =====================================================
+   DOCUMENT BUTTON
+===================================================== */
+
+.ot-doc-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    max-width: 100%;
+    padding: 8px 12px;
+    color: #245331;
+    background: #edf4eb;
+    border: 1px solid #b9cfb5;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.ot-doc-link span {
+    color: #79512f;
+}
+
+.ot-doc-link:hover {
+    color: #ffffff;
+    background: #245331;
+    border-color: #245331;
+}
+
+.ot-doc-link:hover span {
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   NOTE
+===================================================== */
+
+.ot-disclosure-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-top: 32px;
+    padding: 18px;
+    background: #fff8eb;
+    border: 1px solid #e3c99f;
+    border-left: 5px solid #79512f;
+}
+
+.ot-note-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    color: #ffffff;
+    background: #79512f;
+    border-radius: 50%;
+    font-weight: 800;
+}
+
+.ot-disclosure-note p {
+    margin: 0;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   TABLET
+   768px - 991px
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .ot-disclosure {
+        padding: 45px 18px;
+    }
+
+    .ot-disclosure-frame {
+        padding: 24px;
+    }
+
+    .ot-disclosure-header {
+        padding: 25px 18px;
+    }
+
+    .ot-disclosure-header h1 {
+        font-size: 34px;
+    }
+
+    .ot-disclosure-header p {
+        font-size: 16px;
+    }
+
+    .ot-disclosure-section-title h2 {
+        font-size: 21px;
+    }
+
+    .ot-disclosure-table {
+        font-size: 15px;
+    }
+
+    .ot-disclosure-table th,
+    .ot-disclosure-table td {
+        padding: 12px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   767px AND BELOW
+
+   TABLE BECOMES CARDS
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .ot-disclosure {
+        padding: 30px 12px;
+    }
+
+    .ot-disclosure-frame {
+        padding: 12px;
+        border-width: 2px;
+        outline-offset: 3px;
+    }
+
+
+    /* CORNERS */
+
+    .ot-disclosure-frame::before,
+    .ot-disclosure-frame::after {
+        width: 32px;
+        height: 32px;
+        border-width: 3px;
+    }
+
+    .ot-disclosure-frame::before {
+        top: 5px;
+        left: 5px;
+    }
+
+    .ot-disclosure-frame::after {
+        right: 5px;
+        bottom: 5px;
+    }
+
+
+    /* HEADER */
+
+    .ot-disclosure-header {
+        padding: 23px 12px 22px;
+        border-bottom-width: 4px;
+    }
+
+    .ot-disclosure-kicker {
+        margin-bottom: 8px;
+        font-size: 10px;
+        letter-spacing: 1.3px;
+    }
+
+    .ot-disclosure-header h1 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .ot-disclosure-divider {
+        gap: 8px;
+        margin: 15px auto 12px;
+    }
+
+    .ot-disclosure-divider span {
+        width: 40px;
+        height: 2px;
+    }
+
+    .ot-disclosure-divider i {
+        font-size: 16px;
+    }
+
+    .ot-disclosure-header p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* SECTION */
+
+    .ot-disclosure-section {
+        margin-top: 25px;
+    }
+
+    .ot-disclosure-section-title {
+        gap: 9px;
+        margin-bottom: 12px;
+        padding: 10px;
+        border-left-width: 4px;
+    }
+
+    .ot-disclosure-letter {
+        width: 32px;
+        height: 32px;
+        flex-basis: 32px;
+        font-size: 14px;
+    }
+
+    .ot-disclosure-section-title h2 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+
+    /* TABLE FRAME */
+
+    .ot-table-frame {
+        padding: 6px;
+        border-bottom-width: 3px;
+    }
+
+    .ot-table-scroll {
+        overflow: visible;
+    }
+
+
+    /* =================================================
+       REMOVE NORMAL TABLE STRUCTURE
+    ================================================= */
+
+    .ot-disclosure-table,
+    .ot-disclosure-table tbody,
+    .ot-disclosure-table tr,
+    .ot-disclosure-table td {
+        display: block;
+        width: 100%;
+    }
+
+
+    /* Hide desktop table header */
+
+    .ot-disclosure-table thead {
+        display: none;
+    }
+
+
+    /* =================================================
+       EACH ROW = MOBILE CARD
+    ================================================= */
+
+    .ot-disclosure-table tbody tr {
+        margin-bottom: 12px;
+        padding: 0;
+        background: #ffffff;
+        border: 1px solid #d5e2d1;
+        border-left: 4px solid #245331;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .ot-disclosure-table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+
+    /* Remove alternating row background */
+
+    .ot-disclosure-table tbody tr:nth-child(even) td,
+    .ot-disclosure-table tbody tr:hover td {
+        background: #ffffff;
+    }
+
+
+    /* =================================================
+       SERIAL NUMBER
+    ================================================= */
+
+    .ot-disclosure-table td:first-child {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 36px;
+        padding: 8px 12px;
+        color: #ffffff;
+        background: #245331 !important;
+        border: 0;
+        text-align: left;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+
+    /* =================================================
+       NORMAL MOBILE CELLS
+    ================================================= */
+
+    .ot-disclosure-table td {
+        width: 100%;
+        padding: 11px 12px;
+        background: #ffffff;
+        border: 0;
+        border-bottom: 1px solid #e1e8de;
+        color: #000000;
+        font-size: 14px;
+        line-height: 1.65;
+        text-align: left;
+    }
+
+    .ot-disclosure-table td:last-child {
+        border-bottom: 0;
+    }
+
+
+    /* =================================================
+       DOCUMENT LINKS
+    ================================================= */
+
+    .ot-disclosure-table td .ot-doc-link {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+
+    /* =================================================
+       NOTE
+    ================================================= */
+
+    .ot-disclosure-note {
+        gap: 9px;
+        margin-top: 23px;
+        padding: 13px;
+        border-left-width: 4px;
+    }
+
+    .ot-note-icon {
+        width: 25px;
+        height: 25px;
+        flex-basis: 25px;
+        font-size: 13px;
+    }
+
+    .ot-disclosure-note p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   480px AND BELOW
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .ot-disclosure {
+        padding: 24px 9px;
+    }
+
+    .ot-disclosure-frame {
+        padding: 8px;
+    }
+
+
+    /* HEADER */
+
+    .ot-disclosure-header {
+        padding: 21px 9px 19px;
+    }
+
+    .ot-disclosure-kicker {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .ot-disclosure-header h1 {
+        font-size: 23px;
+    }
+
+    .ot-disclosure-header p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+
+    /* SECTION */
+
+    .ot-disclosure-section {
+        margin-top: 22px;
+    }
+
+    .ot-disclosure-section-title {
+        padding: 9px 8px;
+    }
+
+    .ot-disclosure-letter {
+        width: 29px;
+        height: 29px;
+        flex-basis: 29px;
+        font-size: 13px;
+    }
+
+    .ot-disclosure-section-title h2 {
+        font-size: 16px;
+    }
+
+
+    /* TABLE CARD */
+
+    .ot-table-frame {
+        padding: 4px;
+    }
+
+    .ot-disclosure-table tbody tr {
+        margin-bottom: 10px;
+        border-left-width: 3px;
+    }
+
+    .ot-disclosure-table td:first-child {
+        min-height: 34px;
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .ot-disclosure-table td {
+        padding: 10px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    /* DOCUMENT BUTTON */
+
+    .ot-disclosure-table td .ot-doc-link {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+
+    /* NOTE */
+
+    .ot-disclosure-note {
+        padding: 11px 9px;
+    }
+
+    .ot-note-icon {
+        width: 23px;
+        height: 23px;
+        flex-basis: 23px;
+    }
+
+    .ot-disclosure-note p {
+        font-size: 13px;
+    }
+}
+
+
+/* =====================================================
+   EXTRA SMALL MOBILE
+   350px AND BELOW
+===================================================== */
+
+@media (max-width: 350px) {
+
+    .ot-disclosure {
+        padding: 20px 7px;
+    }
+
+    .ot-disclosure-frame {
+        padding: 6px;
+    }
+
+    .ot-disclosure-header {
+        padding: 19px 7px 17px;
+    }
+
+    .ot-disclosure-header h1 {
+        font-size: 21px;
+    }
+
+    .ot-disclosure-header p {
+        font-size: 13px;
+    }
+
+    .ot-disclosure-section-title {
+        gap: 7px;
+        padding: 8px 6px;
+    }
+
+    .ot-disclosure-letter {
+        width: 26px;
+        height: 26px;
+        flex-basis: 26px;
+        font-size: 12px;
+    }
+
+    .ot-disclosure-section-title h2 {
+        font-size: 15px;
+    }
+
+    .ot-table-frame {
+        padding: 3px;
+    }
+
+    .ot-disclosure-table td:first-child {
+        padding: 7px 9px;
+        font-size: 11px;
+    }
+
+    .ot-disclosure-table td {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .ot-disclosure-table td .ot-doc-link {
+        font-size: 11px;
+    }
+
+    .ot-disclosure-note {
+        padding: 9px 7px;
+    }
+
+    .ot-disclosure-note p {
+        font-size: 12px;
+    }
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+.ot-disclosure a:focus-visible {
+    outline: 3px solid #b58a5a;
+    outline-offset: 3px;
+}
+
+/* =========================================================
+   OLIVE TREE - CAREERS SECTION
+========================================================= */
+
+.ot-careers-section {
+    width: 100%;
+    padding: 85px 20px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.ot-careers-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.ot-careers-heading {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+
+.ot-careers-kicker {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #8a5a2b;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.ot-careers-heading h2 {
+    margin: 0 0 18px;
+
+    color: #174d35;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+.ot-careers-heading h2 strong {
+    color: #8b1e2d;
+    font-weight: 700;
+}
+
+
+.ot-careers-heading p {
+    margin: 0;
+
+    color: #111111;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.ot-careers-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT CAREER CONTENT
+========================================================= */
+
+.ot-careers-info {
+    display: flex;
+    flex-direction: column;
+
+    background: #f5f1e8;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CAREER IMAGE
+========================================================= */
+
+.ot-careers-image {
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+}
+
+
+.ot-careers-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+
+.ot-careers-info:hover .ot-careers-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.ot-career-content {
+    padding: 38px 40px 42px;
+}
+
+
+.ot-career-small-title {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #8a5a2b;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+}
+
+
+.ot-career-content h3 {
+    margin: 0 0 18px;
+
+    color: #174d35;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+.ot-career-content h3 span {
+    color: #8b1e2d;
+}
+
+
+.ot-career-content > p {
+    margin: 0 0 14px;
+
+    color: #111111;
+
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   CAREER POINTS
+========================================================= */
+
+.ot-career-points {
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.ot-career-point {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+
+.ot-career-number {
+    flex: 0 0 42px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #174d35;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.ot-career-point h4 {
+    margin: 0 0 5px;
+
+    color: #174d35;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.ot-career-point p {
+    margin: 0;
+
+    color: #111111;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM BOX
+========================================================= */
+
+.ot-career-form-box {
+    background: #ffffff;
+
+    border: 1px solid #ded8ca;
+
+    border-top: 5px solid #174d35;
+
+    border-radius: 20px;
+
+    padding: 38px 40px 40px;
+}
+
+
+/* =========================================================
+   FORM HEADER
+========================================================= */
+
+.ot-form-header {
+    margin-bottom: 28px;
+}
+
+
+.ot-form-header > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #8a5a2b;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+}
+
+
+.ot-form-header h3 {
+    margin: 0 0 8px;
+
+    color: #174d35;
+
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+.ot-form-header p {
+    margin: 0;
+
+    color: #111111;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM ROW
+========================================================= */
+
+.ot-form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.ot-form-group {
+    width: 100%;
+}
+
+
+.ot-form-group.ot-full-width {
+    margin-bottom: 18px;
+}
+
+
+.ot-form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #174d35;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.ot-form-group label span {
+    color: #8b1e2d;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.ot-form-group input,
+.ot-form-group select,
+.ot-form-group textarea {
+
+    width: 100%;
+
+    border: 1px solid #d9d4c9;
+
+    border-radius: 8px;
+
+    background: #faf9f6;
+
+    color: #111111;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.ot-form-group input,
+.ot-form-group select {
+    height: 48px;
+
+    padding: 0 14px;
+}
+
+
+.ot-form-group textarea {
+    padding: 12px 14px;
+
+    resize: vertical;
+
+    min-height: 105px;
+}
+
+
+.ot-form-group input::placeholder,
+.ot-form-group textarea::placeholder {
+    color: #777777;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+========================================================= */
+
+.ot-form-group input:focus,
+.ot-form-group select:focus,
+.ot-form-group textarea:focus {
+
+    border-color: #174d35;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+========================================================= */
+
+.ot-file-box {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    background: #faf9f6;
+
+    border: 1px dashed #bdb6a7;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+.ot-file-box input[type="file"] {
+    width: 100%;
+    height: 48px;
+
+    padding: 12px;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+.ot-file-box span {
+    position: absolute;
+
+    right: 12px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONSENT
+========================================================= */
+
+.ot-career-consent {
+    margin: 4px 0 22px;
+}
+
+
+.ot-career-consent label {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    cursor: pointer;
+}
+
+
+.ot-career-consent input {
+    width: 16px;
+    height: 16px;
+
+    margin-top: 3px;
+
+    accent-color: #174d35;
+
+    flex-shrink: 0;
+}
+
+
+.ot-career-consent span {
+    color: #333333;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.ot-career-submit {
+    width: 100%;
+
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: #174d35;
+
+    color: #ffffff;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.ot-career-submit:hover {
+    background: #8b1e2d;
+
+    transform: translateY(-2px);
+}
+
+
+.ot-career-submit i {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .ot-careers-section {
+        padding: 70px 20px;
+    }
+
+
+    .ot-careers-heading {
+        margin-bottom: 42px;
+    }
+
+
+    .ot-careers-heading h2 {
+        font-size: 36px;
+    }
+
+
+    .ot-careers-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .ot-careers-image {
+        height: 350px;
+    }
+
+
+    .ot-career-content {
+        padding: 35px;
+    }
+
+
+    .ot-career-form-box {
+        padding: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .ot-careers-section {
+        padding: 55px 15px;
+    }
+
+
+    .ot-careers-heading {
+        margin-bottom: 32px;
+    }
+
+
+    .ot-careers-kicker {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+
+    .ot-careers-heading h2 {
+        font-size: 29px;
+        line-height: 1.3;
+    }
+
+
+    .ot-careers-heading p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    .ot-careers-grid {
+        gap: 25px;
+    }
+
+
+    .ot-careers-info,
+    .ot-career-form-box {
+        border-radius: 15px;
+    }
+
+
+    .ot-careers-image {
+        height: 250px;
+    }
+
+
+    .ot-career-content {
+        padding: 28px 22px 30px;
+    }
+
+
+    .ot-career-content h3 {
+        font-size: 25px;
+    }
+
+
+    .ot-career-content > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    .ot-career-point p {
+        font-size: 13px;
+    }
+
+
+    .ot-career-form-box {
+        padding: 28px 20px 30px;
+    }
+
+
+    .ot-form-header h3 {
+        font-size: 25px;
+    }
+
+
+    .ot-form-header p {
+        font-size: 14px;
+    }
+
+
+    .ot-form-row {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .ot-form-group input,
+    .ot-form-group select {
+        height: 47px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 468px) {
+
+    .ot-careers-section {
+        padding: 45px 12px;
+    }
+
+
+    .ot-careers-heading h2 {
+        font-size: 25px;
+    }
+
+
+    .ot-careers-heading p {
+        font-size: 15px;
+    }
+
+
+    .ot-careers-image {
+        height: 220px;
+    }
+
+
+    .ot-career-content {
+        padding: 24px 18px 27px;
+    }
+
+
+    .ot-career-content h3 {
+        font-size: 22px;
+    }
+
+
+    .ot-career-content > p {
+        font-size: 15px;
+    }
+
+
+    .ot-career-points {
+        gap: 17px;
+        margin-top: 22px;
+    }
+
+
+    .ot-career-number {
+        flex: 0 0 36px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 10px;
+    }
+
+
+    .ot-career-point h4 {
+        font-size: 14px;
+    }
+
+
+    .ot-career-point p {
+        font-size: 12px;
+    }
+
+
+    .ot-career-form-box {
+        padding: 24px 16px 26px;
+    }
+
+
+    .ot-form-header h3 {
+        font-size: 23px;
+    }
+
+
+    .ot-form-header p {
+        font-size: 13px;
+    }
+
+
+    .ot-form-group label {
+        font-size: 12px;
+    }
+
+
+    .ot-form-group input,
+    .ot-form-group select,
+    .ot-form-group textarea {
+        font-size: 13px;
+    }
+
+
+    .ot-file-box span {
+        display: none;
+    }
+
+
+    .ot-career-submit {
+        min-height: 49px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .ot-careers-heading h2 {
+        font-size: 23px;
+    }
+
+
+    .ot-careers-heading p {
+        font-size: 14px;
+    }
+
+
+    .ot-careers-image {
+        height: 190px;
+    }
+
+
+    .ot-career-content {
+        padding: 22px 15px;
+    }
+
+
+    .ot-career-form-box {
+        padding: 22px 13px 24px;
+    }
+
+
+    .ot-career-point {
+        gap: 10px;
+    }
+
+
+    .ot-career-number {
+        flex: 0 0 33px;
+
+        width: 33px;
+        height: 33px;
+    }
+
+}

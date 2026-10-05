@@ -38,7 +38,7 @@ a.meanmenu-reveal {
     flex-direction: column;
     align-items: center;
     margin-left: 40px;
-	background: #1A9120;
+	background: burlywood;
 }
 
 .dark-page .mean-container a.meanmenu-reveal {
@@ -46,11 +46,11 @@ a.meanmenu-reveal {
 }
 
 .mean-container a.meanmenu-reveal span {
-  background: #fff none repeat scroll 0 0;
+  background: #640000 none repeat scroll 0 0;
   display: block;
-  height: 2px;
+  height: 2.7px;
   margin-top: 8px;
-  width: 22px;
+  width: 25px;
 }
 
 .mean-container a.meanmenu-reveal>span {
@@ -61,10 +61,10 @@ a.meanmenu-reveal {
 	position: absolute;
 	right: 15px;
 	top: 15px;
-	width: 22px;
-	height: 2px;
+	width: 24px;
+	height: 2.7px;
 	content: "";
-	background: #fff;
+	background: #640000;
 }
 
 .mean-container .mean-nav {

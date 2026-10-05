@@ -1756,6 +1756,7 @@ body.dark-page .mouse-circle-mover-follow {
   justify-content: center;
   display: flex;
   align-items: center;
+  background: #640000;
 }
 .cp-header-area .topbar .topbar-right .contact-info.social li {
   color: #fff;
@@ -2217,7 +2218,8 @@ body.dark-page .mouse-circle-mover-follow {
 }
 @media (max-width: 991px) {
   .cp-header-style-2 .menu-area {
-    padding: 10px 0;
+    padding: 0px 5px;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 375px) {
@@ -2268,7 +2270,7 @@ body.dark-page .mouse-circle-mover-follow {
 }
 @media (max-width: 450px) {
   .cp-header-style-2 .mean-container a.meanmenu-reveal {
-    margin-top: -57px;
+    margin-top: -53px;
   }
 }
 @media (max-width: 375px) {

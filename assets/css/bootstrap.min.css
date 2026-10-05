@@ -8,28 +8,15 @@
 
 
 
-@media (min-width: 1200px) {
-    .col-xl-2 {
-        flex: 0 0 auto;
-        width: 20%;
-    }
-}
 
-@media (min-width: 1200px) {
-    .col-xl-6 {
-        flex: 0 0 auto;
-        width: 60%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .col-xl-4 {
-        flex: 0 0 auto;
-        width: 20%;
-    }
-}
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover, a:not([href]):not([class]):focus {
     color: white;
     text-decoration: none;
 }
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
