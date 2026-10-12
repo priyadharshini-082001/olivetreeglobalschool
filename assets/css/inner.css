@@ -3081,1071 +3081,548 @@
     }
 }
 
-/* =========================================================
-   OLIVE TREE GLOBAL SCHOOL
-   AWARDS & RECOGNITION
-   ASYMMETRIC BOTANICAL RIBBON
-   TYPOGRAPHY:
-   DARK GREEN + DARK RED + BLACK
-========================================================= */
+/* =========================================
+   OLIVE TREE GLOBAL SCHOOL - AWARDS SECTION
+========================================= */
 
-.otgs-awards-ribbon {
-    position: relative;
+.ot-awards {
     width: 100%;
+    padding: 50px 20px;
     overflow: hidden;
-    padding:50px 20px;
-    background: rgb(240, 255, 205);
+    background: white;
     color: #000000;
-    isolation: isolate;
 }
 
+/* SECTION INTRODUCTION */
 
-/* =========================================================
-   COLOR VARIABLES
-========================================================= */
-
-.otgs-awards-ribbon {
-    --otgs-green: #30482b;
-    --otgs-green-light: #607847;
-    --otgs-red: #7e3f32;
-    --otgs-brown: #806043;
-    --otgs-black: #000000;
-    --otgs-line: #ded8ce;
-    --otgs-soft: #f4f1e9;
+.ot-awards-intro {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    text-align: center;
 }
 
-
-/* =========================================================
-   BACKGROUND PATTERN
-========================================================= */
-
-.otgs-awards-ribbon::before {
-    content: "";
-    position: absolute;
-
-    width: 620px;
-    height: 620px;
-
-    left: -390px;
-    top: 5%;
-
-    border: 1px solid rgba(48, 72, 43, 0.09);
-    border-radius: 50%;
-
-    z-index: -3;
+.ot-awards-eyebrow {
+    display: inline-block;
+    margin-bottom: 17px;
+    padding: 9px 19px;
+    border: 1px solid #dce8df;
+    border-radius: 30px;
+    background: #eff6f0;
+    color: #315b43;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
 }
 
-.otgs-awards-ribbon::after {
-    content: "";
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    right: -300px;
-    bottom: -180px;
-
-    border: 1px solid rgba(126, 63, 50, 0.09);
-    border-radius: 50%;
-
-    z-index: -3;
+.ot-awards-intro h2 {
+    margin: 0 0 18px;
+    color: #173b32;
+    font-size: clamp(30px, 4vw, 45px);
+    font-weight: 800;
+    line-height: 1.3;
 }
 
-
-/* =========================================================
-   BACKGROUND CIRCLES
-========================================================= */
-
-.otgs-awards-ribbon-circle {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: -2;
+.ot-awards-intro h2 span {
+    color: #9a7027;
 }
 
-.circle-one {
-    width: 170px;
-    height: 170px;
-
-    right: 7%;
-    top: 13%;
-
-    background: rgba(96, 120, 71, 0.035);
+.ot-awards-intro p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+    text-align-last: center;
 }
 
-.circle-two {
-    width: 115px;
-    height: 115px;
-
-    left: 5%;
-    bottom: 18%;
-
-    background: rgba(126, 63, 50, 0.035);
+.ot-intro-line {
+    width: 75px;
+    height: 4px;
+    margin: 25px auto 0;
+    border-radius: 5px;
+    background: #a78646;
 }
 
+/* AWARD LIST */
 
-/* =========================================================
-   BOTANICAL BRANCHES
-========================================================= */
-
-.otgs-ribbon-branch {
-    position: absolute;
-
-    width: 180px;
-    height: 1px;
-
-    background: var(--otgs-brown);
-    opacity: .20;
-
-    pointer-events: none;
-    z-index: -1;
-}
-
-.branch-one {
-    left: -50px;
-    top: 27%;
-    transform: rotate(38deg);
-}
-
-.branch-two {
-    right: -55px;
-    bottom: 28%;
-    transform: rotate(-42deg);
-}
-
-
-/* =========================================================
-   LEAVES
-========================================================= */
-
-.otgs-ribbon-leaf {
-    position: absolute;
-
-    width: 52px;
-    height: 27px;
-
-    border: 1px solid rgba(96, 120, 71, .22);
-    border-radius: 100% 0 100% 0;
-
-    pointer-events: none;
-    z-index: -1;
-}
-
-.otgs-ribbon-leaf::after {
-    content: "";
-
-    position: absolute;
-
-    width: 70%;
-    height: 1px;
-
-    left: 15%;
-    top: 50%;
-
-    background: rgba(96, 120, 71, .25);
-
-    transform: rotate(-22deg);
-}
-
-.ribbon-leaf-one {
-    top: 15%;
-    right: 15%;
-    transform: rotate(30deg);
-}
-
-.ribbon-leaf-two {
-    top: 18%;
-    right: 12%;
-    transform: rotate(70deg) scale(.75);
-}
-
-.ribbon-leaf-three {
-    bottom: 13%;
-    left: 10%;
-    transform: rotate(-35deg);
-}
-
-.ribbon-leaf-four {
-    bottom: 10%;
-    left: 13%;
-    transform: rotate(5deg) scale(.72);
-}
-
-
-/* =========================================================
-   MAIN CONTAINER
-========================================================= */
-
-.otgs-awards-ribbon-container {
-    position: relative;
-
-    width: 100%;
-    max-width: 1180px;
-
+.ot-awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
+/* INDIVIDUAL AWARD CARD */
 
-/* =========================================================
-   SECTION HEADER
-========================================================= */
-
-.otgs-awards-ribbon-header {
-    max-width: 760px;
-    text-align: center;
-}
-
-
-/* Eyebrow */
-
-.otgs-ribbon-eyebrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 12px;
-    margin-bottom: 12px;
-
-    color: var(--otgs-red);
-
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 700;
-
-    letter-spacing: 1px;
-}
-
-.otgs-ribbon-eyebrow span {
-    width: 38px;
-    height: 1px;
-
-    background: var(--otgs-green);
-}
-
-
-/* Main heading */
-
-.otgs-awards-ribbon-header h2 {
-    margin: 0;
-
-    color: var(--otgs-green);
-
-    font-size: 18px;
-    line-height: 1.3;
-    font-weight: 700;
-
-    letter-spacing: .3px;
-}
-
-.otgs-awards-ribbon-header h2 b {
-    color: var(--otgs-red);
-    font-weight: 700;
-}
-
-.otgs-awards-ribbon-header h2 strong {
-    color: var(--otgs-red);
-    font-weight: 700;
-}
-
-
-/* Header paragraph */
-
-.otgs-awards-ribbon-header p {
-    max-width: 700px;
-
-    margin: 15px auto 0;
-
-    color: var(--otgs-black);
-
-    font-size: 18px;
-    line-height: 1.7;
-    font-weight: 400;
-}
-
-
-/* =========================================================
-   MAIN TWO-COLUMN AREA
-========================================================= */
-
-.otgs-awards-ribbon-main {
+.ot-award-row {
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 15px;
-
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
+    gap: 42px;
+    padding: 30px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: none;
+    animation: otAwardEnter 0.7s ease both;
+    transition: background-color 0.3s ease;
 }
 
+.ot-award-row:hover {
+    box-shadow: none;
+}
 
-/* =========================================================
-   IMAGE AREA
-========================================================= */
+/* DIFFERENT MILD CARD COLOURS */
 
-.otgs-ribbon-image-area {
+.ot-award-row:nth-child(1) {
+    background: #dfffe4;
+    border:2px solid #19a938;
+
+}
+
+.ot-award-row:nth-child(2) {
+    background: #e0ebff;
+   
+    border:2px solid #1944a9;
+}
+
+.ot-award-row:nth-child(3) {
+    background: #fff2e0;
+    border:2px solid #dfa62c;
+}
+
+.ot-award-row:nth-child(4) {
+    background: #ebdaff;
+    border:2px solid #c12cdf;
+}
+
+.ot-award-row:nth-child(5) {
+    background: #fcffbb;
+    border:2px solid #d0df2c;
+}
+
+.ot-award-row:nth-child(6) {
+    background: #ffd1f2;
+    border:2px solid #df2ca6;
+}
+
+.ot-award-row:nth-child(7) {
+    background: #d8ffef;
+    border:2px solid #10946b;
+}
+
+.ot-award-row:nth-child(8) {
+    background: #ffdde2;
+  border:2px solid #941010;
+}
+
+/* ALTERNATING LAYOUT */
+
+.ot-award-reverse .ot-award-content {
+    order: 2;
+}
+
+.ot-award-reverse .ot-award-image {
+    order: 1;
+}
+
+/* AWARD TEXT */
+
+.ot-award-content {
+    min-width: 0;
+    padding: 8px 3px;
+}
+
+.ot-award-category {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #315d48;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    line-height: 1.7;
+}
+
+.ot-award-content h3 {
+    margin: 0 0 11px;
+    color: #173b32;
+    font-size: clamp(25px, 2.5vw, 33px);
+    font-weight: 800;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+}
+
+.ot-award-content h4 {
+    margin: 0 0 18px;
+    color: #87621e;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.ot-award-content p {
+    margin: 0 0 17px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.9;
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+
+/* AWARD HIGHLIGHT */
+
+.ot-award-highlight {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 3px;
+    padding: 11px 15px;
+    border-left: 4px solid #a88a4c;
+    border-radius: 0 7px 7px 0;
+    background: rgba(255, 255, 255, 0.75);
+    color: #44371e;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+/* =========================================
+   AWARD IMAGE FRAME
+========================================= */
+
+.ot-award-image {
     position: relative;
-
-    min-height: 570px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* Background image layer */
-
-.otgs-ribbon-image-shadow {
-    position: absolute;
-
-    width: 77%;
-    height: 78%;
-
-    left: 8%;
-    top: 9%;
-
-    background: #f3efe6;
-
-    border: 1px solid #c8b89e;
-
-    transform: rotate(-5deg);
-}
-
-
-/* Image */
-
-.otgs-ribbon-image {
-    position: relative;
-
-    width: 81%;
-    height: 500px;
-
-    padding: 9px;
-
-    background: #ffffff;
-
-    border: 1px solid var(--otgs-brown);
-
-    z-index: 2;
-}
-
-.otgs-ribbon-image img {
-    display: block;
-
     width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: center;
-
-    transition: transform .6s ease;
+    height: 360px;
+    min-width: 0;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #d7e2da;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: none;
+    transition: transform 0.35s ease;
 }
 
-.otgs-ribbon-image:hover img {
-    transform: scale(1.02);
-}
-
-
-/* =========================================================
-   IMAGE CORNERS
-========================================================= */
-
-.otgs-ribbon-corner {
+.ot-award-image::before {
     position: absolute;
-
-    width: 58px;
-    height: 58px;
-
-    z-index: 4;
-
+    top: -7px;
+    right: -7px;
+    z-index: 0;
+    width: 78px;
+    height: 78px;
+    border-top: 3px solid #b39454;
+    border-right: 3px solid #b39454;
+    border-radius: 0 12px 0 0;
+    content: "";
     pointer-events: none;
 }
 
-.corner-left {
-    left: -12px;
-    top: -12px;
-
-    border-left: 2px solid var(--otgs-green-light);
-    border-top: 2px solid var(--otgs-green-light);
-}
-
-.corner-right {
-    right: -12px;
-    bottom: -12px;
-
-    border-right: 2px solid var(--otgs-red);
-    border-bottom: 2px solid var(--otgs-red);
-}
-
-
-/* =========================================================
-   VERTICAL IMAGE LABEL
-========================================================= */
-
-.otgs-ribbon-vertical-label {
+.ot-award-image::after {
     position: absolute;
-
-    left: 2%;
-    top: 50%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 45px;
-    height: 155px;
-
-    background: var(--otgs-green-light);
-
-    border: 4px solid #ffffff;
-
-    transform: translateY(-50%);
-
-    z-index: 5;
-}
-
-.otgs-ribbon-vertical-label span {
-    color: #ffffff;
-
-    font-size: 8px;
-    line-height: 1;
-
-    writing-mode: vertical-rl;
-
-    transform: rotate(180deg);
-}
-
-.otgs-ribbon-vertical-label strong {
-    margin-top: 9px;
-
-    color: #ffffff;
-
-    font-size: 11px;
-    line-height: 1;
-
-    writing-mode: vertical-rl;
-
-    transform: rotate(180deg);
-}
-
-
-/* =========================================================
-   IMAGE CAPTION
-========================================================= */
-
-.otgs-ribbon-caption {
-    position: absolute;
-
-    right: 2%;
-    bottom: 18px;
-
-    width: 245px;
-
-    padding: 12px 15px;
-
-    background: #ffffff;
-
-    border-top: 2px solid var(--otgs-red);
-
-    z-index: 5;
-}
-
-.otgs-ribbon-caption small {
-    display: block;
-
-    margin-bottom: 4px;
-
-    color:darkred;
-
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 700;
-}
-
-.otgs-ribbon-caption strong {
-    display: block;
-
-    color:rgb(0, 0, 0);
-
-    font-size: 13px;
-    line-height: 1.4;
-    font-weight: 700;
-}
-
-
-/* =========================================================
-   CONTENT HEADING
-========================================================= */
-
-.otgs-ribbon-content {
-    width: 100%;
-}
-
-.otgs-ribbon-content-heading {
-    display: flex;
-    align-items: flex-start;
-
-    gap: 16px;
-
-    padding-bottom: 19px;
-
-    border-bottom: 1px solid var(--otgs-line);
-}
-
-
-/* Number */
-
-.otgs-ribbon-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 43px;
-    height: 43px;
-
-    flex: 0 0 43px;
-
-    background: var(--otgs-soft);
-
-    border-left: 3px solid var(--otgs-red);
-
-    color: var(--otgs-red);
-
-    font-size: 18px;
-    font-weight: 700;
-}
-
-
-/* Small heading */
-
-.otgs-ribbon-content-heading small {
-    display: block;
-
-    margin-bottom: 5px;
-
-    color: var(--otgs-red);
-
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 700;
-
-    letter-spacing: .5px;
-}
-
-
-/* Main content heading */
-
-.otgs-ribbon-content-heading h3 {
-    margin: 0;
-
-    color: var(--otgs-green);
-
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 700;
-}
-
-.otgs-ribbon-content-heading h3 em {
-    color: var(--otgs-red);
-    font-style: normal;
-}
-
-
-/* =========================================================
-   INTRO PARAGRAPH
-========================================================= */
-
-.otgs-ribbon-intro {
-    margin: 20px 0;
-
-    color: var(--otgs-black);
-
-    font-size: 18px;
-    line-height: 1.7;
-    font-weight: 400;
-}
-
-
-/* =========================================================
-   AWARD RIBBON LIST
-========================================================= */
-
-.otgs-award-ribbons {
-    position: relative;
-}
-
-
-/* Connecting botanical line */
-
-.otgs-award-ribbons::before {
+    bottom: -7px;
+    left: -7px;
+    z-index: 0;
+    width: 60px;
+    height: 60px;
+    border-bottom: 3px solid #49745a;
+    border-left: 3px solid #49745a;
+    border-radius: 0 0 0 12px;
     content: "";
-
-    position: absolute;
-
-    left: 8px;
-    top: 15px;
-    bottom: 15px;
-
-    width: 1px;
-
-    background: #c9d0bf;
+    pointer-events: none;
 }
 
-
-/* Award item */
-
-.otgs-award-ribbon-item {
+.ot-award-image img {
     position: relative;
-
-    display: grid;
-
-    grid-template-columns: 17px 1fr;
-
-    gap: 13px;
-
-    padding: 9px 0;
-
-    transition:
-        padding-left .3s ease,
-        transform .3s ease;
-}
-
-.otgs-award-ribbon-item:hover {
-    padding-left: 7px;
-}
-
-
-/* Marker */
-
-.otgs-award-ribbon-marker {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-
-    padding-top: 6px;
-
-    z-index: 2;
-}
-
-.otgs-award-ribbon-marker span {
+    z-index: 1;
     display: block;
-
-    width: 10px;
-    height: 10px;
-
-    background: #ffffff;
-
-    border: 2px solid var(--otgs-green-light);
-
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: none;
+    transition: transform 0.5s ease;
 }
 
-
-/* Award text */
-
-.otgs-award-ribbon-text {
-    display: grid;
-
-    grid-template-columns: 155px 1fr;
-
-    align-items: center;
-
-    gap: 15px;
-
-    min-height: 38px;
-
-    padding-bottom: 9px;
-
-    border-bottom: 1px solid #e5e0d8;
+.ot-award-image:hover {
+    transform: translateY(-4px);
+    box-shadow: none;
 }
 
-
-/* Category */
-
-.otgs-award-ribbon-text small {
-    color: darkred;
-
-    font-size: 13px;
-    line-height: 1.3;
-    font-weight: 700;
-
-    letter-spacing: .2px;
+.ot-award-image:hover img {
+    transform: scale(1.025);
 }
 
+/* IMAGE CAPTION */
 
-/* Award name */
-
-.otgs-award-ribbon-text strong {
-    color:darkgreen;
-
-    font-size: 15px;
-    line-height: 1.4;
-    font-weight: 600;
-}
-
-
-/* =========================================================
-   PUBLICATION NOTE
-========================================================= */
-
-.otgs-ribbon-note {
-    display: flex;
-    align-items: flex-start;
-
-    gap: 12px;
-
-    margin-top: 22px;
-
-    padding: 13px 15px;
-
-    background: #f5f6f1;
-
-    border-left: 3px solid var(--otgs-green-light);
-}
-
-
-/* Check */
-
-.otgs-ribbon-note > span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 25px;
-    height: 25px;
-
-    flex: 0 0 25px;
-
-    background: var(--otgs-green-light);
-
-    border-radius: 50%;
-
+.ot-award-image figcaption {
+    position: absolute;
+    right: 19px;
+    bottom: 19px;
+    left: 19px;
+    z-index: 2;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    background: rgba(23, 54, 43, 0.92);
     color: #ffffff;
-
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
-}
-
-
-/* Note text */
-
-.otgs-ribbon-note p {
-    margin: 0;
-
-    color: var(--otgs-black);
-
-    font-size: 18px;
     line-height: 1.6;
 }
 
-.otgs-ribbon-note strong {
-    color: var(--otgs-green);
-}
+/* =========================================
+   CLOSING MESSAGE
+========================================= */
 
-
-/* =========================================================
-   BOTTOM STATEMENT
-========================================================= */
-
-.otgs-ribbon-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 25px;
-
-    margin-top: 55px;
-}
-
-
-.otgs-ribbon-bottom-line {
-    width: 150px;
-    height: 1px;
-
-    background: #d7d2c9;
-}
-
-
-.otgs-ribbon-bottom-text {
+.ot-awards-closing {
+    max-width: 1050px;
+    margin: 65px auto 0;
+    padding: 38px 30px;
+    border: 1px solid #dce6de;
+    border-top: 4px solid #315d48;
+    border-radius: 15px;
+    background: #f1f7f2;
+    box-shadow: none;
     text-align: center;
 }
 
-
-.otgs-ribbon-bottom-text small {
+.ot-closing-symbol {
     display: block;
-
-    margin-bottom: 4px;
-
-    color: var(--otgs-red);
-
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 700;
+    margin-bottom: 12px;
+    color: #a7823c;
+    font-size: 31px;
 }
 
-
-.otgs-ribbon-bottom-text strong {
-    color: var(--otgs-green);
-
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 700;
+.ot-awards-closing h3 {
+    margin: 0 0 15px;
+    color: #173b32;
+    font-size: clamp(23px, 2.8vw, 32px);
+    font-weight: 800;
+    line-height: 1.45;
 }
 
+.ot-awards-closing p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+}
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* =========================================
+   ENTRANCE ANIMATION
+========================================= */
 
-@media (max-width: 991px) {
-
-    .otgs-awards-ribbon {
-        padding: 60px 20px 55px;
+@keyframes otAwardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
     }
 
-    .otgs-awards-ribbon-header {
-        margin-bottom: 42px;
-    }
-
-    .otgs-awards-ribbon-main {
-        gap: 40px;
-    }
-
-    .otgs-ribbon-image-area {
-        min-height: 510px;
-    }
-
-    .otgs-ribbon-image {
-        width: 88%;
-        height: 440px;
-    }
-
-    .otgs-ribbon-vertical-label {
-        left: 0;
-        height: 140px;
-    }
-
-    .otgs-ribbon-caption {
-        width: 210px;
-        right: 0;
-    }
-
-    .otgs-award-ribbon-text {
-        grid-template-columns: 125px 1fr;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
 
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 767px) {
-
-    .otgs-awards-ribbon {
-        padding: 50px 16px 45px;
+@media (max-width: 950px) {
+    .ot-awards {
+        padding: 60px 4%;
     }
 
-    .otgs-awards-ribbon-header {
+    .ot-award-row {
+        gap: 28px;
+        padding: 23px;
+    }
+
+    .ot-award-image {
+        height: 310px;
+    }
+
+    .ot-award-content h3 {
+        font-size: 27px;
+    }
+
+    .ot-award-content h4 {
+        font-size: 17px;
+    }
+
+    .ot-award-content p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+    .ot-awards {
+        padding: 42px 15px;
+    }
+
+    .ot-awards-intro {
         margin-bottom: 35px;
     }
 
-    .otgs-awards-ribbon-main {
-        display: flex;
-        flex-direction: column;
-
-        gap: 42px;
+    .ot-awards-eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.1px;
     }
 
-
-    /* Image */
-
-    .otgs-ribbon-image-area {
-        width: 100%;
-        min-height: 430px;
+    .ot-awards-intro h2 {
+        font-size: 29px;
+        line-height: 1.4;
     }
 
-    .otgs-ribbon-image-shadow {
-        width: 83%;
-        height: 82%;
-
-        left: 5%;
-        top: 5%;
+    .ot-awards-intro p {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: justify;
+        text-align-last: left;
     }
 
-    .otgs-ribbon-image {
-        width: 89%;
-        height: 385px;
+    .ot-awards-list {
+        gap: 24px;
     }
 
-    .otgs-ribbon-corner {
-        width: 45px;
-        height: 45px;
+    .ot-award-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 23px;
+        padding: 17px;
+        border-radius: 13px;
     }
 
-    .otgs-ribbon-vertical-label {
-        left: 0;
+    /* TEXT FIRST, IMAGE SECOND ON MOBILE */
 
-        width: 39px;
-        height: 125px;
-
-        border-width: 3px;
+    .ot-award-row .ot-award-content,
+    .ot-award-row.ot-award-reverse .ot-award-content {
+        order: 1;
     }
 
-    .otgs-ribbon-caption {
-        right: 0;
-        bottom: 12px;
-
-        width: 195px;
-
-        padding: 10px 12px;
+    .ot-award-row .ot-award-image,
+    .ot-award-row.ot-award-reverse .ot-award-image {
+        order: 2;
     }
 
-
-    /* Content */
-
-    .otgs-ribbon-content-heading {
-        gap: 12px;
+    .ot-award-content {
+        padding: 5px 2px;
     }
 
-    .otgs-ribbon-number {
-        width: 38px;
-        height: 38px;
-        flex-basis: 38px;
+    .ot-award-category {
+        margin-bottom: 10px;
+        font-size: 11px;
+        letter-spacing: 1px;
     }
 
-    .otgs-ribbon-intro {
-        margin: 18px 0;
-
-        font-size: 15px;
-        line-height: 1.7;
+    .ot-award-content h3 {
+        font-size: 25px;
+        line-height: 1.4;
     }
 
-
-    /* Award list */
-
-    .otgs-award-ribbon-text {
-        grid-template-columns: 115px 1fr;
-
-        gap: 10px;
+    .ot-award-content h4 {
+        margin-bottom: 14px;
+        font-size: 16px;
     }
 
-
-    /* Bottom */
-
-    .otgs-ribbon-bottom {
-        margin-top: 42px;
-        gap: 12px;
+    .ot-award-content p {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: justify;
     }
 
-    .otgs-ribbon-bottom-line {
-        width: 50px;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .otgs-awards-ribbon {
-        padding: 42px 13px 40px;
+    .ot-award-highlight {
+        font-size: 13px;
     }
 
-    .otgs-awards-ribbon-main {
-        gap: 38px;
+    .ot-award-image {
+        height: 255px;
+        padding: 8px;
     }
 
-    .otgs-ribbon-image-area {
-        min-height: 365px;
+    .ot-award-image::before {
+        width: 52px;
+        height: 52px;
     }
 
-    .otgs-ribbon-image {
-        width: 91%;
-        height: 315px;
+    .ot-award-image::after {
+        width: 42px;
+        height: 42px;
     }
 
-    .otgs-ribbon-image-shadow {
-        width: 85%;
-        height: 83%;
+    .ot-award-image figcaption {
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 11px;
+        font-size: 13px;
     }
 
-    .otgs-ribbon-vertical-label {
-        width: 34px;
-        height: 105px;
+    .ot-awards-closing {
+        margin-top: 40px;
+        padding: 28px 19px;
     }
 
-    .otgs-ribbon-caption {
-        width: 160px;
-        bottom: 7px;
-
-        padding: 8px 10px;
+    .ot-awards-closing h3 {
+        font-size: 24px;
     }
 
-    .otgs-ribbon-eyebrow {
-        font-size: 18px;
-    }
-
-    .otgs-awards-ribbon-header h2 {
-        font-size: 18px;
-    }
-
-    .otgs-awards-ribbon-header p {
-        font-size: 18px;
-    }
-
-    .otgs-ribbon-content-heading h3 {
-        font-size: 18px;
-    }
-
-    .otgs-award-ribbon-text {
-        grid-template-columns: 120px 1fr;
-        gap: 20px;
-    }
-
-    .otgs-ribbon-bottom-line {
-        width: 25px;
+    .ot-awards-closing p {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: justify;
     }
 }
 
+/* SMALL MOBILE */
 
-/* =========================================================
-   EXTRA SMALL MOBILE
-========================================================= */
-
-@media (max-width: 350px) {
-
-    .otgs-awards-ribbon {
-        padding-left: 10px;
-        padding-right: 10px;
+@media (max-width: 380px) {
+    .ot-awards {
+        padding-right: 12px;
+        padding-left: 12px;
     }
 
-    .otgs-ribbon-image {
-        height: 280px;
+    .ot-award-row {
+        padding: 13px;
     }
 
-    .otgs-ribbon-image-area {
-        min-height: 325px;
+    .ot-awards-intro h2 {
+        font-size: 26px;
     }
 
-    .otgs-ribbon-vertical-label {
-        width: 30px;
-        height: 95px;
+    .ot-award-content h3 {
+        font-size: 23px;
     }
 
-    .otgs-ribbon-caption {
-        width: 145px;
-    }
-
-    .otgs-award-ribbon-text {
-        grid-template-columns: 80px 1fr;
-        gap: 6px;
+    .ot-award-image {
+        height: 220px;
     }
 }
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .ot-award-row {
+        animation: none;
+        transition: none;
+    }
+
+    .ot-award-image,
+    .ot-award-image img {
+        transition: none;
+    }
+}
+
 
 /* =========================================================
    OLIVE TREE GLOBAL SCHOOL
